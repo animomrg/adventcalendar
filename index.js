@@ -7,10 +7,7 @@ const snowToggle = document.getElementById('snow-theme');
 const greenToggle = document.getElementById('green-theme');
 const backgroundToggle = document.getElementById('background-btn');
 const mainContainer = document.querySelector('.main-container');
-
-// let redStyle = true;
-// let greenStyle = false;
-// let snowStyle = false;
+const bgImgs = ['none', 'url(./images/greenbg.png)', 'url(./images/redbg.png)', 'url(./images/neonbg.png)', 'url(./images/snowflakebg.png)'];
 
 const root = document.querySelector(':root');
 
@@ -39,35 +36,26 @@ function snowTheme() {
 }
 
 redToggle.addEventListener('click', function() {
-    // if (!redStyle) {
-        redTheme();
-        // redStyle = true;
-        // greenStyle = false;
-        // snowStyle = false;
-    // }
+    redTheme();
 });
 
 snowToggle.addEventListener('click', function() {
-    // if (!snowStyle) {
-        snowTheme();
-        // redStyle = false;
-        // greenStyle = false;
-        // snowStyle = true;
-    // }
+    snowTheme();
 });
 
 greenToggle.addEventListener('click', function() {
-    // if (!greenStyle) {
-        greenTheme();
-        // redStyle = false;
-        // greenStyle = true;
-        // snowStyle = false;
-    // }
+    greenTheme();
 });
 
+let bgIndex = 0;
 backgroundToggle.addEventListener('click', function() {
-    mainContainer.classList.toggle('main-container-background');
-})
+    if (bgIndex === bgImgs.length - 1) {
+        bgIndex = 0;
+    } else {
+        bgIndex += 1;
+    }
+    mainContainer.style.setProperty('background-image', bgImgs[bgIndex]);
+});
 
 /* 
 FONT TOGGLING 
@@ -178,9 +166,7 @@ playBtn.addEventListener('click', function() {
 })
 
 /*
-
 TRIVIA FUNCTIONALITY
-
 */
 
 const questions = [
@@ -212,13 +198,9 @@ function setNextQuestion() {
     questionNum.textContent = `Question ${questionIndex + 1}`;
     questionText.textContent = questions[questionIndex].question;
     questionImg.src = questions[questionIndex].image; 
-    const answers = questions[questionIndex].answers;
+    let answers = questions[questionIndex].answers;
+    let correctAnswer = questions[questionIndex].correct;
     for (let i = 0; i < answers.length; i++) {
         answerBtns[i].textContent = answers[i];
     };
 };
-
-function checkAnswer(e) {
-    const userAnswer = e.target;
-
-}
