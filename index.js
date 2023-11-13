@@ -5,10 +5,12 @@ COLOR THEMES AND TOGGLING
 const redToggle = document.getElementById('red-theme');
 const snowToggle = document.getElementById('snow-theme');
 const greenToggle = document.getElementById('green-theme');
+const backgroundToggle = document.getElementById('background-btn');
+const mainContainer = document.querySelector('.main-container');
 
-let redStyle = true;
-let greenStyle = false;
-let snowStyle = false;
+// let redStyle = true;
+// let greenStyle = false;
+// let snowStyle = false;
 
 const root = document.querySelector(':root');
 
@@ -37,32 +39,35 @@ function snowTheme() {
 }
 
 redToggle.addEventListener('click', function() {
-    if (!redStyle) {
+    // if (!redStyle) {
         redTheme();
-        redStyle = true;
-        greenStyle = false;
-        snowStyle = false;
-    }
+        // redStyle = true;
+        // greenStyle = false;
+        // snowStyle = false;
+    // }
 });
 
 snowToggle.addEventListener('click', function() {
-    if (!snowStyle) {
+    // if (!snowStyle) {
         snowTheme();
-        redStyle = false;
-        greenStyle = false;
-        snowStyle = true;
-    }
+        // redStyle = false;
+        // greenStyle = false;
+        // snowStyle = true;
+    // }
 });
 
 greenToggle.addEventListener('click', function() {
-    if (!greenStyle) {
+    // if (!greenStyle) {
         greenTheme();
-        redStyle = false;
-        greenStyle = true;
-        snowStyle = false;
-    }
+        // redStyle = false;
+        // greenStyle = true;
+        // snowStyle = false;
+    // }
 });
 
+backgroundToggle.addEventListener('click', function() {
+    mainContainer.classList.toggle('main-container-background');
+})
 
 /* 
 FONT TOGGLING 
@@ -198,19 +203,22 @@ const questionText = document.getElementById('question-text');
 const questionImg = document.getElementById('question-img');
 const answerBtns = document.querySelectorAll('.answer-btn');
 
-answerBtns.forEach(btn => console.log(btn.id))
-
 function triviaStart() {
     setNextQuestion();
 }
 
 function setNextQuestion() {
-    const answers = questions[0].answers;
-    questionText.innerHTML = questions[0].question;
-    questionImg.src = questions[0].image;
-    
+    let questionIndex = 0;
+    questionNum.textContent = `Question ${questionIndex + 1}`;
+    questionText.textContent = questions[questionIndex].question;
+    questionImg.src = questions[questionIndex].image; 
+    const answers = questions[questionIndex].answers;
+    for (let i = 0; i < answers.length; i++) {
+        answerBtns[i].textContent = answers[i];
     };
+};
 
-function checkAnswer() {
+function checkAnswer(e) {
+    const userAnswer = e.target;
 
 }

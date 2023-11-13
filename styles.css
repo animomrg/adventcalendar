@@ -168,6 +168,11 @@ Classes
     overflow: hidden;
 }
 
+.main-container-background {
+    background-image: url(./images/15.png);
+    opacity: 0.5;
+}
+
 .title {
     display: flex;
     flex-direction: row;
