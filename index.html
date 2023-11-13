@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advent Calendar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b6bef2591.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div class="main-container">
+            <div class="title">
+                <div class="theme-btn-container">
+                    <button class="theme-toggle" id="font-btn">
+                        <i class="fa-solid fa-font"></i>
+                    </button>
+                    <button class="theme-toggle" id="background-btn">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </button>
+                    <button class="theme-toggle">
+                        <i class="fa-solid fa-gift"></i>
+                    </button>
+                </div>
+                <div class="title-content">
+                    <h2>Advent-ure Calendar 2023</h2>
+                </div>
+                <div class="theme-btn-container">
+                    <button class="theme-toggle" id="red-theme">
+                        <i class="fa-solid fa-candy-cane"></i>
+                    </button>
+                    <button class="theme-toggle" id="snow-theme">
+                        <i class="fa-solid fa-snowman"></i>
+                    </button>
+                    <button class="theme-toggle" id="green-theme">
+                        <i class="fa-solid fa-tree"></i></i>
+                    </button>
+                </div>
+            </div>
+            <div class="day-boxes">
+                <div class="day">
+                    <button class="btn btn-day day-8" id="8" type="button">
+                        <h4 class="day-number">8</h4>
+                    </button>
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-23" id="23" type="button">
+                        <h4 class="day-number">23</h4>
+                    </button>
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-15" id='15' type="button">
+                        <h4 class="day-number">15</h4>
+                    </button>
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-19" id="19" type="button">
+                        <h4 class="day-number">19</h4>
+                    </button>
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-6" id="6" type="button">
+                        <h4 class="day-number">6</h4>
+                    </button>
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-17" id="17" type="button">
+                        <h4 class="day-number">17</h4>
+                    </button>
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-2" id="2" type="button">
+                        <h4 class="day-number">2</h4>
+                    </button>
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-9" id="9" type="button">
+                        <h4 class="day-number">9</h4>
+                    </button>
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-12" id="12" type="button">
+                        <h4 class="day-number">12</h4>
+                    </button>
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-18" id="18" type="button">
+                        <h4 class="day-number">18</h4>
+                    </button>
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-24" id="24" type="button">
+                        <h4 class="day-number">24</h4>
+                    </button>
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-20" id="20" type="button">
+                        <h4 class="day-number">20</h4>
+                    </button>
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-13" id="13" type="button">
+                        <h4 class="day-number">13</h4>
+                    </button>
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-3" id="3" type="button">
+                        <h4 class="day-number">3</h4>
+                    </button> 
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-22" id="22" type="button">
+                        <h4 class="day-number">22</h4>
+                    </button>
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-16" id="16" type="button">
+                        <h4 class="day-number">16</h4>
+                    </button>
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-5" id="5" type="button">
+                        <h4 class="day-number">5</h4>
+                    </button>
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-11" id="11" type="button">
+                        <h4 class="day-number">11</h4>
+                    </button>
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-21" id="21" type="button">
+                        <h4 class="day-number">21</h4>
+                    </button> 
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-1" id="1" type="button">
+                        <h4 class="day-number">1</h4>
+                    </button>
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-7" id="7" type="button">
+                        <h4 class="day-number">7</h4>
+                    </button>
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-14" id="14" type="button">
+                        <h4 class="day-number">14</h4>
+                    </button>
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-10" id="10" type="button">
+                        <h4 class="day-number">10</h4>
+                    </button>
+                </div>
+                <div class="day">
+                    <button class="btn btn-day day-4" id="4" type="button">
+                        <h4 class="day-number">4</h4>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-overlay">
+                <div class="modal-container">
+                    <button class="close-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <article class="intro-modal">
+                        <h1 id="slide-header">Intro</h1>
+                        <div class="slide-text">
+                            <p id="slide-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Necessitatibus in, sit tenetur numquam cum dolor officia 
+                                officiis blanditiis! Ad, molestiae!
+                            </p>
+                            <img src="" alt="" class="slide-img" />
+                        </div>
+                        <div class="btn-container">
+                            <button class="prev-btn" type="button">
+                                <i class="fa-solid fa-circle-chevron-left"></i>
+                            </button>
+                            <button class="next-btn" type="button">
+                                <i class="fa-solid fa-circle-chevron-right"></i>
+                            </button>
+                        </div>
+                        <button class="play-btn" type="button">Quiz Me!</button> 
+                    </article>
+                    <article class="trivia-modal">
+                        <div class="question-info">
+                            <h1 id="question-num">Question 1</h1>
+                            <img id="question-img" src="" alt="" />
+                            <p id="question-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Natus fugit odit tempore voluptas suscipit, 
+                                perferendis aut molestias nulla assumenda sunt!
+                            </p>
+                        </div>    
+                        <div class="answer-grid">
+                            <div class="answer-container">
+                                <button class="answer-btn" type="button" id="answer-a">Answer A</button>
+                            </div>
+                            <div class="answer-container">
+                                <button class="answer-btn" type="button" id="answer-b">Answer B</button>
+                            </div>
+                            <div class="answer-container">
+                                <button class="answer-btn" type="button" id="answer-c">Answer C</button>
+                            </div>
+                            <div class="answer-container">
+                                <button class="answer-btn" type="button" id="answer-d">Answer D</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
