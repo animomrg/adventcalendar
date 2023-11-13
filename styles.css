@@ -400,4 +400,13 @@ TRIVIA MODAL
     body {
         height: 80vh;
     }
+
+    .main-container {
+        height: 70vh;
+    }
+
+    .day {
+        width: 45%;
+        height: 60%;
+    }
 }
