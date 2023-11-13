@@ -249,16 +249,16 @@ Classes
 }
 
 .modal-container {
+    position: relative;
     background: var(--clr-primary-5);
     border-radius: var(--radius);
-    width: 90vw;
-    height: 60vh;
+    width: 100%;
+    height: 100%;
     max-width: var(--fixed-width);
     /* transition: var(--transition); */
     text-align: center;
     display: grid;
     place-items: center;
-    position: relative;
 }
 
 .close-btn {

@@ -196,7 +196,7 @@ playBtn.addEventListener('click', function() {
 TRIVIA FUNCTIONALITY
 */
 
-const questionsDec1 = [
+const questions = [
     {
         question: "What movie is this?",
         image: '/images/elf1.png',
