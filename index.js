@@ -7,7 +7,7 @@ const snowToggle = document.getElementById('snow-theme');
 const greenToggle = document.getElementById('green-theme');
 const backgroundToggle = document.getElementById('background-btn');
 const mainContainer = document.querySelector('.main-container');
-const bgImgs = ['none', 'url(./images/greenbg.png)', 'url(./images/redbg.png)', 'url(./images/neonbg.png)', 'url(./images/snowflakebg.png)'];
+const bgImgs = ['none', 'url(./images/greenbg.png)', 'url(./images/redbg.png)', 'url(./images/neonbg.png)', 'url(./images/snowbg.png)'];
 
 const root = document.querySelector(':root');
 
@@ -82,10 +82,20 @@ DAY BTNS & INTRO MODAL
 const dayBtns = document.querySelectorAll('.btn-day');
 const modalOverlay = document.querySelector('.modal-overlay');
 
+const date = new Date().getDate();
+
 dayBtns.forEach(button => {
+    let btnDay = button.id;
+
     button.addEventListener('click', () => {
-        modalOverlay.classList.add('open-modal');
-        updateSlide();
+        if (date >= btnDay) {
+            slideImg.src = ''
+            modalOverlay.classList.add('open-modal');
+            updateSlide();
+        } else {
+            modalOverlay.classList.add('open-modal');
+            warningSlide();
+        };
     });
 });
 
@@ -93,6 +103,13 @@ const nextBtn = document.querySelector('.next-btn');
 const prevBtn = document.querySelector('.prev-btn');
 const closeBtn = document.querySelector('.close-btn');
 const playBtn = document.querySelector('.play-btn');
+
+const warningSlides = [
+    {
+        header: 'No Peeking!',
+        text: "You don't want coal in your stocking, do you?"
+    }
+];
 
 const slides = [
     {
@@ -117,6 +134,7 @@ const introModal = document.querySelector('.intro-modal');
 const triviaModal = document.querySelector('.trivia-modal');
 const slideHeader = document.getElementById('slide-header');
 const slideText = document.getElementById('slide-text');
+const slideImg = document.querySelector('.slide-img');
 const modalContainer = document.querySelector('.modal-container');
 
 let currentSlide = 0;
@@ -144,6 +162,15 @@ function updateSlide() {
     }
 };
 
+function warningSlide() {
+    let slide = warningSlides[0];
+    slideHeader.textContent = slide.header;
+    slideText.textContent = slide.text;
+    prevBtn.style.display = 'none';
+    nextBtn.style.display = 'none';
+    slideImg.src = './images/grinch.png';
+}
+
 nextBtn.addEventListener('click', function() {
     currentSlide++;
     updateSlide();
@@ -169,7 +196,7 @@ playBtn.addEventListener('click', function() {
 TRIVIA FUNCTIONALITY
 */
 
-const questions = [
+const questionsDec1 = [
     {
         question: "What movie is this?",
         image: '/images/elf1.png',
@@ -182,6 +209,21 @@ const questions = [
         answers: ['Candy Corn', 'Candy Canes', 'Chocolate', 'SYRUP!'],
         correct: 'Chocolate',
     }
+];
+
+const questionsDec2 = [
+    {
+        question: "What movie is this?",
+        image: '/images/homealone.png',
+        answers: ['Home Alone', 'Elf', 'The Grinch', 'The Santa Clause'],
+        correct: 'Home Alone',
+    },
+    {
+        question: 'What criminal nickname did Marv give himself and Harry?',
+        image: '/images/homealonebadguys.png',
+        answers: ['The Sticky Bandits', 'The Goodfellas', 'Team Rocket', 'The Wet Bandits'],
+        correct: 'The Wet Bandits',
+    }  
 ];
 
 const questionNum = document.getElementById('question-num');
