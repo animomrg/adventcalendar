@@ -91,7 +91,7 @@ dayBtns.forEach(button => {
         if (date >= btnDay) {
             slideImg.src = ''
             modalOverlay.classList.add('open-modal');
-            updateSlide(btnDay);
+            updateSlide();
         } else {
             modalOverlay.classList.add('open-modal');
             warningSlide();
@@ -113,7 +113,7 @@ const warningSlides = [
 
 const slides = [
     {
-        header: 'December 1',
+        header: 'Happy December 1!',
         text: "As always, the best thing about turning over the calendar to December is opening the first door of the advent calendar!",
     },
     {
@@ -139,9 +139,9 @@ const modalContainer = document.querySelector('.modal-container');
 
 let currentSlide = 0;
 
-function updateSlide(btnDay) {
+function updateSlide() {
     const slide = slides[currentSlide];
-    slideHeader.textContent = `December ${btnDay}`;
+    slideHeader.textContent = slide.header;
     slideText.textContent = slide.text;
     if (currentSlide < slides.length - 1) {
         nextBtn.style.display = 'inline';
