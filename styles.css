@@ -22,7 +22,7 @@ Colors/Fonts
     --clr-primary-12: #A6FFFF;
     --clr-primary-13: #00FFFF;
     --clr-primary-14: #02E6E6;
-    --clr-primary-15: #6BC8FF;
+    --clr-primary-15: #14a8fe;
     /* other props */
     --clr-white: #fff;
     --clr-black: #222;
@@ -111,7 +111,7 @@ h3 {
   }
 
 h4 {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: var(--clr-primary-2);
     font-family: var(--ff-primary);
     margin-top: 5%;
@@ -295,17 +295,19 @@ Classes
     margin: auto;
 }
 
-.slide-text {
+#slide-text {
     display: relative;
     width: 60%;
     margin: 3rem auto;
-    font-size: 1.25rem;
 }
 
-.slide-img {
-    width: 50%;
+#slide-img {
+    width: 300px;
+    height: 250px;
+    border: 3px solid var(--clr-primary-2);
     border-radius: 10px;
-    padding-top: 5%;
+    display: none;
+    margin-bottom: 20px;
 }
 
 .play-btn {
@@ -393,20 +395,4 @@ TRIVIA MODAL
     text-shadow: 2px 2px 5px var(--clr-primary-1);
     background: linear-gradient(var(--clr-primary-1), var(--clr-primary-2));
     border: 2px solid var(--clr-primary-4);
-}
-
-@media only screen and (max-width: 800px) {
-
-    body {
-        height: 80vh;
-    }
-
-    .main-container {
-        height: 70vh;
-    }
-
-    .day {
-        width: 45%;
-        height: 60%;
-    }
 }
