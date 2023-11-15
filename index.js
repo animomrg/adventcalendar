@@ -129,10 +129,8 @@ const introSlides = [
 // DAY BUTTONS
 const currentDate = new Date().getDate();
 const dayBtns = document.querySelectorAll('.btn-day');
-const modalContainer = document.querySelector('.modal-container');
 const modalOverlay = document.querySelector('.modal-overlay');
 const introModal = document.querySelector('.intro-modal');
-
 // DAY BUTTON EVENT LISTENERS
 dayBtns.forEach(button => {
     let btnDay = button.id;
@@ -147,19 +145,19 @@ dayBtns.forEach(button => {
     });
 });
 
-const slideHeader = document.getElementById('slide-header');
-const slideText = document.getElementById('slide-text');
-const slideImg = document.getElementById('slide-img');
-const comeBackText = document.getElementById('come-back-text');
+const slideHeader = document.querySelector('.slide-header');
+const slideText = document.querySelector('.slide-text');
+const slideImg = document.querySelector('.slide-img');
+const comeBackText = document.querySelector('.come-back-text');
 
 // MODAL RESET FUNCTION
 function modalReset() {
     slideHeader.textContent = '';
     slideText.textContent = '';
     slideImg.style.display = 'none';
-    comeBackText.style.display = 'none';
     prevBtn.style.display = 'none';
     nextBtn.style.display = 'none';
+    comeBackText.classList.remove('cbt-active');
     currentSlide = 0;
 };
 
@@ -168,10 +166,14 @@ function warningSlide() {
     let index = Math.floor(Math.random() * warningSlides.length);
     let warning = warningSlides[index];
     slideHeader.textContent = warning.header;
-    slideText.textContent = warning.text;
+    slideText.textContent = '';
     slideImg.src = warning.img;
     slideImg.style.display = 'inline';
-    comeBackText.style.display = 'block';
+    comeBackText.classList.add('cbt-active');
+    closeBtn.addEventListener('click', function() {
+        modalReset();
+        modalOverlay.classList.remove('open-modal');
+    });
 };
 
 // DAILY INTRO VARIABLES
