@@ -164,51 +164,56 @@
             </div>
             <div class="modal-overlay">
                 <div class="modal-container">
-                    <button class="close-btn">
+                    <button id="close-btn">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                     <article class="intro-modal">
                         <h2 id="slide-header">Intro</h2>
-                        <h4 id="slide-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            Necessitatibus in, sit tenetur numquam cum dolor officia 
-                            officiis blanditiis! Ad, molestiae!
-                        </h4>
+                        <div class="text-container">
+                            <h3 id="slide-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Necessitatibus in, sit tenetur numquam cum dolor officia 
+                                officiis blanditiis! Ad, molestiae!
+                            </h3>
+                        </div>
                         <div class="img-container">
-                            <img id="slide-img" src="" alt="villain image" />
+                            <img id="slide-img" src="" alt="" />
                         </div>
                         <h4 id="come-back-text">Come back when this date is available!</h4>
                         <div class="btn-container">
-                            <button class="prev-btn" type="button">
+                            <button id="play-btn" type="button">I'm Ready!</button>
+                            <button id="prev-btn" type="button">
                                 <i class="fa-solid fa-circle-chevron-left"></i>
                             </button>
-                            <button class="next-btn" type="button">
+                            <button id="next-btn" type="button">
                                 <i class="fa-solid fa-circle-chevron-right"></i>
                             </button>
                         </div>
-                        <button class="play-btn" type="button">Quiz Me!</button> 
                     </article>
                     <article class="trivia-modal">
-                        <div class="question-info">
+                        <div class="countdown-container">
+                            <h1 id="countdown">3</h1>
+                        </div>
+                        <div class="question-container">
                             <h1 id="question-num">Question 1</h1>
                             <img id="question-img" src="" alt="" />
-                            <p id="question-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            <h3 id="question-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                 Natus fugit odit tempore voluptas suscipit, 
                                 perferendis aut molestias nulla assumenda sunt!
-                            </p>
+                            </h3>
                         </div>    
-                        <div class="answer-grid">
-                            <div class="answer-container">
-                                <button class="answer-btn" type="button" id="answer-a">Answer A</button>
+                        <div class="answer-container">
+                            <div class="answer-grid">
+                                <button class="answer-btn" type="button" id="0">Answer A</button>
                             </div>
-                            <div class="answer-container">
-                                <button class="answer-btn" type="button" id="answer-b">Answer B</button>
+                            <div class="answer-grid">
+                                <button class="answer-btn" type="button" id="1">Answer B</button>
                             </div>
-                            <div class="answer-container">
-                                <button class="answer-btn" type="button" id="answer-c">Answer C</button>
+                            <div class="answer-grid">
+                                <button class="answer-btn" type="button" id="2">Answer C</button>
                             </div>
-                            <div class="answer-container">
-                                <button class="answer-btn" type="button" id="answer-d">Answer D</button>
+                            <div class="answer-grid">
+                                <button class="answer-btn" type="button" id="3">Answer D</button>
                             </div>
                         </div>
                     </article>
@@ -216,6 +221,6 @@
             </div>
         </div>
     </main>
-    <script src="index.js"></script>
+    <script src="index.js" type="module"></script>
 </body>
 </html>

@@ -261,7 +261,7 @@ Classes
     place-items: center;
 }
 
-.close-btn {
+#close-btn {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -273,9 +273,11 @@ Classes
     /* transition: var(--transition); */
 }
 
-.close-btn:hover {
-    color: var(--clr-primary-1);
-    transform: scale(1.3);
+#close-btn:hover,
+#play-btn:hover,
+#prev-btn:hover,
+#next-btn:hover {
+    animation: bounce 2s ease-in-out infinite;
 }
 
 .intro-modal {
@@ -296,9 +298,11 @@ Classes
 }
 
 #slide-text {
-    display: relative;
-    width: 60%;
-    margin: 3rem auto;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #slide-img {
@@ -310,7 +314,7 @@ Classes
     margin-bottom: 20px;
 }
 
-.play-btn {
+#play-btn {
     position: relative;
     display: none;
     background: var(--clr-primary-2);
@@ -320,9 +324,9 @@ Classes
     border: none;
     border-radius: 45px;
     padding: 0 2%;
+    margin: 25px auto;
     /* transition: var(--transition); */
     cursor: pointer;
-
 }
 
 .btn-container {
@@ -331,8 +335,8 @@ Classes
     width: 100%;
 }
 
-.prev-btn,
-.next-btn {
+#prev-btn,
+#next-btn {
     color: var(--clr-primary-2);
     font-size: 2rem;
     background: transparent;
@@ -351,7 +355,31 @@ TRIVIA MODAL
     display: none;
 }
 
-.question-text {
+.countdown-container {
+    display: inline;
+}
+
+#countdown {
+    font-size: 8rem;
+    animation: grow 1s linear 3;
+}
+@keyframes grow {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    95% {
+      transform: scale(2);
+    }
+  }
+
+.question-container {
+    display: none;
+}
+
+#question-text {
     width: 75%;
     margin: 5% auto;
 }
@@ -364,17 +392,20 @@ TRIVIA MODAL
     border: 2px solid var(--clr-primary-2);
 }
 
-.answer-grid {
+.answer-container {
     position: relative;
-    display: inline-grid;
+    visibility: hidden;
+    display: grid;
+    width: 80%;
+    margin: auto;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
 }
 
-.answer-container {
+.answer-grid {
     position: relative;
-    margin: 5% auto;
-    width: 250px;
+    margin: 5%;
+    width: 200px;
 }
 
 .answer-btn {
@@ -386,7 +417,7 @@ TRIVIA MODAL
     font-size: 1.5rem;
     border: 2px solid var(--clr-primary-1);
     border-radius: 45px;
-    padding: 0 2%;
+    padding: none;
     /* transition: var(--transition); */
     cursor: pointer;
 }

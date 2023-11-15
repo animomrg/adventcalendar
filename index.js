@@ -1,19 +1,13 @@
+import { questions } from "./questions.js";
 /*
 COLOR THEMES AND TOGGLING 
 */
 
-// COLOR & FONT VARIABLES
+// COLOR THEMES
 const redToggle = document.getElementById('red-theme');
 const snowToggle = document.getElementById('snow-theme');
 const greenToggle = document.getElementById('green-theme');
-const backgroundToggle = document.getElementById('background-btn');
-const fontToggle = document.getElementById('font-btn');
-const mainContainer = document.querySelector('.main-container');
-const bgImgs = ['none', 'url(./images/greenbg.png)', 'url(./images/redbg.png)', 'url(./images/neonbg.png)', 'url(./images/snowbg.png)'];
-const fonts = ['Mountains of Christmas', 'Comic Neue', 'St Nicholas', 'Montserrat'];
-const root = document.querySelector(':root');
 
-// COLOR THEMES
 function greenTheme() {
     root.style.setProperty('--clr-primary-1', '#00DB1D');
     root.style.setProperty('--clr-primary-2', '#22A834');
@@ -36,7 +30,6 @@ function snowTheme() {
     root.style.setProperty('--clr-primary-5', '#14a8fe');    
 }
 
-// COLOR TOGGLES
 redToggle.addEventListener('click', function() {
     redTheme();
 });
@@ -50,6 +43,9 @@ greenToggle.addEventListener('click', function() {
 });
 
 // BACKGROUND TOGGLE
+const backgroundToggle = document.getElementById('background-btn');
+const mainContainer = document.querySelector('.main-container');
+const bgImgs = ['none', 'url(./images/greenbg.png)', 'url(./images/redbg.png)', 'url(./images/neonbg.png)', 'url(./images/snowbg.png)'];
 let bgIndex = 0;
 backgroundToggle.addEventListener('click', function() {
     if (bgIndex === bgImgs.length - 1) {
@@ -61,6 +57,9 @@ backgroundToggle.addEventListener('click', function() {
 });
 
 // FONT TOGGLE
+const fontToggle = document.getElementById('font-btn');
+const fonts = ['Mountains of Christmas', 'Comic Neue', 'St Nicholas', 'Montserrat'];
+const root = document.querySelector(':root');
 let fontIndex = 0;
 fontToggle.addEventListener('click', function() {
     if (fontIndex === fonts.length - 1) {
@@ -70,33 +69,6 @@ fontToggle.addEventListener('click', function() {
     }
     root.style.setProperty('--ff-primary', fonts[fontIndex]);
 });
-
-/*
-DAY BTNS & INTRO MODAL
-*/
-
-// Selectors 
-
-// BUTTONS
-const nextBtn = document.querySelector('.next-btn');
-const prevBtn = document.querySelector('.prev-btn');
-const closeBtn = document.querySelector('.close-btn');
-const playBtn = document.querySelector('.play-btn');
-const answerBtns = document.querySelectorAll('.answer-btn');
-const modalOverlay = document.querySelector('.modal-overlay');
-const introModal = document.querySelector('.intro-modal');
-const triviaModal = document.querySelector('.trivia-modal');
-const slideHeader = document.getElementById('slide-header');
-const slideText = document.getElementById('slide-text');
-const slideImg = document.getElementById('slide-img');
-const comeBackText = document.getElementById('come-back-text');
-const modalContainer = document.querySelector('.modal-container');
-const questionNum = document.getElementById('question-num');
-const questionText = document.getElementById('question-text');
-const questionImg = document.getElementById('question-img');
-
-const currentDate = new Date().getDate();
-let currentSlide = 0;
 
 // SLIDE ARRAYS
 const warningSlides = [
@@ -127,96 +99,39 @@ const warningSlides = [
     }
 ];
 
-const introDec1 = [
-    "The best thing about turning over the calendar to December is opening the first door of the advent calendar!", 
-    "Each day, when you come back to your advent calendar and open the day's door, you'll find five trivia questions waiting for you.",
-    "Choose the best answer from the multiple choice options by clicking or tapping on the correct button.",
-    "Without further ado, let's get started!",
-];
-
-const introDec2 = [
-    "Welcome back for day number 2! Glad you haven't OD'ed on Christmas baking yet, still plenty of time for that.",
-    "Today is the first very special Sing Along Saturday! All questions will be fill-in-the-blank with the correct missing lyrics.",
-    "Choose the best answer from the multiple choice options by clicking or tapping on the correct button.",
-    "It's beginning to look a lot like Christmas! Let's go!"
-];
-
-const introDec3 = [
-    "Since we all loved Sing Along Saturday so much, why not roll it right into a Sing Along Sunday!?",
-    "If you missed yesterday, it's nice and easy. All questions are fill-in-the-blank with the correct missing lyrics.",
-    "Choose the best answer from the multiple choice options by clicking or tapping on the correct button.",
-    "Here's a vocal warm-up for you: 'Unique, New York. Unique, New York.' Are we ready?"
-];
-
-const introDec4 = [
-    "Today we're going back to the movies, but before that a quick non-Christmas sing-along interlude...",
-    "Happy birthday to Meg\nHappy birthday to Meg\nHappy birthday to Megan\nHappy birthday to you!",
-    "And with that, a reminder to click or tap the correct button for your answer to the multiple-choice question.",
-    "Let's get it started!",
-];
-
-const questionsDec1 = [
-    {
-        question: "What movie is this?",
-        image: '/images/elf1.png',
-        answers: ['Home Alone', 'Elf', 'The Grinch', 'The Santa Clause'],
-        correct: 'Elf',
-    },
-    {
-        question: 'According to Buddy, which of the following is not a main food group?',
-        image: '/images/food.png',
-        answers: ['Candy Corn', 'Candy Canes', 'Chocolate', 'SYRUP!'],
-        correct: 'Chocolate',
-    }
-];
-
-const questionsDec2 = [
-    {
-        lyric: "You know Dasher and Dancer and Prancer and _____\nComet and Cupid and ______ and Blitzen\nBut do you recall\nThe most famous reindeer of all?",
-        image: '.images/rudolph.gif',
-        answers: ['Vixen / Donner', 'Dixon / Rona', 'Nixon / Fauna', 'Billy / Reginald'],
-        correct: 'Vixen / Donner',
-    },
-    {
-        lyric: "Once again, as in olden days\nHappy golden days of ____\nFaithful friends who are ____ to us\nWill be near to us once more",
-        image: '.images/frank.png',
-        answers: ['Yours / Close', 'Yore / Dear', 'Snow / Good', 'Lore / Feared'],
-        correct: 'Yore / Dear',
-    }
-];
-
-const questionsDec3 = [
-    {
-        lyric: "In the meadow, we can build a snowman\mWe'll pretend that he is ______ Brown\nHe'll say, are you _______?\nWe'll say, no man\nBut you can do the job when you're in town",
-        image: '.images/winter.png',
-        answers: ['Carson / Tired', 'Mister / Cranky', 'Parson / Married', 'Jerry / Richard'],
-        correct: 'Parson / Married',
-    },
-    {
-        lyric: "Here comes Santa Claus, here comes Santa Claus, right down ________________\nHe's got a bag that's filled with toys for boys and girls again.\nHear those sleigh bells jingle jangle, oh what a beautiful _____\nSo jump in bed and cover your head, 'cause Santa Claus comes tonight",
-        image: '.images/santa.gif',
-        answers: ['Candy Cane Lane / Night', 'Sugar Drop Lane / Day', 'The Opposite Lane / Light', 'Santa Claus Lane / Sight'],
-        correct: 'Santa Claus Lane / Sight',
-    }
-];
-
-const questionsDec4 = [
-    {
-        question: "What movie is this?",
-        image: '/images/homealone.png',
-        answers: ['Home Alone', 'Elf', 'The Grinch', 'The Santa Clause'],
-        correct: 'Home Alone',
-    },
-    {
-        question: 'What criminal nickname did Marv give himself and Harry?',
-        image: '/images/homealonebadguys.png',
-        answers: ['The Sticky Bandits', 'The Goodfellas', 'Team Rocket', 'The Wet Bandits'],
-        correct: 'The Wet Bandits',
-    }  
+const introSlides = [
+    [
+        "The best thing about turning over the calendar to December is opening the first door of the advent calendar!", 
+        "Each day, when you come back to your advent calendar and open the day's door, you'll find five trivia questions waiting for you.",
+        "Choose the best answer from the multiple choice options by clicking or tapping on the correct button.",
+        "Without further ado, let's get started!",
+    ],
+    [
+        "Welcome back for day number 2! Glad you haven't OD'ed on Christmas baking yet, still plenty of time for that.",
+        "Today is the first very special Sing Along Saturday! All questions will be fill-in-the-blank with the correct missing lyrics.",
+        "Choose the best answer from the multiple choice options by clicking or tapping on the correct button.",
+        "It's beginning to look a lot like Christmas! Let's go!"
+    ],
+    [
+        "Since we all loved Sing Along Saturday so much, why not roll it right into a Sing Along Sunday!?",
+        "If you missed yesterday, it's nice and easy. All questions are fill-in-the-blank with the correct missing lyrics.",
+        "Choose the best answer from the multiple choice options by clicking or tapping on the correct button.",
+        "Here's a vocal warm-up for you: 'Unique, New York. Unique, New York.' Are we ready?"
+    ],
+    [
+        "Today we're going back to the movies, but before that a quick non-Christmas sing-along interlude...",
+        "Happy birthday to Meg\nHappy birthday to Meg\nHappy birthday to Megan\nHappy birthday to you!",
+        "And with that, a reminder to click or tap the correct button for your answer to the multiple-choice question.",
+        "Let's get it started!",
+    ],
 ];
 
 // DAY BUTTONS
+const currentDate = new Date().getDate();
 const dayBtns = document.querySelectorAll('.btn-day');
+const modalContainer = document.querySelector('.modal-container');
+const modalOverlay = document.querySelector('.modal-overlay');
+const introModal = document.querySelector('.intro-modal');
 
 // DAY BUTTON EVENT LISTENERS
 dayBtns.forEach(button => {
@@ -232,6 +147,11 @@ dayBtns.forEach(button => {
     });
 });
 
+const slideHeader = document.getElementById('slide-header');
+const slideText = document.getElementById('slide-text');
+const slideImg = document.getElementById('slide-img');
+const comeBackText = document.getElementById('come-back-text');
+
 // MODAL RESET FUNCTION
 function modalReset() {
     slideHeader.textContent = '';
@@ -240,6 +160,7 @@ function modalReset() {
     comeBackText.style.display = 'none';
     prevBtn.style.display = 'none';
     nextBtn.style.display = 'none';
+    currentSlide = 0;
 };
 
 // WARNING MODAL FUNCTION
@@ -253,70 +174,116 @@ function warningSlide() {
     comeBackText.style.display = 'block';
 };
 
+// DAILY INTRO VARIABLES
+let currentSlide = 0;
+let introArray = [];
+const nextBtn = document.getElementById('next-btn');
+const prevBtn = document.getElementById('prev-btn');
+const closeBtn = document.getElementById('close-btn');
+const playBtn = document.getElementById('play-btn');
+
+// DAILY INTRO FUNCTION
 function dailyIntro(date) {
-    let currentSlide = 1;
-    let slideInfo = slides[`Dec ${date}`];
+    introArray = introSlides[date - 1];
     slideHeader.textContent = `December ${date}`;
-    slideText.textContent = slideInfo[`text${currentSlide}`];
-    if (currentSlide < introLength - 1) {
+    updateSlide();
+
+    nextBtn.addEventListener('click', function() {
+        currentSlide++;
+        updateSlide();
+    });
+    
+    prevBtn.addEventListener('click', function() {
+        currentSlide--;
+        updateSlide();
+    });
+    
+    closeBtn.addEventListener('click', function() {
+        modalReset();
+        modalOverlay.classList.remove('open-modal');
+    });
+    
+    playBtn.addEventListener('click', function() {
+        modalReset();
+        introModal.style.display = 'none';
+        triviaStart(date);
+    });
+};
+
+// UPDATE SLIDE FUNCTION
+function updateSlide() {
+    slideText.textContent = introArray[currentSlide];
+    if (currentSlide < introArray.length - 1) {
         nextBtn.style.display = 'inline';
     } else {
         nextBtn.style.display = 'none';
     }
-
     if (currentSlide > 0) {
         prevBtn.style.display = 'inline';
     } else {
         prevBtn.style.display = 'none';
     }
-
-    if (currentSlide === introLength - 1) {
-        playBtn.style.display = 'inline';
+    if (currentSlide === introArray.length - 1) {
+        playBtn.style.display = 'block';
     } else {
         playBtn.style.display = 'none';
     }
 };
 
-nextBtn.addEventListener('click', function() {
-    currentSlide++;
-    slideText.textContent = slideInfo[`text${currentSlide}`];
-});
+// TRIVIA VARIABLES
+const triviaModal = document.querySelector('.trivia-modal');
+const answerBtns = document.querySelectorAll('.answer-btn');
+const qNum = document.getElementById('question-num');
+const qText = document.getElementById('question-text');
+const qImg = document.getElementById('question-img');
+let triviaScore = 0;
+let triviaQuestions = [];
+let qIndex = 0;
+let triviaActive = false;
 
-prevBtn.addEventListener('click', function() {
-    currentSlide--;
-});
+const countdownContainer = document.querySelector('.countdown-container');
+const questionContainer = document.querySelector('.question-container');
+const answerContainer = document.querySelector('.answer-container');
 
-closeBtn.addEventListener('click', function() {
-    modalOverlay.classList.remove('open-modal');
-    currentSlide = 0;
-});
-
-playBtn.addEventListener('click', function() {
-    introModal.style.display = 'none';
+function triviaStart(date) {
     triviaModal.style.display = 'inline';
-    triviaStart();
-});
-
-
-
-// Functions 
-
-
-
-
-
-function triviaStart() {
-    setNextQuestion();
+    triviaActive = true;
+    let userScore = 0;
+    triviaQuestions = questions[date - 1];
+    triviaCountdown(); 
+    setNextQuestion(qIndex);
 };
 
-function setNextQuestion() {
-    let questionIndex = 0;
-    questionNum.textContent = `Question ${questionIndex + 1}`;
-    questionText.textContent = questions[questionIndex].question;
-    questionImg.src = questions[questionIndex].image; 
-    let answers = questions[questionIndex].answers;
-    let correctAnswer = questions[questionIndex].correct;
+function triviaCountdown() {
+    let timeRem = 2;
+    clearInterval();
+    let timer = null;
+    timer = setInterval(countdown, 1000);
+    function countdown() {
+        countdownContainer.innerHTML = `<h1 id="countdown">${timeRem}</h1>`
+        if (timeRem === 0) {
+            clearInterval();
+            countdownContainer.style.display = 'none';
+            questionContainer.style.display = 'inline';
+            answerContainer.style.visibility = 'visible';
+        } else {
+            timeRem--;
+        };
+    };
+}
+
+function setNextQuestion(index) {
+    let question = triviaQuestions[index];
+    let answers = question['answers'];
+    let userAnswer = '';
+    let correctAnswer = question['correct'];
+    qImg.src = question['image'];
+    qNum.textContent = `Question ${index + 1}`;
+    qText.textContent = question['question'];
     for (let i = 0; i < answers.length; i++) {
         answerBtns[i].textContent = answers[i];
+        answerBtns[i].addEventListener('click', (e) => {
+            console.log(e.target.textContent);
+        });
     };
 };
