@@ -154,7 +154,7 @@ Classes
     margin: 2% auto;
 }
 
-.title-content > h2 {
+#advent-title {
     padding-top: 5%;
 }
 
@@ -224,7 +224,8 @@ Classes
 
 .btn-day:hover {
     background-color: var(--clr-primary-5); 
-    border: 4px solid var(--clr-primary-2)
+    border: 4px solid var(--clr-primary-2);
+    animation: bounce 2s ease-in-out infinite;
 }
 
 .modal-overlay {
@@ -239,6 +240,12 @@ Classes
     /* transition: var(--transition); */
     visibility: hidden;
     z-index: -10;
+}
+
+/* JS CLASS TO ACTIVATE MODAL */
+.open-modal {
+    visibility: visible;
+    z-index: 10;
 }
 
 .modal-container {
@@ -274,23 +281,22 @@ Classes
 }
 
 .intro-modal {
-    position: relative;
+    position: fixed;
     display: inline;
     height: 80%;
     width: 100%;
 }
 
-.open-modal {
-    visibility: visible;
-    z-index: 10;
-}
-
-.slide-header {
-    position: relative;
+#intro-header {
     margin: auto;
 }
 
-.slide-text {
+.text-container {
+    margin: auto;
+    width: 50%;
+}
+
+#intro-text {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -298,27 +304,32 @@ Classes
     transform: translate(-50%, -50%);
 }
 
-.slide-img {
+#warning-img {
     width: 300px;
     height: 250px;
     border: 3px solid var(--clr-primary-2);
     border-radius: 10px;
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.come-back-text {
-    visibility: hidden;
-    position: fixed;
-    width: 50%;
-    bottom: 10%;
-    left: 25%;
+#warning-text {
+    margin: 0;
+    position: absolute;
+    display: none;
+    top: 95%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
-.cbt-active {
-    visibility: visible;
+.btn-container {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
 }
 
 #play-btn {
@@ -336,12 +347,6 @@ Classes
     cursor: pointer;
 }
 
-.btn-container {
-    position: absolute;
-    bottom: 1rem;
-    width: 100%;
-}
-
 #prev-btn,
 #next-btn {
     color: var(--clr-primary-2);
@@ -351,6 +356,16 @@ Classes
     margin: 0 0.5rem;
     /* transition: var(--transition); */
     cursor: pointer;
+}
+
+#pause-btn {
+    color: var(--clr-primary-2);
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    display: inline;
+    margin-top: 10px;
 }
 
 /*
@@ -377,7 +392,7 @@ TRIVIA MODAL
     50% {
       transform: scale(1.5);
     }
-    95% {
+    100% {
       transform: scale(2);
     }
   }
@@ -386,17 +401,17 @@ TRIVIA MODAL
     display: none;
 }
 
-#question-text {
-    width: 75%;
-    margin: 5% auto;
-}
-
 #question-img {
     display: block;
     width: 40%;
     margin: auto;
     border-radius: 20px;
     border: 2px solid var(--clr-primary-2);
+}
+
+#question-text {
+    width: 75%;
+    margin: 5% auto;
 }
 
 .answer-container {
@@ -411,13 +426,14 @@ TRIVIA MODAL
 
 .answer-grid {
     position: relative;
-    margin: 5%;
-    width: 200px;
+    padding: 5% 0;
+    width: 100%;
 }
 
 .answer-btn {
     position: relative;
-    width: 200px;
+    width: 80%;
+    margin: auto;
     background: var(--clr-primary-2);
     font-family: var(--ff-primary);
     color: var(--clr-primary-5);
@@ -434,3 +450,10 @@ TRIVIA MODAL
     background: linear-gradient(var(--clr-primary-1), var(--clr-primary-2));
     border: 2px solid var(--clr-primary-4);
 }
+
+.trivia-btn-container {
+    width: 100%;
+    margin: auto;
+}
+
+

@@ -26,7 +26,7 @@
                     </button>
                 </div>
                 <div class="title-content">
-                    <h2>Advent Trivia Calendar</h2>
+                    <h2 id="advent-title">Advent Trivia Calendar</h2>
                 </div>
                 <div class="theme-btn-container">
                     <button class="theme-toggle" id="red-theme">
@@ -168,12 +168,13 @@
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                     <article class="intro-modal">
-                        <h2 class="slide-header"></h2>
-                        <div class="text-container">
-                            <h3 class="slide-text"></h3>
+                        <div class="header-container">
+                            <h2 id="intro-header"></h2>
                         </div>
-                        <div class="img-container">
-                            <img class="slide-img" src="" alt="" />
+                        <img id="warning-img" src="" alt="" />
+                        <div class="text-container">
+                            <h3 id="intro-text"></h3>
+                            <h3 id="warning-text"></h3>
                         </div>
                         <div class="btn-container">
                             <button id="play-btn" type="button">I'm Ready!</button>
@@ -184,7 +185,6 @@
                                 <i class="fa-solid fa-circle-chevron-right"></i>
                             </button>
                         </div>
-                        <h4 class="come-back-text">Come back when this date is available!</h4>
                     </article>
                     <article class="trivia-modal">
                         <div class="countdown-container">
@@ -200,17 +200,22 @@
                         </div>    
                         <div class="answer-container">
                             <div class="answer-grid">
-                                <button class="answer-btn" type="button" id="0">Answer A</button>
+                                <button class="answer-btn" type="button" id="answer-a">Answer A</button>
                             </div>
                             <div class="answer-grid">
-                                <button class="answer-btn" type="button" id="1">Answer B</button>
+                                <button class="answer-btn" type="button" id="answer-b">Answer B</button>
                             </div>
                             <div class="answer-grid">
-                                <button class="answer-btn" type="button" id="2">Answer C</button>
+                                <button class="answer-btn" type="button" id="answer-c">Answer C</button>
                             </div>
                             <div class="answer-grid">
-                                <button class="answer-btn" type="button" id="3">Answer D</button>
+                                <button class="answer-btn" type="button" id="answer-d">Answer D</button>
                             </div>
+                        </div>
+                        <div class="trivia-btn-container">
+                            <button id="pause-btn" type="button">
+                                <i class="fa-solid fa-circle-pause"></i>
+                            </button>
                         </div>
                     </article>
                 </div>
