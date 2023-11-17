@@ -97,7 +97,7 @@ const nextBtn = document.getElementById('next-btn');
 const prevBtn = document.getElementById('prev-btn');
 const closeBtn = document.getElementById('close-btn');
 const playBtn = document.getElementById('play-btn');
-const pauseBtn = document.getElementById('pause-btn');
+const submitBtn = document.getElementById('submit-btn');
 
 let currentSlide = 0;
 
@@ -134,7 +134,7 @@ function modalReset() {
 
 // DAY BUTTON EVENT LISTENERS
 dayBtns.forEach(button => {
-    let btnDay = button.id;
+    let btnDay = button.textContent;
     button.addEventListener('click', () => {
         modalOverlay.classList.add('open-modal');
         if (currentDate >= btnDay) {
@@ -205,33 +205,36 @@ let triviaQuestions = [];
 let triviaAnswers = [];
 let correctAnswers = [];
 let userAnswers = [];
-let qIndex = 0;
+let question = '';
 
 const countdownContainer = document.querySelector('.countdown-container');
 const questionContainer = document.querySelector('.question-container');
-const answerContainer = document.querySelector('.answer-container');
+const answerContainer = document.querySelector('.trivia-answers');
 
 function triviaStart(date) {
+    let index = 0
     triviaModal.style.display = 'inline';
     closeBtn.style.display = 'none'; 
     triviaQuestions = questions[date - 1];
     correctAnswers = triviaQuestions.map(question => question['correct']);
     triviaCountdown();
-    setNextQuestion(qIndex);
+    setNextQuestion(index);
 };
+
 
 function triviaCountdown() {
     let timeRem = 2;
-    clearInterval();
-    let timer = null;
-    timer = setInterval(countdown, 1000);
+    let timer = setInterval(countdown, 1000);
+    function stopCountdown() {
+        clearInterval(timer);
+    };
     function countdown() {
         countdownContainer.innerHTML = `<h1 id="countdown">${timeRem}</h1>`
         if (timeRem === 0) {
-            clearInterval();
             countdownContainer.style.display = 'none';
             questionContainer.style.display = 'inline';
             answerContainer.style.visibility = 'visible';
+            stopCountdown();
         } else {
             timeRem--;
         };
@@ -239,16 +242,13 @@ function triviaCountdown() {
 }
 
 function setNextQuestion(index) {
-    pauseBtn.style.display = 'inline';
-    let question = triviaQuestions[index];
+    submitBtn.style.display = 'block';
+    question = triviaQuestions[index];
     triviaAnswers = question['answers'];
     qImg.src = question['image'];
     qNum.textContent = `Question ${index + 1}`;
     qText.textContent = question['question'];
     for (let i = 0; i < triviaAnswers.length; i++) {
-        answerBtns[i].textContent = triviaAnswers[i];
-        answerBtns[i].addEventListener('click', (e) => {
-            userAnswers.push(e.target.textContent);
-        });
+        answerBtns[i].label.textContent = triviaAnswers[i];
     };
 };

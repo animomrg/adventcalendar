@@ -332,7 +332,8 @@ Classes
     width: 100%;
 }
 
-#play-btn {
+#play-btn,
+#submit-btn {
     position: relative;
     display: none;
     background: var(--clr-primary-2);
@@ -356,16 +357,6 @@ Classes
     margin: 0 0.5rem;
     /* transition: var(--transition); */
     cursor: pointer;
-}
-
-#pause-btn {
-    color: var(--clr-primary-2);
-    font-size: 2rem;
-    background: transparent;
-    border-color: transparent;
-    cursor: pointer;
-    display: inline;
-    margin-top: 10px;
 }
 
 /*
@@ -414,7 +405,7 @@ TRIVIA MODAL
     margin: 5% auto;
 }
 
-.answer-container {
+.trivia-answers {
     position: relative;
     visibility: hidden;
     display: grid;
@@ -433,16 +424,21 @@ TRIVIA MODAL
 .answer-btn {
     position: relative;
     width: 80%;
+    height: 60px;
     margin: auto;
     background: var(--clr-primary-2);
     font-family: var(--ff-primary);
+    font-size: 1.25rem;
     color: var(--clr-primary-5);
-    font-size: 1.5rem;
     border: 2px solid var(--clr-primary-1);
     border-radius: 45px;
     padding: none;
     /* transition: var(--transition); */
     cursor: pointer;
+}
+
+.answer-select {
+    box-shadow: 10px 5px 5px var(--clr-primary-1);
 }
 
 .answer-btn:hover {
@@ -451,9 +447,10 @@ TRIVIA MODAL
     border: 2px solid var(--clr-primary-4);
 }
 
-.trivia-btn-container {
-    width: 100%;
-    margin: auto;
+.answer-text {
+    position: relative;
+    width: 75%;
+    color: var(--clr-primary-5);
 }
 
 
