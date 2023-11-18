@@ -97,7 +97,6 @@ const nextBtn = document.getElementById('next-btn');
 const prevBtn = document.getElementById('prev-btn');
 const closeBtn = document.getElementById('close-btn');
 const playBtn = document.getElementById('play-btn');
-const submitBtn = document.getElementById('submit-btn');
 
 let currentSlide = 0;
 
@@ -195,32 +194,23 @@ function updateSlide() {
     }
 };
 
-// TRIVIA VARIABLES
+// // TRIVIA VARIABLES
+let currentQuestion = 0;
+let userScore = 0;
+let dayQuestions = [];
 const triviaModal = document.querySelector('.trivia-modal');
-const answerBtns = document.querySelectorAll('.answer-btn');
-const qNum = document.getElementById('question-num');
-const qText = document.getElementById('question-text');
-const qImg = document.getElementById('question-img');
-let triviaQuestions = [];
-let triviaAnswers = [];
-let correctAnswers = [];
-let userAnswers = [];
-let question = '';
-
 const countdownContainer = document.querySelector('.countdown-container');
 const questionContainer = document.querySelector('.question-container');
-const answerContainer = document.querySelector('.trivia-answers');
+const answerContainer = document.querySelector('.answer-container');
+const submitBtn = document.getElementById('submit-btn');
 
 function triviaStart(date) {
-    let index = 0
     triviaModal.style.display = 'inline';
-    closeBtn.style.display = 'none'; 
-    triviaQuestions = questions[date - 1];
-    correctAnswers = triviaQuestions.map(question => question['correct']);
+    closeBtn.style.display = 'none';
+    dayQuestions = questions[date - 1];
     triviaCountdown();
-    setNextQuestion(index);
+    loadQuestion();
 };
-
 
 function triviaCountdown() {
     let timeRem = 2;
@@ -232,23 +222,92 @@ function triviaCountdown() {
         countdownContainer.innerHTML = `<h1 id="countdown">${timeRem}</h1>`
         if (timeRem === 0) {
             countdownContainer.style.display = 'none';
-            questionContainer.style.display = 'inline';
-            answerContainer.style.visibility = 'visible';
+            questionContainer.style.display = 'block';
+            answerContainer.style.display = 'grid';
+            submitBtn.style.display = 'inline';
             stopCountdown();
         } else {
             timeRem--;
         };
     };
+};
+
+function loadQuestion() {
+    const elQuestion = document.getElementById('question-text');
+    const elImage = document.getElementById('question-image');
+
+    elQuestion.textContent = dayQuestions[currentQuestion].question;
+    elImage.src = dayQuestions[currentQuestion].image;
+    submitBtn.addEventListener('click', checkAnswer);
+    answerContainer.innerHTML = "";
+
+    for (let i = 0; i < dayQuestions.length - 1; i++) {
+        const answerDiv = document.createElement('answer-div');
+        const answer = document.createElement('input');
+        const answerLabel = document.createElement('label');
+        
+        answer.type = 'radio';
+        answer.name = 'answer';
+        answer.value = i;
+        answer.id = i;
+        answer.className = 'answer-radio';
+
+        answerLabel.textContent = dayQuestions[currentQuestion].answers[i].text;
+        if (answerLabel.textContent.length > 20) {
+            answerLabel.classList.add('label-small-font');
+        }
+        answerLabel.classList.add = 'answer-label';
+        answerLabel.htmlFor = i;
+
+        answerDiv.className = 'answer-div';
+        answerDiv.appendChild(answer);
+        answerDiv.appendChild(answerLabel);
+
+        answerContainer.appendChild(answerDiv);
+    }
+};
+
+function loadScore() {
+    const scoreContainer = document.querySelector('.score-container');
+    const totalScore = document.getElementById('score-text');
+    const scoreImg = document.getElementById('score-img');
+    scoreContainer.style.display = 'inline-block';
+    scoreImg.style.display = 'inline-block';
+
+    totalScore.textContent = `You scored ${userScore} out of ${dayQuestions.length}!`;
+    if (userScore === 5) {
+        scoreImg.src = './images/leslie.gif';
+    } else if (userScore === 4) {
+        scoreImg.src = './images/santawink.gif';
+    } else if (userScore === 3) {
+        scoreImg.src = './images/shrug.gif';
+    } else if (userScore === 2) {
+        scoreImg.src = './images/ralphieshrug.gif';
+    } else if (userScore === 1) {
+        scoreImg.src = './images/christmasangry.gif';
+    } else {
+        scoreImg.src = './images/samuel.gif';
+    }
+};
+
+function nextQuestion() {
+    if (currentQuestion < dayQuestions.length - 1) {
+        currentQuestion++;
+        loadQuestion();
+    } else {
+        questionContainer.remove();
+        answerContainer.remove();
+        submitBtn.remove();
+        loadScore();
+    }
 }
 
-function setNextQuestion(index) {
-    submitBtn.style.display = 'block';
-    question = triviaQuestions[index];
-    triviaAnswers = question['answers'];
-    qImg.src = question['image'];
-    qNum.textContent = `Question ${index + 1}`;
-    qText.textContent = question['question'];
-    for (let i = 0; i < triviaAnswers.length; i++) {
-        answerBtns[i].label.textContent = triviaAnswers[i];
-    };
-};
+function checkAnswer() {
+    const userAnswer = parseInt(document.querySelector('input[name="answer"]:checked').value);
+    if (dayQuestions[currentQuestion].answers[userAnswer].isCorrect) {
+        userScore++;
+        nextQuestion();
+    } else {
+        nextQuestion();
+    }
+}

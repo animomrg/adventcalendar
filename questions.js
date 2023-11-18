@@ -4,32 +4,52 @@ export const questions = [
         {
             'question': "What movie is this?",
             'image': '/images/elf1.png',
-            'wrong answers': ['Home Alone', 'The Grinch', 'The Santa Clause'],
-            'correct': 'Elf',
+            'answers': [
+                { text: 'Home Alone', isCorrect: false },
+                { text: 'The Grinch', isCorrect: false },
+                { text: 'The Santa Clause', isCorrect: false },
+                { text: 'Elf', isCorrect: true },
+            ],
         },
         {
             'question': 'According to Buddy, which of the following is not a main food group?',
             'image': '/images/food.png',
-            'wrong answers': ['Candy Corn', 'Candy Canes', 'SYRUP!'],
-            'correct': 'Chocolate',
+            'answers': [
+                { text: 'Chocolate', isCorrect: true },
+                { text: 'Candy Corn', isCorrect: false },
+                { text: 'Candy Canes', isCorrect: false },
+                { text: 'SYRUP!', isCorrect: false },
+            ],
         },
         {
             'question': 'What epithet does Buddy use to describe himself when he only makes 85 etch-a-sketches?',
             'image': './images/etch.png',
-            'wrong answers': ['Bumbling Stumbling Doofus', 'Silly Sally Sanders', 'Nefarious Nincompoop'],
-            'correct': 'Cotton Headed Ninnymuggins',
+            'answers': [
+                { text: 'Bumbling Stumbling Doofus', isCorrect: false },
+                { text: 'Silly Sally Sanders', isCorrect: false },
+                { text: 'Cotton Headed Ninnymuggins', isCorrect: true },
+                { text: 'Nefarious Nincompoop', isCorrect: false },
+            ],    
         },
         {
             'question': 'What is the final leg of Buddy\'s journey from the North Pole?',
             'image': './images/narwhal.png',
-            'wrong answers': ['The Candy Cane Forest', 'The Sea of Swirly Twirly Gumdrops', 'The Empire State Bridge'],
-            'correct': 'The Lincoln Tunnel',
+            'answers': [
+                { text: 'The Sea of Swirly Twirly Gumdrops', isCorrect: false },
+                { text: 'The Lincoln Tunnel', isCorrect: true },
+                { text: 'The Candy Cane Forest', isCorrect: false },
+                { text: 'The Empire State Bridge', isCorrect: false },
+            ],
         },
         {
             'question': 'What Christmas Carol does the amassed crowd sing in order to power Santa\'s sleigh?',
             'image': './images/elfsanta.png',
-            'wrong answers': ['Rudolph The Red Nosed Reindeer', 'Winter Wonderland', 'Silent Night'],
-            'correct': 'Santa Claus Is Coming To Town',
+            'answers': [
+                { text: 'Rudolph The Red Nosed Reindeer', isCorrect: false },
+                { text: 'Winter Wonderland', isCorrect: false },
+                { text: 'Santa Claus Is Coming To Town', isCorrect: true },
+                { text: 'Silent Night', isCorrect: false },
+            ],
         }
     ],
     [

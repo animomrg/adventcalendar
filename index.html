@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advent Calendar</title>
     <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6b6bef2591.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -191,41 +191,25 @@
                             <h1 id="countdown">3</h1>
                         </div>
                         <div class="question-container">
-                            <h1 id="question-num"></h1>
-                            <img id="question-img" src="" alt="" />
-                            <h4 id="question-text"></h4>
-                            <form class="trivia-answers" name="answer-form">
-                                <div class="answer-grid">
-                                    <button class="answer-btn" name="answer-btn" type="radio" value="0" id="answer-0">
-                                        <label for="answer-0"></label>
-                                    </button>
-                                </div>
-                                <div class="answer-grid">
-                                    <button class="answer-btn" name="answer-btn" type="radio" value="1" id="answer-1">
-                                        <label for="answer-1"></label>
-                                    </button>
-                                </div>
-                                <div class="answer-grid">
-                                    <button class="answer-btn" name="answer-btn" type="radio" value="2" id="answer-2">
-                                        <label for="answer-2"></label>
-                                    </button>
-                                </div>
-                                <div class="answer-grid">
-                                    <button class="answer-btn" name="answer-btn" type="radio" value="3" id="answer-3">
-                                        <label for="answer-3"></label>
-                                    </button>
-                                </div>
-                                <div class="submit-container">
-                                    <button class="submit-btn" type="submit" id="submit-btn">Final Answer!</button>
-                                </div>
-                            </form>
+                            <h2 id="question-text"></h2>
+                            <img id="question-image" src="" alt="" />
+                        </div>
+                        <div class="answer-container"></div>
+                        <div class="submit-btn-container">
+                            <button id="submit-btn">
+                                <i class="fa-solid fa-circle-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="score-container">
+                            <h1 id="score-text"></h1>
+                            <img id="score-img" src="" alt="" />
+                        </div>
                         </div>    
-                        
                     </article>
                 </div>
             </div>
         </div>
     </main>
-    <script src="index.js" type="module"></script>
+    <script src="index.js" type='module'></script>
 </body>
 </html>
