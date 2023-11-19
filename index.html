@@ -14,7 +14,7 @@
     <main>
         <div class="main-container">
             <div class="title">
-                <div class="theme-btn-container">
+                <div class="other-btn-container">
                     <button class="theme-toggle" id="font-btn">
                         <i class="fa-solid fa-font"></i>
                     </button>
@@ -29,15 +29,21 @@
                     <h2 id="advent-title">Advent Trivia Calendar</h2>
                 </div>
                 <div class="theme-btn-container">
-                    <button class="theme-toggle" id="red-theme">
-                        <i class="fa-solid fa-candy-cane"></i>
-                    </button>
-                    <button class="theme-toggle" id="snow-theme">
-                        <i class="fa-solid fa-snowman"></i>
-                    </button>
-                    <button class="theme-toggle" id="green-theme">
-                        <i class="fa-solid fa-tree"></i></i>
-                    </button>
+                    <input type="radio" name="theme" id="red-theme" class="theme-radio" value="red">
+                        <label for="red-theme" class="theme-label theme-toggle">
+                            <i class="fa-solid fa-candy-cane"></i>
+                        </label>    
+                    </input>
+                    <input type="radio" name="theme" id="snow-theme" class="theme-radio" value="snow">
+                        <label for="snow-theme" class="theme-label theme-toggle">
+                            <i class="fa-solid fa-snowman"></i>
+                        </label>
+                    </input>
+                    <input type="radio" name="theme" id="green-theme" class="theme-radio" value="green">
+                        <label for="green-theme" class="theme-label theme-toggle">
+                            <i class="fa-solid fa-tree"></i></i>
+                        </label>    
+                    </input>
                 </div>
             </div>
             <div class="day-boxes">
@@ -162,50 +168,62 @@
                     </button>
                 </div>
             </div>
-            <div class="modal-overlay">
-                <div class="modal-container">
-                    <button id="close-btn">
+            <div class="modal-overlay">      
+                <div class="warning-modal">
+                    <button id="warning-close-btn">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
-                    <article class="intro-modal">
-                        <div class="header-container">
-                            <h2 id="intro-header"></h2>
-                        </div>
-                        <img id="warning-img" src="" alt="" />
-                        <div class="text-container">
-                            <h3 id="intro-text"></h3>
-                            <h3 id="warning-text"></h3>
-                        </div>
-                        <div class="btn-container">
-                            <button id="play-btn" type="button">I'm Ready!</button>
-                            <button id="prev-btn" type="button">
-                                <i class="fa-solid fa-circle-chevron-left"></i>
+                    <div class="header-container">
+                        <h2 id="warning-header"></h2>
+                    </div>
+                    <img id="warning-img" src="" alt="" />
+                    <div class="warning-text-container">
+                        <h3 id="warning-text">Come back when this day is ready!</h3>
+                    </div>
+                </div>  
+                <div class="intro-modal">
+                    <button id="intro-close-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <div class="header-container">
+                        <h2 id="intro-header"></h2>
+                    </div>
+                    <div class="intro-text-container">
+                        <h3 id="intro-text"></h3>
+                    </div>
+                    <div class="intro-btn-container">
+                        <button id="play-btn" type="button">I'm Ready!</button>
+                        <button id="prev-btn" type="button">
+                            <i class="fa-solid fa-circle-chevron-left"></i>
+                        </button>
+                        <button id="next-btn" type="button">
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="trivia-modal">
+                    <div class="countdown-container">
+                        <h1 id="countdown">3</h1>
+                    </div>
+                    <div class="question-container">
+                        <h3 id="question-text"></h3>
+                        <img id="question-image" src="" alt="" />
+                    </div>
+                    <div class="answer-container">
+                        <div class="answer-grid"></div>
+                        <button id="submit-btn">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="score-container">
+                        <h1 id="score-text"></h1>
+                        <img id="score-img" src="" alt="" />
+                        <div class="btn-container home">
+                            <button id="home-btn" type="button">
+                            <i class="fa-solid fa-house-chimney-window"></i>
                             </button>
-                            <button id="next-btn" type="button">
-                                <i class="fa-solid fa-circle-chevron-right"></i>
-                            </button>
-                        </div>
-                    </article>
-                    <article class="trivia-modal">
-                        <div class="countdown-container">
-                            <h1 id="countdown">3</h1>
-                        </div>
-                        <div class="question-container">
-                            <h2 id="question-text"></h2>
-                            <img id="question-image" src="" alt="" />
-                        </div>
-                        <div class="answer-container"></div>
-                        <div class="submit-btn-container">
-                            <button id="submit-btn">
-                                <i class="fa-solid fa-circle-chevron-right"></i>
-                            </button>
-                        </div>
-                        <div class="score-container">
-                            <h1 id="score-text"></h1>
-                            <img id="score-img" src="" alt="" />
-                        </div>
-                        </div>    
-                    </article>
+                        </div>  
+                    </div>
                 </div>
             </div>
         </div>

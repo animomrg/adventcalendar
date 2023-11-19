@@ -88,14 +88,17 @@ const currentDate = new Date().getDate();
 const dayBtns = document.querySelectorAll('.btn-day');
 const modalOverlay = document.querySelector('.modal-overlay');
 const introModal = document.querySelector('.intro-modal');
+const titleSection = document.querySelector('.title');
+const dayBoxes = document.querySelector('.day-boxes')
 
 // MODAL RESET FUNCTION
 const introHeader = document.getElementById('intro-header');
 const introText = document.getElementById('intro-text');
-const warningText = document.getElementById('warning-text');
 const nextBtn = document.getElementById('next-btn');
 const prevBtn = document.getElementById('prev-btn');
-const closeBtn = document.getElementById('close-btn');
+const closeBtnWarning = document.getElementById('warning-close-btn');
+const closeBtnIntro = document.getElementById('intro-close-btn');
+
 const playBtn = document.getElementById('play-btn');
 
 let currentSlide = 0;
@@ -110,37 +113,46 @@ prevBtn.addEventListener('click', () => {
     updateSlide();
 });
 
-closeBtn.addEventListener('click', () => {
-    modalOverlay.classList.remove('open-modal');
-    modalReset();
+closeBtnWarning.addEventListener('click', () => {
+    modalOverlay.style.display = 'none';
+    warningModal.style.display = 'none';
+    introModal.style.display = 'none';
+    triviaModal.style.display = 'none';
+    titleSection.style.display = 'flex';
+    dayBoxes.style.display = 'grid';
+});
+
+closeBtnIntro.addEventListener('click', () => {
+    currentSlide = 0;
+    modalOverlay.style.display = 'none';
+    warningModal.style.display = 'none';
+    introModal.style.display = 'none';
+    triviaModal.style.display = 'none';
+    titleSection.style.display = 'flex';
+    dayBoxes.style.display = 'grid';
 });
 
 playBtn.addEventListener('click', () => {
-    modalReset();
     introModal.style.display = 'none';
 });
 
-function modalReset() {
-    introHeader.textContent = '';
-    introText.textContent = '';
-    prevBtn.style.display = 'none';
-    nextBtn.style.display = 'none';
-    playBtn.style.display = 'none';
-    warningImg.style.display = 'none';
-    warningText.style.display = 'none';
-    currentSlide = 0;
-};
+function modalActivate() {
+    titleSection.style.display = 'none';
+    dayBoxes.style.display = 'none';
+    modalOverlay.style.display = 'block';
+}
 
 // DAY BUTTON EVENT LISTENERS
 dayBtns.forEach(button => {
     let btnDay = button.textContent;
     button.addEventListener('click', () => {
-        modalOverlay.classList.add('open-modal');
         if (currentDate >= btnDay) {
+            modalActivate();
+            introModal.style.display = 'block';
             dailyIntro(btnDay);
         } else {
-            modalReset();
-            warningSlide();
+            modalActivate();
+            warningActivate();
         };
     });
 });
@@ -158,20 +170,16 @@ function dailyIntro(date) {
 };
 
 // WARNING MODAL FUNCTION
+const warningModal = document.querySelector('.warning-modal');
+const warningHeader = document.getElementById('warning-header');
 const warningImg = document.getElementById('warning-img');
 
-function warningSlide() {
+function warningActivate() {
+    warningModal.style.display = 'block';
     let index = Math.floor(Math.random() * warningSlides.length);
-    let warning = warningSlides[index];
-    introHeader.textContent = warning.header;
-    warningText.style.display = 'block';
-    warningText.textContent = 'Come back when this day is ready!';
-    warningImg.style.display = 'block';
-    warningImg.src = warning.img;
-    closeBtn.addEventListener('click', () => {
-        modalReset();
-        modalOverlay.classList.remove('open-modal');
-    });
+    let warningContent = warningSlides[index];
+    warningHeader.textContent = warningContent.header;
+    warningImg.src = warningContent.img;
 };
 
 // UPDATE SLIDE FUNCTION
@@ -201,12 +209,12 @@ let dayQuestions = [];
 const triviaModal = document.querySelector('.trivia-modal');
 const countdownContainer = document.querySelector('.countdown-container');
 const questionContainer = document.querySelector('.question-container');
-const answerContainer = document.querySelector('.answer-container');
+const answerContainer = document.querySelector('.answer-grid');
 const submitBtn = document.getElementById('submit-btn');
 
 function triviaStart(date) {
-    triviaModal.style.display = 'inline';
-    closeBtn.style.display = 'none';
+    triviaModal.style.display = 'block';
+    introModal.style.display = 'none';
     dayQuestions = questions[date - 1];
     triviaCountdown();
     loadQuestion();
@@ -242,7 +250,7 @@ function loadQuestion() {
     answerContainer.innerHTML = "";
 
     for (let i = 0; i < dayQuestions.length - 1; i++) {
-        const answerDiv = document.createElement('answer-div');
+        const answerDiv = document.createElement('div');
         const answer = document.createElement('input');
         const answerLabel = document.createElement('label');
         
@@ -253,11 +261,11 @@ function loadQuestion() {
         answer.className = 'answer-radio';
 
         answerLabel.textContent = dayQuestions[currentQuestion].answers[i].text;
+        answerLabel.classList.add('answer-label');
+        answerLabel.htmlFor = i;
         if (answerLabel.textContent.length > 20) {
             answerLabel.classList.add('label-small-font');
         }
-        answerLabel.classList.add = 'answer-label';
-        answerLabel.htmlFor = i;
 
         answerDiv.className = 'answer-div';
         answerDiv.appendChild(answer);
@@ -271,8 +279,15 @@ function loadScore() {
     const scoreContainer = document.querySelector('.score-container');
     const totalScore = document.getElementById('score-text');
     const scoreImg = document.getElementById('score-img');
+    const homeBtn = document.getElementById('home-btn');
+    homeBtn.addEventListener('click', () => {
+        modalOverlay.classList.remove('open-modal');
+        triviaModal.style.display = 'none';
+    })
+
     scoreContainer.style.display = 'inline-block';
     scoreImg.style.display = 'inline-block';
+    homeBtn.style.display = 'inline';
 
     totalScore.textContent = `You scored ${userScore} out of ${dayQuestions.length}!`;
     if (userScore === 5) {
@@ -300,7 +315,7 @@ function nextQuestion() {
         submitBtn.remove();
         loadScore();
     }
-}
+};
 
 function checkAnswer() {
     const userAnswer = parseInt(document.querySelector('input[name="answer"]:checked').value);
@@ -310,4 +325,5 @@ function checkAnswer() {
     } else {
         nextQuestion();
     }
-}
+};
+
