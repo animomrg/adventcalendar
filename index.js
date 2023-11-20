@@ -58,20 +58,23 @@ greenToggle.addEventListener('click', () => {
 // BACKGROUND TOGGLE
 const backgroundToggle = document.getElementById('background-btn');
 const mainContainer = document.querySelector('.main-container');
+const titleContent = document.querySelector('.title-content');
 const bgImgs = ['none', 'url(./images/greenbg.png)', 'url(./images/redbg.png)', 'url(./images/neonbg.png)', 'url(./images/snowbg.png)'];
 let bgIndex = 0;
 backgroundToggle.addEventListener('click', () => {
     if (bgIndex === bgImgs.length - 1) {
         bgIndex = 0;
+        titleContent.classList.remove('title-content-border');
     } else {
         bgIndex += 1;
+        titleContent.classList.add('title-content-border');
     }
     mainContainer.style.setProperty('background-image', bgImgs[bgIndex]);
 });
 
 // FONT TOGGLE
 const fontToggle = document.getElementById('font-btn');
-const fonts = ['Mountains of Christmas', 'Comic Neue', 'St Nicholas', 'Montserrat'];
+const fonts = ['Mountains of Christmas', 'Comic Neue', 'St Nicholas'];
 const root = document.querySelector(':root');
 let fontIndex = 0;
 fontToggle.addEventListener('click', () => {
@@ -114,27 +117,26 @@ prevBtn.addEventListener('click', () => {
 });
 
 closeBtnWarning.addEventListener('click', () => {
-    modalOverlay.style.display = 'none';
-    warningModal.style.display = 'none';
-    introModal.style.display = 'none';
-    triviaModal.style.display = 'none';
-    titleSection.style.display = 'flex';
-    dayBoxes.style.display = 'grid';
+    returnHome();
 });
 
 closeBtnIntro.addEventListener('click', () => {
     currentSlide = 0;
-    modalOverlay.style.display = 'none';
-    warningModal.style.display = 'none';
-    introModal.style.display = 'none';
-    triviaModal.style.display = 'none';
-    titleSection.style.display = 'flex';
-    dayBoxes.style.display = 'grid';
+    returnHome();
 });
 
 playBtn.addEventListener('click', () => {
     introModal.style.display = 'none';
 });
+
+function returnHome() {
+    modalOverlay.style.display = 'none';
+    warningModal.style.display = 'none';
+    introModal.style.display = 'none';
+    triviaModal.style.display = 'none';
+    titleSection.style.display = 'flex';
+    dayBoxes.style.display = 'grid';
+}
 
 function modalActivate() {
     titleSection.style.display = 'none';
@@ -209,6 +211,7 @@ let dayQuestions = [];
 const triviaModal = document.querySelector('.trivia-modal');
 const countdownContainer = document.querySelector('.countdown-container');
 const questionContainer = document.querySelector('.question-container');
+const questionImgContainer = document.querySelector('.question-img-container');
 const answerContainer = document.querySelector('.answer-grid');
 const submitBtn = document.getElementById('submit-btn');
 
@@ -231,8 +234,9 @@ function triviaCountdown() {
         if (timeRem === 0) {
             countdownContainer.style.display = 'none';
             questionContainer.style.display = 'block';
+            questionImgContainer.style.display = 'block';
             answerContainer.style.display = 'grid';
-            submitBtn.style.display = 'inline';
+            submitBtn.style.display = 'block';
             stopCountdown();
         } else {
             timeRem--;
@@ -242,8 +246,10 @@ function triviaCountdown() {
 
 function loadQuestion() {
     const elQuestion = document.getElementById('question-text');
+    let numQuestion = document.getElementById('question-number');
     const elImage = document.getElementById('question-image');
 
+    numQuestion.textContent = currentQuestion + 1;
     elQuestion.textContent = dayQuestions[currentQuestion].question;
     elImage.src = dayQuestions[currentQuestion].image;
     submitBtn.addEventListener('click', checkAnswer);
@@ -278,16 +284,23 @@ function loadQuestion() {
 function loadScore() {
     const scoreContainer = document.querySelector('.score-container');
     const totalScore = document.getElementById('score-text');
+    const scoreImgContainer = document.querySelector('.score-img-container');
     const scoreImg = document.getElementById('score-img');
+    const homeBtnContainer = document.querySelector('.home-btn-container');
     const homeBtn = document.getElementById('home-btn');
+
     homeBtn.addEventListener('click', () => {
-        modalOverlay.classList.remove('open-modal');
-        triviaModal.style.display = 'none';
+        scoreContainer.style.display = 'none';
+        currentSlide = 0;
+        currentQuestion = 0;
+        dayQuestions = [];
+        returnHome();
     })
 
-    scoreContainer.style.display = 'inline-block';
-    scoreImg.style.display = 'inline-block';
-    homeBtn.style.display = 'inline';
+    scoreContainer.style.display = 'block';
+    scoreImgContainer.style.display = 'block';
+    scoreImg.style.display = 'block';
+    homeBtnContainer.style.display = 'block';
 
     totalScore.textContent = `You scored ${userScore} out of ${dayQuestions.length}!`;
     if (userScore === 5) {
@@ -311,6 +324,7 @@ function nextQuestion() {
         loadQuestion();
     } else {
         questionContainer.remove();
+        questionImgContainer.remove();
         answerContainer.remove();
         submitBtn.remove();
         loadScore();
