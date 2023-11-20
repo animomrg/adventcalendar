@@ -130,14 +130,7 @@ playBtn.addEventListener('click', () => {
     introModal.style.display = 'none';
 });
 
-function returnHome() {
-    modalOverlay.style.display = 'none';
-    warningModal.style.display = 'none';
-    introModal.style.display = 'none';
-    triviaModal.style.display = 'none';
-    titleSection.style.display = 'flex';
-    dayBoxes.style.display = 'grid';
-};
+
 
 // DAY BUTTON EVENT LISTENERS
 dayBtns.forEach(button => {
@@ -216,14 +209,12 @@ function triviaStart(date) {
     triviaModal.style.display = 'block';
     introModal.style.display = 'none';
     dayQuestions = questions[date - 1];
-    console.log(dayQuestions);
     loadQuestion();
 };
 
 function loadQuestion() {
     elQuestion.innerHTML = dayQuestions[currentQuestion].question;
     elImage.src = dayQuestions[currentQuestion].image;
-    submitBtn.addEventListener('click', checkAnswer);
     answerContainer.innerHTML = "";
 
     for (let i = 0; i < dayQuestions.length - 1; i++) {
@@ -231,11 +222,19 @@ function loadQuestion() {
         const answer = document.createElement('input');
         const answerLabel = document.createElement('label');
         
-        answer.type = 'radio';
+        answer.type = 'submit';
         answer.name = 'answer';
         answer.value = i;
         answer.id = i;
         answer.className = 'answer-radio';
+        answer.addEventListener('click', function() {
+            if (dayQuestions[currentQuestion].answers[answer.id].isCorrect) {
+                userScore++;
+                nextQuestion();
+            } else {
+                nextQuestion();
+            }
+        });
 
         answerLabel.textContent = dayQuestions[currentQuestion].answers[i].text;
         answerLabel.classList.add('answer-label');
@@ -252,16 +251,6 @@ function loadQuestion() {
     }
 };
 
-function checkAnswer() {
-    const userAnswer = parseInt(document.querySelector('input[name="answer"]:checked').value);
-    if (dayQuestions[currentQuestion].answers[userAnswer].isCorrect) {
-        userScore++;
-        nextQuestion();
-    } else {
-        nextQuestion();
-    }
-};
-
 function nextQuestion() {
     if (currentQuestion < dayQuestions.length - 1) {
         currentQuestion++;
@@ -270,7 +259,6 @@ function nextQuestion() {
         questionContainer.remove();
         questionImgContainer.remove();
         answerContainer.remove();
-        submitBtn.remove();
         loadScore();
     }
 };
@@ -310,4 +298,13 @@ function loadScore() {
     } else {
         scoreImg.src = './images/samuel.gif';
     }
+};
+
+function returnHome() {
+    modalOverlay.style.display = 'none';
+    warningModal.style.display = 'none';
+    introModal.style.display = 'none';
+    triviaModal.style.display = 'none';
+    titleSection.style.display = 'flex';
+    dayBoxes.style.display = 'grid';
 };

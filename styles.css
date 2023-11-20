@@ -285,8 +285,7 @@ Classes
 #play-btn:hover,
 #prev-btn:hover,
 #next-btn:hover,
-#home-btn:hover,
-#submit-btn:hover {
+#home-btn:hover {
     animation: bounce 2s ease-in-out infinite;
 }
 
@@ -376,7 +375,6 @@ Classes
 
 #prev-btn,
 #next-btn,
-#submit-btn,
 #home-btn {
     color: var(--clr-primary-2);
     font-size: 2rem;
@@ -518,22 +516,6 @@ input[type="radio"] {
     border: 3px solid var(--clr-primary-2);
     font-weight: bold;
     box-shadow: none;
-}
-
-.submit-btn-container {
-    width: 100%;
-}
-
-#submit-btn {
-    position: relative;
-    margin: auto;
-    top: 33%;
-    display: block;
-    color: var(--clr-primary-2);
-    font-size: 2rem;
-    background: transparent;
-    border-color: transparent;
-    cursor: pointer;
 }
 
 .score-container {
