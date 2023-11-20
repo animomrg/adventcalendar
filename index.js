@@ -1,5 +1,6 @@
 import { questions } from "./questions.js";
 import { introSlides, warningSlides } from "./slides.js";
+"use strict";
 
 /*
 COLOR THEMES AND TOGGLING 
@@ -130,8 +131,6 @@ playBtn.addEventListener('click', () => {
     introModal.style.display = 'none';
 });
 
-
-
 // DAY BUTTON EVENT LISTENERS
 dayBtns.forEach(button => {
     let btnDay = button.textContent;
@@ -201,7 +200,6 @@ const triviaModal = document.querySelector('.trivia-modal');
 const questionContainer = document.querySelector('.question-container');
 const questionImgContainer = document.querySelector('.question-img-container');
 const answerContainer = document.querySelector('.answer-grid');
-const submitBtn = document.getElementById('submit-btn');
 const elQuestion = document.getElementById('question-text');
 const elImage = document.getElementById('question-image');
 
@@ -256,9 +254,9 @@ function nextQuestion() {
         currentQuestion++;
         loadQuestion();
     } else {
-        questionContainer.remove();
-        questionImgContainer.remove();
-        answerContainer.remove();
+        questionContainer.style.display = 'none';
+        questionImgContainer.style.display = 'none';
+        answerContainer.style.display = 'none';
         loadScore();
     }
 };
@@ -273,9 +271,11 @@ function loadScore() {
 
     homeBtn.addEventListener('click', () => {
         scoreContainer.style.display = 'none';
+        questionContainer.style.display = 'block';
+        questionImgContainer.style.display = 'block';
+        answerContainer.style.display = 'grid';
         currentSlide = 0;
         currentQuestion = 0;
-        dayQuestions = [];
         returnHome();
     })
 
@@ -307,4 +307,5 @@ function returnHome() {
     triviaModal.style.display = 'none';
     titleSection.style.display = 'flex';
     dayBoxes.style.display = 'grid';
+    dayQuestions = [];
 };
