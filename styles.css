@@ -189,9 +189,16 @@ Classes
     animation: bounce 2s ease-in-out infinite;
 }
 
+.theme-radio {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
 .theme-radio:checked {
     background-color: none;
 }
+
 @keyframes bounce {
     0% {
       transform: scale(1);
@@ -314,6 +321,8 @@ Classes
 
 .intro-text-container {
     position: absolute;
+    color: var(--clr-primary-2);
+    font-size: 1.75rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -351,8 +360,7 @@ Classes
 }
 
 .intro-btn-container,
-.question-btn-container,
-.home-btn-container {
+.question-btn-container {
     position: absolute;
     bottom: 3rem;
     width: 100%;
@@ -455,22 +463,11 @@ TRIVIA MODAL
 }
 
 .answer-container {
-    margin-top: 5%;
-}
-
-.answer-grid {
     position: relative;
-    height: 50%;
     width: 100%;
-    padding: 0 10%;
+    padding: 5% 10%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-}
-
-.answer-radio {
-    visibility: hidden;
-    height: 0;
-    width: 0;
 }
 
 .answer-div {
@@ -494,7 +491,7 @@ TRIVIA MODAL
 }
 
 .label-small-font {
-    font-size: 1.05rem;
+    font-size: 1.0rem;
 }
 
 .answer-label:hover {
@@ -504,24 +501,34 @@ TRIVIA MODAL
     box-shadow: none;
 }
 
-input[type="radio"] {
+.answer-button {
     visibility: hidden;
     height: 0;
     width: 0;
-  }
+}
 
-.answer-div > input[type='radio']:checked + label {
-    background-color: var(--clr-primary-2);
-    color: var(--clr-primary-5);
-    border: 3px solid var(--clr-primary-2);
-    font-weight: bold;
-    box-shadow: none;
+.correct-answer {
+    background-image: linear-gradient(to bottom right, green, rgb(0, 230, 0));
+    border: 3px solid green;
+    box-shadow: 0 4px 8px 0 green, 0 6px 10px 0 rgb(0, 230, 0);
+    color: rgb(0, 40, 0);
+    animation: bounce 1s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.incorrect-answer {
+    background-image: linear-gradient(to bottom right, red, rgb(100, 0, 0));
+    border: 3px solid red;
+    box-shadow: 0 4px 8px 0 red, 0 6px 10px 0 rgb(100, 0, 0);
+    color: rgb(100, 0, 0);
+    animation: bounce 1s ease-in-out infinite;
+    pointer-events: none;
 }
 
 .score-container {
-    height: 80%;
+    height: 100%;
     width: 100%;
-    position: relative;
+    position: absolute;
     display: none;
     top: 50%;
     left: 50%;
@@ -529,14 +536,15 @@ input[type="radio"] {
 }
 
 #score-text {
-    position: relative; 
+    position: relative;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 .score-img-container {
     position: relative;
     display: none;
+    height: 40%;
     width: 100%;
 }
 
@@ -555,6 +563,8 @@ input[type="radio"] {
     margin: 10% auto;
 }
 
-#home-btn {
-    margin: 10% auto
+.home-btn-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
 }

@@ -75,40 +75,7 @@ export const questions = [
             ],
         },
         {
-            'question': '',
-            'image': '',
-            'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-            ],
-        },
-        {
-            'question': '',
-            'image': '',
-            'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-            ],
-        },
-        {
-            'question': '',
-            'image': '',
-            'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-            ],
-        }
-    ],
-    [
-        // DAY 3 - LYRICS
-        {
-            'question': "In the meadow, we can build a snowman\mWe'll pretend that he is ______ Brown\nHe'll say, are you _______?\nWe'll say, no man\nBut you can do the job when you're in town",
+            'question': "In the meadow, we can build a snowman\nWe'll pretend that he is ______ Brown\nHe'll say, are you ______?\nWe'll say, no man\nBut you can do the job when you're in town",
             'image': '.images/winter.png',
             'answers': [
                 { text: 'Carson / Tired', isCorrect: false },
@@ -118,7 +85,7 @@ export const questions = [
             ],
         },
         {
-            'question': "Here comes Santa Claus, here comes Santa Claus, right down ________________\nHe's got a bag that's filled with toys for boys and girls again.\nHear those sleigh bells jingle jangle, oh what a beautiful _____\nSo jump in bed and cover your head, 'cause Santa Claus comes tonight",
+            'question': "Here comes Santa Claus, here comes Santa Claus, right down ______\nHe's got a bag that's filled with toys for boys and girls again.\nHear those sleigh bells jingle jangle, oh what a beautiful ______\nSo jump in bed and cover your head, 'cause Santa Claus comes tonight",
             'image': '.images/santa.gif',
             'answers': [
                 { text: 'Santa Claus Lane / Sight', isCorrect: true },
@@ -126,91 +93,125 @@ export const questions = [
                 { text: 'Sugar Drop Lane / Day', isCorrect: false },
                 { text: 'The Opposite Lane / Light', isCorrect: false },
             ],
-        },        
+        },   
         {
-            'question': '',
+            'question': 'Children carry through the streets,\nA brightly painted ______,\nAngels gather round the ______,\nStrumming on guitars',
             'image': '',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-            ],
-        },
-        {
-            'question': '',
-            'image': '',
-            'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-            ],
-        },
-        {
-            'question': '',
-            'image': '',
-            'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'Barre / Tree', isCorrect: false },
+                { text: 'Shard / Scene', isCorrect: false },
+                { text: 'Star / Hearth', isCorrect: true },
+                { text: 'Tsar / Kids', isCorrect: false },
             ],
         }
     ],
     [
-        // DAY 4 - MOVIE - HOME ALONE
+        // DAY 3 - CHRISTMAS POTPURRI
         {
-            'question': "What movie is this?",
-            'image': '/images/homealone.png',
+            'question': 'Which member of the British Royalty is credited with popularizing the in-house Christmas Tree?',
+            'image': '',
             'answers': [
-                { text: 'The Santa Clause', isCorrect: false },
-                { text: 'The Grinch', isCorrect: false },
-                { text: 'Elf', isCorrect: false },
-                { text: 'Home Alone', isCorrect: true },
+                { text: 'King Edward VIII', isCorrect: false },
+                { text: 'Queen Elizabeth', isCorrect: false },
+                { text: 'King George VI', isCorrect: false },
+                { text: 'Prince Albert', isCorrect: true },
             ],
         },
         {
-            'question': 'What criminal nickname does Marv give himself and Harry?',
-            'image': '/images/homealonebadguys.png',
+            'question': 'In 1931, what company first depicted Santa Claus as a jolly old man with a long white beard?',
+            'image': '',
             'answers': [
-                { text: 'The Goodfellas', isCorrect: false },
-                { text: 'The Sticky Bandits', isCorrect: false },
-                { text: 'The Wet Bandits', isCorrect: true },
-                { text: 'Team Rocket', isCorrect: false },
+                { text: 'Ford', isCorrect: false },
+                { text: 'Coca Cola', isCorrect: true },
+                { text: 'Sears', isCorrect: false },
+                { text: 'Marlboro', isCorrect: false },
+            ],
+        },   
+        {
+            'question': 'Which beloved Christmas character was created by the Montgomery Ward department store in a 1939 advertising campaign?',
+            'image': '',
+            'answers': [
+                { text: 'Frosty The Snowman', isCorrect: false },
+                { text: 'Jack Frost', isCorrect: false },
+                { text: 'Rudolph The Red-Nosed Reindeer', isCorrect: true },
+                { text: 'Mrs. Claus', isCorrect: false },
             ],
         },
         {
-            'question': '',
+            'question': 'Which Christmas carol was broadcast back to NASA command by the crew of Gemini 6 in a prank related to a possible UFO coming from the north pole?',
             'image': '',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-            ],
-        }, 
-        {
-            'question': '',
-            'image': '',
-            'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'I\'ll Be Home For Christmas', isCorrect: false },
+                { text: 'All I Want For Christmas Is You', isCorrect: false },
+                { text: 'Last Christmas', isCorrect: false },
+                { text: 'Jingle Bells', isCorrect: true },
             ],
         },
         {
-            'question': '',
+            'question': 'Which traditional Christmas item is also an ancient symbol of fertility and virility <em>(aka. an aphrodisiac)</em>?',
             'image': '',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'Mistletoe', isCorrect: true },
+                { text: 'A Fir Wreath', isCorrect: false },
+                { text: 'Chocolate Chip Cookies', isCorrect: false },
+                { text: 'A Dancing Santa', isCorrect: false },
             ],
         }
     ],
+    [
+        // DAY 4 - IS THAT A CHRISTMAS MOVIE?
+    {
+        'question': 'What movie is this?',
+        'image': './images/mclane.png',
+        'answers': [
+            { text: 'Lethal Weapon', isCorrect: false },
+            { text: 'Die Hard', isCorrect: true },
+            { text: 'The Fifth Element', isCorrect: false },
+            { text: '12 Monkeys', isCorrect: false },
+        ],
+    },
+    {
+        'question': 'Die Hard\'s villain is played by Alan Rickman. What was his name?',
+        'image': './images/gruber.png',
+        'answers': [
+            { text: 'Hans Gruber', isCorrect: true },
+            { text: 'Otto Becker', isCorrect: false },
+            { text: 'Frans Fischer', isCorrect: false },
+            { text: 'Severus Snape', isCorrect: false },
+        ],
+    },
+    {
+        'question': 'In which city does John McLane work as a police officer?',
+        'image': './images/mclane2.png',
+        'answers': [
+            { text: 'Boston', isCorrect: false },
+            { text: 'San Francisco', isCorrect: false },
+            { text: 'Chicago', isCorrect: false },
+            { text: 'New York', isCorrect: true },
+        ],
+    },
+    {
+        'question': 'What is McLane\'s limo driver\'s fashion-inspired name?',
+        'image': './images/argyle.png',
+        'answers': [
+            { text: 'Paisley', isCorrect: false },
+            { text: 'Argyle', isCorrect: true },
+            { text: 'Pinstripe', isCorrect: false },
+            { text: 'Polka Dot', isCorrect: false },
+        ],
+    },
+    {
+        'question': 'Which fictional company is attacked by the terrorists?',
+        'image': './images/holly.png',
+        'answers': [
+            { text: 'Fujitsu Corp', isCorrect: false },
+            { text: 'Ishikawa Inc', isCorrect: false },
+            { text: 'Nakatomi Corp', isCorrect: true },
+            { text: 'Nintendo Ltd', isCorrect: false },
+        ],
+    }
+],
+        
     [
         // DAY 5 - AROUND THE WORLD
         {
@@ -318,55 +319,55 @@ export const questions = [
         }
     ],
     [
-        // DAY 7 - IS THAT A CHRISTMAS MOVIE?
+        // DAY 7 - MOVIE - HOME ALONE
         {
-            'question': 'What movie is this?',
-            'image': './images/mclane.png',
+            'question': "What movie is this?",
+            'image': '/images/homealone.png',
             'answers': [
-                { text: 'Lethal Weapon', isCorrect: false },
-                { text: 'Die Hard', isCorrect: true },
-                { text: 'The Fifth Element', isCorrect: false },
-                { text: '12 Monkeys', isCorrect: false },
+                { text: 'The Santa Clause', isCorrect: false },
+                { text: 'The Grinch', isCorrect: false },
+                { text: 'Elf', isCorrect: false },
+                { text: 'Home Alone', isCorrect: true },
             ],
         },
         {
-            'question': 'Die Hard\'s villain is played by Alan Rickman. What was his name?',
-            'image': './images/gruber.png',
+            'question': 'What criminal nickname does Marv give himself and Harry?',
+            'image': '/images/homealonebadguys.png',
             'answers': [
-                { text: 'Hans Gruber', isCorrect: true },
-                { text: 'Otto Becker', isCorrect: false },
-                { text: 'Frans Fischer', isCorrect: false },
-                { text: 'Severus Snape', isCorrect: false },
+                { text: 'The Goodfellas', isCorrect: false },
+                { text: 'The Sticky Bandits', isCorrect: false },
+                { text: 'The Wet Bandits', isCorrect: true },
+                { text: 'Team Rocket', isCorrect: false },
             ],
         },
         {
-            'question': 'In which city does John McLane work as a police officer?',
-            'image': './images/mclane2.png',
+            'question': '',
+            'image': '',
             'answers': [
-                { text: 'Boston', isCorrect: false },
-                { text: 'San Francisco', isCorrect: false },
-                { text: 'Chicago', isCorrect: false },
-                { text: 'New York', isCorrect: true },
+                { text: '', isCorrect: false },
+                { text: '', isCorrect: false },
+                { text: '', isCorrect: false },
+                { text: '', isCorrect: false },
+            ],
+        }, 
+        {
+            'question': '',
+            'image': '',
+            'answers': [
+                { text: '', isCorrect: false },
+                { text: '', isCorrect: false },
+                { text: '', isCorrect: false },
+                { text: '', isCorrect: false },
             ],
         },
         {
-            'question': 'What is McLane\'s limo driver\'s fashion-inspired name?',
-            'image': './images/argyle.png',
+            'question': '',
+            'image': '',
             'answers': [
-                { text: 'Paisley', isCorrect: false },
-                { text: 'Argyle', isCorrect: true },
-                { text: 'Pinstripe', isCorrect: false },
-                { text: 'Polka Dot', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'Which fictional company is attacked by the terrorists?',
-            'image': './images/holly.png',
-            'answers': [
-                { text: 'Fujitsu Corp', isCorrect: false },
-                { text: 'Ishikawa Inc', isCorrect: false },
-                { text: 'Nakatomi Corp', isCorrect: true },
-                { text: 'Nintendo Ltd', isCorrect: false },
+                { text: '', isCorrect: false },
+                { text: '', isCorrect: false },
+                { text: '', isCorrect: false },
+                { text: '', isCorrect: false },
             ],
         }
     ],

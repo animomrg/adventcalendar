@@ -88,7 +88,8 @@ fontToggle.addEventListener('click', () => {
 });
 
 // DAY BUTTONS
-const currentDate = new Date().getDate();
+// const currentDate = new Date().getDate();
+const currentDate = 5
 const dayBtns = document.querySelectorAll('.btn-day');
 const modalOverlay = document.querySelector('.modal-overlay');
 const introModal = document.querySelector('.intro-modal');
@@ -97,7 +98,7 @@ const dayBoxes = document.querySelector('.day-boxes')
 
 // MODAL RESET FUNCTION
 const introHeader = document.getElementById('intro-header');
-const introText = document.getElementById('intro-text');
+const introText = document.querySelector('.intro-text-container');
 const nextBtn = document.getElementById('next-btn');
 const prevBtn = document.getElementById('prev-btn');
 const playBtn = document.getElementById('play-btn');
@@ -156,13 +157,13 @@ function dailyIntro(date) {
     introSlideArray = introSlides[date - 1];
     introHeader.textContent = `December ${date}`;
     updateSlide(); 
-    playBtn.addEventListener('click', function() {
+    playBtn.addEventListener('click', () => {
         triviaStart(date);
     });
 };
 
 function updateSlide() {
-    introText.textContent = introSlideArray[currentSlide];
+    introText.innerHTML = introSlideArray[currentSlide];
     if (currentSlide < introSlideArray.length - 1) {
         nextBtn.style.display = 'inline';
     } else {
@@ -199,7 +200,7 @@ let dayQuestions = [];
 const triviaModal = document.querySelector('.trivia-modal');
 const questionContainer = document.querySelector('.question-container');
 const questionImgContainer = document.querySelector('.question-img-container');
-const answerContainer = document.querySelector('.answer-grid');
+const answerContainer = document.querySelector('.answer-container');
 const elQuestion = document.getElementById('question-text');
 const elImage = document.getElementById('question-image');
 
@@ -220,26 +221,28 @@ function loadQuestion() {
         const answer = document.createElement('input');
         const answerLabel = document.createElement('label');
         
-        answer.type = 'submit';
-        answer.name = 'answer';
-        answer.value = i;
-        answer.id = i;
-        answer.className = 'answer-radio';
-        answer.addEventListener('click', function() {
-            if (dayQuestions[currentQuestion].answers[answer.id].isCorrect) {
-                userScore++;
-                nextQuestion();
-            } else {
-                nextQuestion();
-            }
-        });
-
         answerLabel.textContent = dayQuestions[currentQuestion].answers[i].text;
         answerLabel.classList.add('answer-label');
         answerLabel.htmlFor = i;
         if (answerLabel.textContent.length > 20) {
             answerLabel.classList.add('label-small-font');
         }
+
+        answer.type = 'submit';
+        answer.name = 'answer';
+        answer.value = i;
+        answer.id = i;
+        answer.className = 'answer-button';
+        answer.addEventListener('click', () => {
+            if (dayQuestions[currentQuestion].answers[answer.id].isCorrect) {
+                userScore++;
+                answerLabel.classList.add('correct-answer');
+                setTimeout(nextQuestion, 2000);
+            } else {
+                answerLabel.classList.add('incorrect-answer');
+                setTimeout(nextQuestion, 2000);
+            }
+        });
 
         answerDiv.className = 'answer-div';
         answerDiv.appendChild(answer);
@@ -274,6 +277,7 @@ function loadScore() {
         questionContainer.style.display = 'block';
         questionImgContainer.style.display = 'block';
         answerContainer.style.display = 'grid';
+        userScore = 0;
         currentSlide = 0;
         currentQuestion = 0;
         returnHome();
