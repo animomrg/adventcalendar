@@ -99,12 +99,13 @@ const introHeader = document.getElementById('intro-header');
 const introText = document.getElementById('intro-text');
 const nextBtn = document.getElementById('next-btn');
 const prevBtn = document.getElementById('prev-btn');
+const playBtn = document.getElementById('play-btn');
 const closeBtnWarning = document.getElementById('warning-close-btn');
 const closeBtnIntro = document.getElementById('intro-close-btn');
 
-const playBtn = document.getElementById('play-btn');
-
+// OTHER VARIABLES
 let currentSlide = 0;
+let introSlideArray = [];
 
 nextBtn.addEventListener('click', () => {
     currentSlide++;
@@ -136,13 +137,7 @@ function returnHome() {
     triviaModal.style.display = 'none';
     titleSection.style.display = 'flex';
     dayBoxes.style.display = 'grid';
-}
-
-function modalActivate() {
-    titleSection.style.display = 'none';
-    dayBoxes.style.display = 'none';
-    modalOverlay.style.display = 'block';
-}
+};
 
 // DAY BUTTON EVENT LISTENERS
 dayBtns.forEach(button => {
@@ -159,8 +154,11 @@ dayBtns.forEach(button => {
     });
 });
 
-// DAILY INTRO FUNCTION
-let introSlideArray = [];
+function modalActivate() {
+    titleSection.style.display = 'none';
+    dayBoxes.style.display = 'none';
+    modalOverlay.style.display = 'block';
+};
 
 function dailyIntro(date) {
     introSlideArray = introSlides[date - 1];
@@ -171,20 +169,6 @@ function dailyIntro(date) {
     });
 };
 
-// WARNING MODAL FUNCTION
-const warningModal = document.querySelector('.warning-modal');
-const warningHeader = document.getElementById('warning-header');
-const warningImg = document.getElementById('warning-img');
-
-function warningActivate() {
-    warningModal.style.display = 'block';
-    let index = Math.floor(Math.random() * warningSlides.length);
-    let warningContent = warningSlides[index];
-    warningHeader.textContent = warningContent.header;
-    warningImg.src = warningContent.img;
-};
-
-// UPDATE SLIDE FUNCTION
 function updateSlide() {
     introText.textContent = introSlideArray[currentSlide];
     if (currentSlide < introSlideArray.length - 1) {
@@ -204,53 +188,40 @@ function updateSlide() {
     }
 };
 
+const warningModal = document.querySelector('.warning-modal');
+const warningHeader = document.getElementById('warning-header');
+const warningImg = document.getElementById('warning-img');
+
+function warningActivate() {
+    warningModal.style.display = 'block';
+    let index = Math.floor(Math.random() * warningSlides.length);
+    let warningContent = warningSlides[index];
+    warningHeader.textContent = warningContent.header;
+    warningImg.src = warningContent.img;
+};
+
 // // TRIVIA VARIABLES
 let currentQuestion = 0;
 let userScore = 0;
 let dayQuestions = [];
 const triviaModal = document.querySelector('.trivia-modal');
-const countdownContainer = document.querySelector('.countdown-container');
 const questionContainer = document.querySelector('.question-container');
 const questionImgContainer = document.querySelector('.question-img-container');
 const answerContainer = document.querySelector('.answer-grid');
 const submitBtn = document.getElementById('submit-btn');
+const elQuestion = document.getElementById('question-text');
+const elImage = document.getElementById('question-image');
 
 function triviaStart(date) {
     triviaModal.style.display = 'block';
     introModal.style.display = 'none';
     dayQuestions = questions[date - 1];
-    triviaCountdown();
+    console.log(dayQuestions);
     loadQuestion();
 };
 
-function triviaCountdown() {
-    let timeRem = 2;
-    let timer = setInterval(countdown, 1000);
-    function stopCountdown() {
-        clearInterval(timer);
-    };
-    function countdown() {
-        countdownContainer.innerHTML = `<h1 id="countdown">${timeRem}</h1>`
-        if (timeRem === 0) {
-            countdownContainer.style.display = 'none';
-            questionContainer.style.display = 'block';
-            questionImgContainer.style.display = 'block';
-            answerContainer.style.display = 'grid';
-            submitBtn.style.display = 'block';
-            stopCountdown();
-        } else {
-            timeRem--;
-        };
-    };
-};
-
 function loadQuestion() {
-    const elQuestion = document.getElementById('question-text');
-    let numQuestion = document.getElementById('question-number');
-    const elImage = document.getElementById('question-image');
-
-    numQuestion.textContent = currentQuestion + 1;
-    elQuestion.textContent = dayQuestions[currentQuestion].question;
+    elQuestion.innerHTML = dayQuestions[currentQuestion].question;
     elImage.src = dayQuestions[currentQuestion].image;
     submitBtn.addEventListener('click', checkAnswer);
     answerContainer.innerHTML = "";
@@ -278,6 +249,29 @@ function loadQuestion() {
         answerDiv.appendChild(answerLabel);
 
         answerContainer.appendChild(answerDiv);
+    }
+};
+
+function checkAnswer() {
+    const userAnswer = parseInt(document.querySelector('input[name="answer"]:checked').value);
+    if (dayQuestions[currentQuestion].answers[userAnswer].isCorrect) {
+        userScore++;
+        nextQuestion();
+    } else {
+        nextQuestion();
+    }
+};
+
+function nextQuestion() {
+    if (currentQuestion < dayQuestions.length - 1) {
+        currentQuestion++;
+        loadQuestion();
+    } else {
+        questionContainer.remove();
+        questionImgContainer.remove();
+        answerContainer.remove();
+        submitBtn.remove();
+        loadScore();
     }
 };
 
@@ -317,27 +311,3 @@ function loadScore() {
         scoreImg.src = './images/samuel.gif';
     }
 };
-
-function nextQuestion() {
-    if (currentQuestion < dayQuestions.length - 1) {
-        currentQuestion++;
-        loadQuestion();
-    } else {
-        questionContainer.remove();
-        questionImgContainer.remove();
-        answerContainer.remove();
-        submitBtn.remove();
-        loadScore();
-    }
-};
-
-function checkAnswer() {
-    const userAnswer = parseInt(document.querySelector('input[name="answer"]:checked').value);
-    if (dayQuestions[currentQuestion].answers[userAnswer].isCorrect) {
-        userScore++;
-        nextQuestion();
-    } else {
-        nextQuestion();
-    }
-};
-

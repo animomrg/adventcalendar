@@ -56,7 +56,7 @@ export const questions = [
         // DAY 2 - LYRICS
         {
             'question': "You know Dasher and Dancer and Prancer and _____\nComet and Cupid and ______ and Blitzen\nBut do you recall\nThe most famous reindeer of all?",
-            'image': '.images/rudolph.gif',
+            'image': './images/rudolph.gif',
             'answers': [
                 { text: 'Dixon / Rona', isCorrect: false },
                 { text: 'Nixon / Fauna', isCorrect: false },
@@ -66,7 +66,7 @@ export const questions = [
         },
         {
             'question': "Once again, as in olden days\nHappy golden days of ____\nFaithful friends who are ____ to us\nWill be near to us once more",
-            'image': '.images/frank.png',
+            'image': './images/frank.png',
             'answers': [
                 { text: 'Yore / Dear', isCorrect: true },
                 { text: 'Yours / Close', isCorrect: false },
@@ -265,7 +265,7 @@ export const questions = [
         }
     ],
     [
-        // DAY 6
+        // DAY 6 - CHRISTMAS FACTS AND FIGURES
         {
             'question': '',
             'image': '',
@@ -371,15 +371,15 @@ export const questions = [
         }
     ],
     [
-        // DAY 8
+        // DAY 8 - CHRISTMAS POTPURRI
         {
-            'question': '',
+            'question': 'What is the highest grossing Christmas movie of all time?',
             'image': '',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'The Grinch (2018)', isCorrect: true },
+                { text: 'Home Alone', isCorrect: false },
+                { text: 'A Christmas Carol (2009)', isCorrect: false },
+                { text: 'The Polar Express (2004)', isCorrect: false },
             ],
         },
         {
@@ -424,108 +424,108 @@ export const questions = [
         }
     ],
     [
-        // DAY 9
+        // DAY 9 - MOVIE - LOVE ACTUALLY
         {
-            'question': '',
-            'image': '',
+            'question': 'Which movie is this?',
+            'image': './images/hugh.gif',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'Deck The Halls', isCorrect: false },
+                { text: 'The Santa Clause', isCorrect: false },
+                { text: 'Jingle All The Way', isCorrect: false },
+                { text: 'Love Actually', isCorrect: true },
             ],
         },
         {
-            'question': '',
-            'image': '',
+            'question': 'In Love Actually, who plays the President of the United States?',
+            'image': './images/whitehouse.png',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'Tim McGraw', isCorrect: false },
+                { text: 'Billy Bob Thornton', isCorrect: true },
+                { text: 'Bruce Willis', isCorrect: false },
+                { text: 'Donald Sutherland', isCorrect: false },
             ],
         },
         {
-            'question': '',
-            'image': '',
+            'question': 'What language does Jamie (Colin Firth) learn in hopes of dating his housekeeper?',
+            'image': './images/jamie.gif',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'Spanish', isCorrect: false },
+                { text: 'Italian', isCorrect: false },
+                { text: 'French', isCorrect: false },
+                { text: 'Portuguese', isCorrect: true },
             ],
         },
         {
-            'question': '',
+            'question': 'Which supermodel has a cameo role as potential love interest for Daniel (Liam Neeson)?',
             'image': '',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'Claudia Schiffer', isCorrect: true },
+                { text: 'Cindy Crawford', isCorrect: false },
+                { text: 'Tyra Banks', isCorrect: false },
+                { text: 'Heidi Klum', isCorrect: false },
             ],
         },
         {
-            'question': '',
+            'question': 'What part does Daisy play in the school Nativity play?',
             'image': '',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'Lucy The Lamb', isCorrect: false },
+                { text: 'The Virgin Mary', isCorrect: false },
+                { text: 'The First Lobster', isCorrect: true },
+                { text: 'The Third Wise Man', isCorrect: false },
             ],
         }
     ],
     [
         // DAY 10 - AROUND THE WORLD
         {
-            'question': '',
+            'question': 'In Norway, they celebrate Little Christmas Eve on which day?',
             'image': '',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'December 23', isCorrect: true },
+                { text: 'December 19', isCorrect: false },
+                { text: 'December 26', isCorrect: false },
+                { text: 'December 24', isCorrect: false },
             ],
         },
         {
-            'question': '',
+            'question': 'What do the Irish traditionally leave on the windowsill on Christmas Eve?',
             'image': '',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'Potato Salad', isCorrect: false },
+                { text: 'A Glass of Whiskey', isCorrect: false },
+                { text: 'A Whole Cabbage', isCorrect: false },
+                { text: 'A Red Candle', isCorrect: true },
             ],
         },
         {
-            'question': '',
+            'question': 'What is the name of the devil-like creature that joins Austia\'s Christmas festivities on December 6?',
             'image': '',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'Krampus', isCorrect: true },
+                { text: 'Kreacher', isCorrect: false },
+                { text: 'Glockler', isCorrect: false },
+                { text: 'Perchten', isCorrect: false },
             ],
         },
         {
-            'question': '',
+            'question': 'On which date do Ukranian Orthodox Christians celebrate Christmas?',
             'image': '',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'December 25', isCorrect: false },
+                { text: 'December 31', isCorrect: false },
+                { text: 'January 7', isCorrect: true },
+                { text: 'January 25', isCorrect: false },
             ],
         },
         {
-            'question': '',
+            'question': 'Which Island nation has a so-called Christmas Capital with a year-round Christmas theme park?',
             'image': '',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'Japan', isCorrect: false },
+                { text: 'Indonesia', isCorrect: false },
+                { text: 'The Philippines', isCorrect: true },
+                { text: 'Fiji', isCorrect: false },
             ],
         }
     ],
@@ -742,55 +742,55 @@ export const questions = [
         }
     ],
     [
-        // DAY 15
+        // DAY 15 - CHRISTMAS AROUND THE WORLD
         {
-            'question': '',
+            'question': 'In Iceland, which folklore character eats people who do not receive new clothes before Christmas Eve?',
             'image': '',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'Gryla The Ogress', isCorrect: false },
+                { text: 'The Yule Cat', isCorrect: true },
+                { text: 'Stúfur The Yule Lad', isCorrect: false },
+                { text: 'Ketkrókur The Meat-Hook', isCorrect: false },
             ],
         },
         {
-            'question': '',
+            'question': 'What is the name of Germany\'s devilish Santa counterpart?',
             'image': '',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'Rudolf The Ripper', isCorrect: false },
+                { text: 'Kranky Kraus', isCorrect: false },
+                { text: 'Hans Landa', isCorrect: false },
+                { text: 'Farmhand Rupert', isCorrect: true },
             ],
         },
         {
-            'question': '',
+            'question': 'In Ukranian folklore, what creepy creatures helped a poor widow to decorate her Christmas tree?',
             'image': '',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'Snakes', isCorrect: false },
+                { text: 'Mice', isCorrect: false },
+                { text: 'Spiders', isCorrect: true },
+                { text: 'Cockroaches', isCorrect: false },
             ],
         },
         {
-            'question': '',
+            'question': 'In Venezuela, how do most locals get to Mass on Christmas morning?',
             'image': '',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'Bicycles', isCorrect: false },
+                { text: 'Roller Skates', isCorrect: true },
+                { text: 'A Sled', isCorrect: false },
+                { text: 'Christmas Bus', isCorrect: false },
             ],
         },
         {
-            'question': '',
+            'question': 'Instead of a glass of milk, what do Italian children leave for their Santa Claus counterpart, Belfana?',
             'image': '',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'Parmesan Cheese', isCorrect: false },
+                { text: 'Apple Juice', isCorrect: false },
+                { text: 'A Pizza', isCorrect: false },
+                { text: 'Wine', isCorrect: true },
             ],
         }
     ],
@@ -1060,55 +1060,55 @@ export const questions = [
         }
     ],
     [
-        // DAY 21
+        // DAY 21 - CHRISTMAS AROUND THE WORLD
         {
-            'question': '',
+            'question': 'In Germany, what kind of ornament is hidden in the Christmas tree for children to find?',
             'image': '',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'Chocolate Bell', isCorrect: false },
+                { text: 'Pickle', isCorrect: true },
+                { text: 'Pretzel', isCorrect: false },
+                { text: 'Soccer Ball', isCorrect: false },
             ],
         },
         {
-            'question': '',
+            'question': 'In Catalonia (Spain), nativity scenes feature a figure named Caganer who is doing what?',
             'image': '',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'Sleeping', isCorrect: false },
+                { text: 'Crying', isCorrect: false },
+                { text: 'Digging a Hole', isCorrect: false },
+                { text: 'Pooping', isCorrect: true },
             ],
         },
         {
-            'question': '',
+            'question': 'On Christmas Day in Sweden, which Disney character addresses nearly half of the country via television special?',
             'image': '',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'Donald Duck', isCorrect: true },
+                { text: 'Mickey Mouse', isCorrect: false },
+                { text: 'Buzz Lightyear', isCorrect: false },
+                { text: 'Cinderella', isCorrect: false },
             ],
         },
         {
-            'question': '',
+            'question': 'Which country holds the claim as the first to decorate a Christmas tree (in 1510)?',
             'image': '',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'Italy', isCorrect: false },
+                { text: 'Romania', isCorrect: false },
+                { text: 'Latvia', isCorrect: true },
+                { text: 'Argentina', isCorrect: false },
             ],
         },
         {
-            'question': '',
+            'question': 'In Iceland, what do people typically exchange on Christmas Eve as part of Jolabokaflod?',
             'image': '',
             'answers': [
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
-                { text: '', isCorrect: false },
+                { text: 'Candy', isCorrect: false },
+                { text: 'Books', isCorrect: true },
+                { text: 'Used Clothes', isCorrect: false },
+                { text: 'Christmas Baking', isCorrect: false },
             ],
         }
     ],
