@@ -612,6 +612,24 @@ TRIVIA MODAL
         font-weight: initial;
         box-shadow: 0 4px 8px 0 var(--clr-primary-2), 0 6px 10px 0 var(--clr-primary-3);
     }
+
+    .correct-answer {
+        background-image: linear-gradient(to bottom right, green, rgb(0, 230, 0));
+        border: 3px solid green;
+        box-shadow: 0 4px 8px 0 green, 0 6px 10px 0 rgb(0, 230, 0);
+        color: rgb(0, 40, 0);
+        animation: bounce 1s ease-in-out infinite;
+        pointer-events: none;
+    }
+    
+    .incorrect-answer {
+        background-image: linear-gradient(to bottom right, red, rgb(100, 0, 0));
+        border: 3px solid red;
+        box-shadow: 0 4px 8px 0 red, 0 6px 10px 0 rgb(100, 0, 0);
+        color: rgb(100, 0, 0);
+        animation: bounce 1s ease-in-out infinite;
+        pointer-events: none;
+    }
 }
 
 @media only screen and (max-width: 475px) {
