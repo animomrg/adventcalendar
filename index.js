@@ -60,7 +60,7 @@ greenToggle.addEventListener('click', () => {
 const backgroundToggle = document.getElementById('background-btn');
 const mainContainer = document.querySelector('.main-container');
 const titleContent = document.querySelector('.title-content');
-const bgImgs = ['none', 'url(./images/greenbg.png)', 'url(./images/redbg.png)', 'url(./images/neonbg.png)', 'url(./images/snowbg.png)'];
+const bgImgs = ['none', 'url(./images/backgroundimgs/greenbg.png)', 'url(./images/backgroundimgs/redbg.png)', 'url(./images/backgroundimgs/neonbg.png)', 'url(./images/backgroundimgs/snowbg.png)'];
 let bgIndex = 0;
 backgroundToggle.addEventListener('click', () => {
     if (bgIndex === bgImgs.length - 1) {
@@ -85,6 +85,18 @@ fontToggle.addEventListener('click', () => {
         fontIndex += 1;
     }
     root.style.setProperty('--ff-primary', fonts[fontIndex]);
+});
+
+// NUMBER SIZE TOGGLE
+const numSizeToggle = document.getElementById('size-icon');
+const dayNumbers = document.querySelectorAll('.day-number');
+
+numSizeToggle.addEventListener('click', () => {
+    numSizeToggle.classList.toggle('fa-maximize');
+    numSizeToggle.classList.toggle('fa-minimize');
+    for (let i = 0; i < dayNumbers.length; i++) {
+        dayNumbers[i].classList.toggle('large-numbers');
+    };
 });
 
 // DAY BUTTONS
@@ -208,10 +220,10 @@ function triviaStart(date) {
     triviaModal.style.display = 'block';
     introModal.style.display = 'none';
     dayQuestions = questions[date - 1];
-    loadQuestion();
+    loadQuestion(date);
 };
 
-function loadQuestion() {
+function loadQuestion(date) {
     elQuestion.innerHTML = dayQuestions[currentQuestion].question;
     elImage.src = dayQuestions[currentQuestion].image;
     answerContainer.innerHTML = "";
@@ -237,10 +249,14 @@ function loadQuestion() {
             if (dayQuestions[currentQuestion].answers[answer.id].isCorrect) {
                 userScore++;
                 answerLabel.classList.add('correct-answer');
-                setTimeout(nextQuestion, 2000);
+                setTimeout(() => {
+                    nextQuestion(date);
+                }, 2000);
             } else {
                 answerLabel.classList.add('incorrect-answer');
-                setTimeout(nextQuestion, 2000);
+                setTimeout(() => {
+                    nextQuestion(date);
+                }, 2000);
             }
         });
 
@@ -252,21 +268,21 @@ function loadQuestion() {
     }
 };
 
-function nextQuestion() {
+function nextQuestion(date) {
     if (currentQuestion < dayQuestions.length - 1) {
         currentQuestion++;
-        loadQuestion();
+        loadQuestion(date);
     } else {
         questionContainer.style.display = 'none';
         questionImgContainer.style.display = 'none';
         answerContainer.style.display = 'none';
-        loadScore();
+        loadScore(date);
     }
 };
 
-function loadScore() {
+function loadScore(date) {
     const scoreContainer = document.querySelector('.score-container');
-    const totalScore = document.getElementById('score-text');
+    const scoreText = document.getElementById('score-text');
     const scoreImgContainer = document.querySelector('.score-img-container');
     const scoreImg = document.getElementById('score-img');
     const homeBtnContainer = document.querySelector('.home-btn-container');
@@ -281,26 +297,28 @@ function loadScore() {
         currentSlide = 0;
         currentQuestion = 0;
         returnHome();
-    })
+    });
+
+    updateBtn(date);
 
     scoreContainer.style.display = 'block';
     scoreImgContainer.style.display = 'block';
     scoreImg.style.display = 'block';
     homeBtnContainer.style.display = 'block';
 
-    totalScore.textContent = `You scored ${userScore} out of ${dayQuestions.length}!`;
+    scoreText.textContent = `You scored ${userScore} out of ${dayQuestions.length}!`;
     if (userScore === 5) {
-        scoreImg.src = './images/leslie.gif';
+        scoreImg.src = './images/scoregifs/kidthumbsup.gif';
     } else if (userScore === 4) {
-        scoreImg.src = './images/santawink.gif';
+        scoreImg.src = './images/scoregifs/babythumbsup.gif';
     } else if (userScore === 3) {
-        scoreImg.src = './images/shrug.gif';
+        scoreImg.src = './images/scoregifs/notbad.gif';
     } else if (userScore === 2) {
-        scoreImg.src = './images/ralphieshrug.gif';
+        scoreImg.src = './images/scoregifs/larry.gif';
     } else if (userScore === 1) {
-        scoreImg.src = './images/christmasangry.gif';
+        scoreImg.src = './images/scoregifs/ouch.gif';
     } else {
-        scoreImg.src = './images/samuel.gif';
+        scoreImg.src = './images/scoregifs/youch.gif';
     }
 };
 
@@ -313,3 +331,7 @@ function returnHome() {
     dayBoxes.style.display = 'grid';
     dayQuestions = [];
 };
+
+function updateBtn(date) {
+    console.log(date);
+}
