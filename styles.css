@@ -600,6 +600,18 @@ TRIVIA MODAL
         font-size: 1.25rem;
         padding-top: 0;
     }
+
+    .answer-container {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1;
+    }
+
+    .answer-label:hover {
+        background-image: none;
+        color: var(--clr-primary-2);
+        font-weight: initial;
+        box-shadow: 0 4px 8px 0 var(--clr-primary-2), 0 6px 10px 0 var(--clr-primary-3);
+    }
 }
 
 @media only screen and (max-width: 475px) {

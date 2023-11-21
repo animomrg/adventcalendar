@@ -253,6 +253,7 @@ function loadQuestion(date) {
                 setTimeout(() => {
                     nextQuestion(date);
                 }, 2000);
+
             } else {
                 answerLabel.classList.add('incorrect-answer');
                 setTimeout(() => {
