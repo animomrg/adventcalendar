@@ -88,12 +88,13 @@ fontToggle.addEventListener('click', () => {
 });
 
 // NUMBER SIZE TOGGLE
-const numSizeToggle = document.getElementById('size-icon');
+const numSizeToggle = document.getElementById('num-size-btn');
 const dayNumbers = document.querySelectorAll('.day-number');
+const sizeIcon = document.getElementById('size-icon');
 
 numSizeToggle.addEventListener('click', () => {
-    numSizeToggle.classList.toggle('fa-maximize');
-    numSizeToggle.classList.toggle('fa-minimize');
+    sizeIcon.classList.toggle('fa-maximize');
+    sizeIcon.classList.toggle('fa-minimize');
     for (let i = 0; i < dayNumbers.length; i++) {
         dayNumbers[i].classList.toggle('large-numbers');
     };
