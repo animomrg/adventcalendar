@@ -582,3 +582,26 @@ TRIVIA MODAL
     width: 100%;
     text-align: center;
 }
+
+@media only screen and (max-width: 850px) {
+    .main-container {
+        height: 75vh;
+    }
+
+    .title {
+        height: 10%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    #advent-title {
+        font-size: 1.25rem;
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    #advent-title {
+        font-size: 1.00rem;
+    }
+}
