@@ -8,8 +8,8 @@ Colors/Fonts
     /* red shades*/
     --clr-primary-1: #A82222;
     --clr-primary-2: #f20000;
-    --clr-primary-3: #820101;
-    --clr-primary-4: #670209;
+    --clr-primary-3: #490000;
+    --clr-primary-4: #670216;
     --clr-primary-5: #331010;
     /* green shades*/
     --clr-primary-6: #00DB1D;
@@ -308,11 +308,11 @@ Classes
   }
 
 .completed-day {
-    background-image: url('./images/star.png');
-    background-position: center;
+    background-image: url(./images/star.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-color: var(--clr-primary-5);
-    border: 2px groove var(--clr-primary-2);
+    border: 2px dotted var(--clr-primary-2);
     animation: none;
 }
 

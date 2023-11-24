@@ -127,7 +127,6 @@ function setNumSize() {
 // DAY BUTTONS
 const currentDate = 5
 // const currentDate = new Date().getDate();
-let completedDays = [];
 
 // const currentDate = 5;
 const dayBtns = document.querySelectorAll('.btn-day');
@@ -336,7 +335,7 @@ function loadScore(date) {
         returnHome();
     });
 
-    updateBtn(date);
+    updateBtn(date, userScore);
 
     scoreContainer.style.display = 'block';
     scoreImgContainer.style.display = 'block';
@@ -369,22 +368,32 @@ function returnHome() {
     dayQuestions = [];
 };
 
-function updateBtn(date) {
+function updateBtn(date, score) {
     const btnNum = Number(date);
-    const completedDayBtn = document.querySelector(`button[value="${btnNum}"]`);
+    let completedDayBtn = document.querySelector(`button[value="${btnNum}"]`);
     completedDayBtn.classList.add('completed-day');
+    let completeDay = { btnNum, score }
+    let completedDays = getCompletedDays();
+    completedDays.push(completeDay);
+    localStorage.setItem('complete-days', JSON.stringify(completedDays));
 };
 
-// function updateCompleteDays(date) {
-//     let completeDays = getCompleteDays();
-// }
+function getCompletedDays() {
+    return localStorage.getItem('complete-days')
+        ? JSON.parse(localStorage.getItem('complete-days'))
+        : [];
+};
 
-
-// function getCompleteDays() {
-//     return localStorage.getItem('complete-days')
-//         ? JSON.parse(localStorage.getItem('complete-days'))
-//         : [];
-// }
+function initializeCalendar() {
+    let completedDays = getCompletedDays();
+    if (completedDays.length > 0) {
+        completedDays.forEach((item) => {
+            let btnNum = item.btnNum;
+            let completedDayBtn = document.querySelector(`button[value="${btnNum}"]`);
+            completedDayBtn.classList.add('completed-day')
+        });
+    }
+};
 
 const welcomeMsg = document.querySelector('.welcome-msg');
 const welcomeHeader = document.getElementById('welcome-header');
@@ -394,7 +403,7 @@ const welcomeForm = document.getElementById('welcome-form');
 const nameInput = document.getElementById('user-name-input');
 const readyBtn = document.getElementById('ready-btn');
 
-document.addEventListener("DOMContentLoaded", () => {
+function initializeUsername() {
     if (localStorage.getItem('username')) {
         const name = localStorage.getItem('username');
         welcomeHeader.textContent = `Welcome back, ${name}!`
@@ -406,7 +415,10 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         welcomeMsg.style.display = 'block';
     }
-    if (localStorage.getItem('theme-color')) {
+};
+
+function initializeTheme() {
+        if (localStorage.getItem('theme-color')) {
         let themeColor = localStorage.getItem('theme-color');
         if (themeColor === 'green') {
             greenTheme();
@@ -416,15 +428,24 @@ document.addEventListener("DOMContentLoaded", () => {
             redTheme();
         }
     }
+};
+
+function initializeBackground() {
     if (localStorage.getItem('bg-image')) {
         let bgImage = localStorage.getItem('bg-image');
         mainContainer.style.setProperty('background-image', bgImage);
         titleContent.classList.add('title-content-border');
     }
+};
+  
+function initializeFont() {
     if (localStorage.getItem('font')) {
         let font = localStorage.getItem('font');
         root.style.setProperty('--ff-primary', font);
     }
+};
+  
+function initializeNumSize() {
     if (localStorage.getItem('num-size')) {
         let size = localStorage.getItem('num-size');
         if (size === 'large') {
@@ -436,6 +457,15 @@ document.addEventListener("DOMContentLoaded", () => {
             };
         } 
     }
+};  
+
+document.addEventListener("DOMContentLoaded", () => {
+    initializeUsername();
+    initializeTheme();
+    initializeBackground();
+    initializeFont();
+    initializeNumSize();
+    initializeCalendar();
 });
 
 readyBtn.addEventListener('click', () => {
