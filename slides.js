@@ -1,9 +1,4 @@
-export const warningSlides = [
-    {
-        header: 'Hey! Stop it!',
-        img: './images/warningimgs/rock.gif'
-    }
-]
+
 
 // export const warningSlides = [
 //     {
@@ -32,38 +27,7 @@ export const warningSlides = [
 //     }
 // ];
 
-export const introSlides = [
-    [
-        "This will surely be some super exciting information that will leave you feeling energized and enlightened...",
-        "Or provide you with guidance for the trivia questions ahead...",
-        "Or, more likely, be something completely irrelevant, unfunny and boring...",
-        "And with that said, why not move right into trivia?"
-    ],
-    [
-        "This will surely be some super exciting information that will leave you feeling energized and enlightened...",
-        "Or provide you with guidance for the trivia questions ahead...",
-        "Or, more likely, be something completely irrelevant, unfunny and boring...",
-        "And with that said, why not move right into trivia?"
-    ],
-    [
-        "This will surely be some super exciting information that will leave you feeling energized and enlightened...",
-        "Or provide you with guidance for the trivia questions ahead...",
-        "Or, more likely, be something completely irrelevant, unfunny and boring...",
-        "And with that said, why not move right into trivia?"
-    ],
-    [
-        "This will surely be some super exciting information that will leave you feeling energized and enlightened...",
-        "Or provide you with guidance for the trivia questions ahead...",
-        "Or, more likely, be something completely irrelevant, unfunny and boring...",
-        "And with that said, why not move right into trivia?"
-    ],
-    [
-        "This will surely be some super exciting information that will leave you feeling energized and enlightened...",
-        "Or provide you with guidance for the trivia questions ahead...",
-        "Or, more likely, be something completely irrelevant, unfunny and boring...",
-        "And with that said, why not move right into trivia?"
-    ],
-];
+
 
 // export const introSlides = [
 //     [
@@ -97,34 +61,36 @@ export const introSlides = [
 //         "What's that? You don't? Hmm, oh well at least it's multiple choice!"
 //     ],
 //     [
-//         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus quae non numquam aliquam nihil, ea perspiciatis officiis tempora illum veniam!",
-//         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id dolor in, corporis ex voluptatem architecto?",
-//         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tempore quia beatae impedit ut dignissimos.",
-//         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eos temporibus explicabo eius minus. Odio."
+//         "Did you know that in many European countries they celebrate <strong>St. Nicholas Day</strong> on December 6th?",
+//         "St. Nicholas was a 4th century bishop who was known for anonymously giving to poor and needy children and families.",
+//         "In modern times, the giving of gifts early in the month helps make Christmas more about the meaning of Christmas...",
+//         "And less about...you know...prezzies and cinny buns. Not that there's anything wrong with prezzies and cinnamon buns!",
+//         "But enough with the anti-prezzy agenda and on with the show!"
 //     ],
 //     [
-//         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus quae non numquam aliquam nihil, ea perspiciatis officiis tempora illum veniam!",
-//         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id dolor in, corporis ex voluptatem architecto?",
-//         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tempore quia beatae impedit ut dignissimos.",
-//         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eos temporibus explicabo eius minus. Odio."
+//         "This year, December 7th marks the start of Hanukkah!",
+//         "After a three-year struggle against Antiochus the Mad, the Jews emerged victorious and Judas ordered the restoration of the Second Temple of Jerusalem.",
+//         "Upon completion, Judas declared that the dedication of the restored Temple should be celebrated every year for a period of eight days.",
+//         "And now you know the origins of Hanukkah! Wahoo for you. You can also probably guess what today's theme is... Mazel Tov!"
 //     ],
 //     [
-//         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus quae non numquam aliquam nihil, ea perspiciatis officiis tempora illum veniam!",
-//         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id dolor in, corporis ex voluptatem architecto?",
-//         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tempore quia beatae impedit ut dignissimos.",
-//         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eos temporibus explicabo eius minus. Odio."
+//         "One week down already!? It's practically Christmas already!",
+//         "If you're sick of the usual Christmas tunes, not to worry! I've got you covered...",
+//         "Check out this 3-hour <a href='https://www.youtube.com/watch?v=Ru8DQ5f5A6U' target='_blank'>YouTube video</a> of LoFi Christmas tunes for a twist on all of the classics that's a little more coffeehouse and a little less Mariah Carey.",
+//         "By all means, though, you do you! But whatever you're listening to, let's get on with it!"
 //     ],
 //     [
-//         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus quae non numquam aliquam nihil, ea perspiciatis officiis tempora illum veniam!",
-//         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id dolor in, corporis ex voluptatem architecto?",
-//         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tempore quia beatae impedit ut dignissimos.",
-//         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eos temporibus explicabo eius minus. Odio."
+//         "Hold the phone everyone! Stop what you're doing and get ready to recognize the December 9th holiday that is...",
+//         "National PASTRY Day!",
+//         "You could celebrate with <a href='https://www.foodandwine.com/recipes/sticky-toffee-pudding' target='_blank'>Sticky Toffee Pudding</a>... Or maybe a <a href='https://www.foodandwine.com/recipes/basque-cheesecake' target='_blank'>Basque Cheesecake</a>... Or even a <a href='https://www.foodandwine.com/recipes/butterscotch-pudding-parfait-gingersnap-crumble' target='_blank'>Butterscotch Pudding Parfait with Gingersnap Crumble</a>",
+//         "Whatever it is, one thing I know for sure is that any desserts consumed today do not count against eating restrictions of any kind... Except maybe allergies <em>Sorry, Meg.</em>",
+//         "Let's see how much you know about Christmas pastries!"
 //     ],
 //     [
-//         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus quae non numquam aliquam nihil, ea perspiciatis officiis tempora illum veniam!",
-//         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id dolor in, corporis ex voluptatem architecto?",
-//         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tempore quia beatae impedit ut dignissimos.",
-//         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eos temporibus explicabo eius minus. Odio."
+//         "Among other things, December 10th is both <em>National Corey Day</em> and <em>National Derek Day</em>. But let's be serious...",
+//         "It seems like pretty much every day is Corey and Derek day, am I right? Sorry, Coreys and Dereks, it's not about you today.",
+//         "Instead, today's trivia theme is International Animal Rights Day! Bonus points, I guess, if your dog or cat (or gerbil) is named Corey or Derek.",
+//         "Go grab Patches (or Buttons) (or Corey) and get ready to test your knowledge of Christmas animals!"
 //     ],
 //     [
 //         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus quae non numquam aliquam nihil, ea perspiciatis officiis tempora illum veniam!",
@@ -211,3 +177,43 @@ export const introSlides = [
 //         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eos temporibus explicabo eius minus. Odio."
 //     ],
 // ];
+
+export const warningSlides = [
+    {
+        header: 'Hey! Stop it!',
+        img: './images/warningimgs/rock.gif'
+    }
+];
+
+export const introSlides = [
+    [
+        "This will surely be some super exciting information that will leave you feeling energized and enlightened...",
+        "Or provide you with guidance for the trivia questions ahead...",
+        "Or, more likely, be something completely irrelevant, unfunny and boring...",
+        "And with that said, why not move right into trivia?"
+    ],
+    [
+        "This will surely be some super exciting information that will leave you feeling energized and enlightened...",
+        "Or provide you with guidance for the trivia questions ahead...",
+        "Or, more likely, be something completely irrelevant, unfunny and boring...",
+        "And with that said, why not move right into trivia?"
+    ],
+    [
+        "This will surely be some super exciting information that will leave you feeling energized and enlightened...",
+        "Or provide you with guidance for the trivia questions ahead...",
+        "Or, more likely, be something completely irrelevant, unfunny and boring...",
+        "And with that said, why not move right into trivia?"
+    ],
+    [
+        "This will surely be some super exciting information that will leave you feeling energized and enlightened...",
+        "Or provide you with guidance for the trivia questions ahead...",
+        "Or, more likely, be something completely irrelevant, unfunny and boring...",
+        "And with that said, why not move right into trivia?"
+    ],
+    [
+        "This will surely be some super exciting information that will leave you feeling energized and enlightened...",
+        "Or provide you with guidance for the trivia questions ahead...",
+        "Or, more likely, be something completely irrelevant, unfunny and boring...",
+        "And with that said, why not move right into trivia?"
+    ],
+];

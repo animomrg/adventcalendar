@@ -1,277 +1,9 @@
-export const questions = [
-    [
-        // DAY 1
-        {
-            'question': 'What color is the sky?',
-            'image': './images/questionimgs/sky.gif',
-            'answers': [
-                { text: 'Green', isCorrect: false },
-                { text: 'Blue', isCorrect: true },
-                { text: 'Red', isCorrect: false },
-                { text: 'Orange', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'Which is not a fruit?',
-            'image': './images/questionimgs/fruits.gif',
-            'answers': [
-                { text: 'Apple', isCorrect: false },
-                { text: 'Orange', isCorrect: false },
-                { text: 'Carrot', isCorrect: true },
-                { text: 'Canteloupe', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'What is 2 + 2?',
-            'image': './images/questionimgs/math.gif',
-            'answers': [
-                { text: '3', isCorrect: false },
-                { text: '4', isCorrect: true },
-                { text: '5', isCorrect: false },
-                { text: '6', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'What sound does a doggy make?',
-            'image': './images/questionimgs/dog.gif',
-            'answers': [
-                { text: 'Bow Wow', isCorrect: true },
-                { text: 'Meow', isCorrect: false },
-                { text: 'Rawr', isCorrect: false },
-                { text: 'Hello, I\'m a Doggy', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'Who was not a Beatle?',
-            'image': './images/questionimgs/beatles.gif',
-            'answers': [
-                { text: 'Ringo Starr', isCorrect: false },
-                { text: 'John Lennon', isCorrect: false },
-                { text: 'George Harrison', isCorrect: false },
-                { text: 'Mick Jagger', isCorrect: true },
-            ],
-        }
-    ],
-    [
-        // DAY 2
-        {
-            'question': 'What color is the sky?',
-            'image': './images/questionimgs/sky.gif',
-            'answers': [
-                { text: 'Green', isCorrect: false },
-                { text: 'Blue', isCorrect: true },
-                { text: 'Red', isCorrect: false },
-                { text: 'Orange', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'Which is not a fruit?',
-            'image': './images/questionimgs/fruits.gif',
-            'answers': [
-                { text: 'Apple', isCorrect: false },
-                { text: 'Orange', isCorrect: false },
-                { text: 'Carrot', isCorrect: true },
-                { text: 'Canteloupe', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'What is 2 + 2?',
-            'image': './images/questionimgs/math.gif',
-            'answers': [
-                { text: '3', isCorrect: false },
-                { text: '4', isCorrect: true },
-                { text: '5', isCorrect: false },
-                { text: '6', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'What sound does a doggy make?',
-            'image': './images/questionimgs/dog.gif',
-            'answers': [
-                { text: 'Bow Wow', isCorrect: true },
-                { text: 'Meow', isCorrect: false },
-                { text: 'Rawr', isCorrect: false },
-                { text: 'Hello, I\'m a Doggy', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'Who was not a Beatle?',
-            'image': './images/questionimgs/beatles.gif',
-            'answers': [
-                { text: 'Ringo Starr', isCorrect: false },
-                { text: 'John Lennon', isCorrect: false },
-                { text: 'George Harrison', isCorrect: false },
-                { text: 'Mick Jagger', isCorrect: true },
-            ],
-        }
-    ],
-    [
-        // DAY 3
-        {
-            'question': 'What color is the sky?',
-            'image': './images/questionimgs/sky.gif',
-            'answers': [
-                { text: 'Green', isCorrect: false },
-                { text: 'Blue', isCorrect: true },
-                { text: 'Red', isCorrect: false },
-                { text: 'Orange', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'Which is not a fruit?',
-            'image': './images/questionimgs/fruits.gif',
-            'answers': [
-                { text: 'Apple', isCorrect: false },
-                { text: 'Orange', isCorrect: false },
-                { text: 'Carrot', isCorrect: true },
-                { text: 'Canteloupe', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'What is 2 + 2?',
-            'image': './images/questionimgs/math.gif',
-            'answers': [
-                { text: '3', isCorrect: false },
-                { text: '4', isCorrect: true },
-                { text: '5', isCorrect: false },
-                { text: '6', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'What sound does a doggy make?',
-            'image': './images/questionimgs/dog.gif',
-            'answers': [
-                { text: 'Bow Wow', isCorrect: true },
-                { text: 'Meow', isCorrect: false },
-                { text: 'Rawr', isCorrect: false },
-                { text: 'Hello, I\'m a Doggy', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'Who was not a Beatle?',
-            'image': './images/questionimgs/beatles.gif',
-            'answers': [
-                { text: 'Ringo Starr', isCorrect: false },
-                { text: 'John Lennon', isCorrect: false },
-                { text: 'George Harrison', isCorrect: false },
-                { text: 'Mick Jagger', isCorrect: true },
-            ],
-        }
-    ],
-    [
-        // DAY 4
-        {
-            'question': 'What color is the sky?',
-            'image': './images/questionimgs/sky.gif',
-            'answers': [
-                { text: 'Green', isCorrect: false },
-                { text: 'Blue', isCorrect: true },
-                { text: 'Red', isCorrect: false },
-                { text: 'Orange', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'Which is not a fruit?',
-            'image': './images/questionimgs/fruits.gif',
-            'answers': [
-                { text: 'Apple', isCorrect: false },
-                { text: 'Orange', isCorrect: false },
-                { text: 'Carrot', isCorrect: true },
-                { text: 'Canteloupe', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'What is 2 + 2?',
-            'image': './images/questionimgs/math.gif',
-            'answers': [
-                { text: '3', isCorrect: false },
-                { text: '4', isCorrect: true },
-                { text: '5', isCorrect: false },
-                { text: '6', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'What sound does a doggy make?',
-            'image': './images/questionimgs/dog.gif',
-            'answers': [
-                { text: 'Bow Wow', isCorrect: true },
-                { text: 'Meow', isCorrect: false },
-                { text: 'Rawr', isCorrect: false },
-                { text: 'Hello, I\'m a Doggy', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'Who was not a Beatle?',
-            'image': './images/questionimgs/beatles.gif',
-            'answers': [
-                { text: 'Ringo Starr', isCorrect: false },
-                { text: 'John Lennon', isCorrect: false },
-                { text: 'George Harrison', isCorrect: false },
-                { text: 'Mick Jagger', isCorrect: true },
-            ],
-        }
-    ],
-    [
-        // DAY 5
-        {
-            'question': 'What color is the sky?',
-            'image': './images/questionimgs/sky.gif',
-            'answers': [
-                { text: 'Green', isCorrect: false },
-                { text: 'Blue', isCorrect: true },
-                { text: 'Red', isCorrect: false },
-                { text: 'Orange', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'Which is not a fruit?',
-            'image': './images/questionimgs/fruits.gif',
-            'answers': [
-                { text: 'Apple', isCorrect: false },
-                { text: 'Orange', isCorrect: false },
-                { text: 'Carrot', isCorrect: true },
-                { text: 'Canteloupe', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'What is 2 + 2?',
-            'image': './images/questionimgs/math.gif',
-            'answers': [
-                { text: '3', isCorrect: false },
-                { text: '4', isCorrect: true },
-                { text: '5', isCorrect: false },
-                { text: '6', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'What sound does a doggy make?',
-            'image': './images/questionimgs/dog.gif',
-            'answers': [
-                { text: 'Bow Wow', isCorrect: true },
-                { text: 'Meow', isCorrect: false },
-                { text: 'Rawr', isCorrect: false },
-                { text: 'Hello, I\'m a Doggy', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'Who was not a Beatle?',
-            'image': './images/questionimgs/beatles.gif',
-            'answers': [
-                { text: 'Ringo Starr', isCorrect: false },
-                { text: 'John Lennon', isCorrect: false },
-                { text: 'George Harrison', isCorrect: false },
-                { text: 'Mick Jagger', isCorrect: true },
-            ],
-        }
-    ],
-]
-
 // export const questions = [
 //     [
 //         // DAY 1 - MOVIE - ELF
 //         {
 //             'question': "What movie is this?",
-//             'image': '/images/elf1.png',
+//             'image': '/images/questionimgs/elf1.png',
 //             'answers': [
 //                 { text: 'Home Alone', isCorrect: false },
 //                 { text: 'The Grinch', isCorrect: false },
@@ -281,7 +13,7 @@ export const questions = [
 //         },
 //         {
 //             'question': 'According to Buddy, which of the following is not a main food group?',
-//             'image': '/images/food.png',
+//             // 'image': '/images/questionimgs/food.png',
 //             'answers': [
 //                 { text: 'Chocolate', isCorrect: true },
 //                 { text: 'Candy Corn', isCorrect: false },
@@ -291,7 +23,7 @@ export const questions = [
 //         },
 //         {
 //             'question': 'What epithet does Buddy use to describe himself when he only makes 85 etch-a-sketches?',
-//             'image': './images/etch.png',
+//             // 'image': './images/questionimgs/etch.png',
 //             'answers': [
 //                 { text: 'Bumbling Stumbling Doofus', isCorrect: false },
 //                 { text: 'Silly Sally Sanders', isCorrect: false },
@@ -301,7 +33,7 @@ export const questions = [
 //         },
 //         {
 //             'question': 'What is the final leg of Buddy\'s journey from the North Pole?',
-//             'image': './images/narwhal.png',
+//             // 'image': './images/questionimgs/narwhal.png',
 //             'answers': [
 //                 { text: 'The Sea of Swirly Twirly Gumdrops', isCorrect: false },
 //                 { text: 'The Lincoln Tunnel', isCorrect: true },
@@ -311,7 +43,7 @@ export const questions = [
 //         },
 //         {
 //             'question': 'What Christmas Carol does the amassed crowd sing in order to power Santa\'s sleigh?',
-//             'image': './images/elfsanta.png',
+//             // 'image': './images/questionimgs/elfsanta.png',
 //             'answers': [
 //                 { text: 'Rudolph The Red Nosed Reindeer', isCorrect: false },
 //                 { text: 'Winter Wonderland', isCorrect: false },
@@ -324,7 +56,7 @@ export const questions = [
 //         // DAY 2 - LYRICS
 //         {
 //             'question': "You know Dasher and Dancer and Prancer and _____<br>Comet and Cupid and ______ and Blitzen<br>But do you recall<br>The most famous reindeer of all?",
-//             'image': './images/rudolph.gif',
+//             // 'image': './images/questionimgs/rudolph.gif',
 //             'answers': [
 //                 { text: 'Dixon / Rona', isCorrect: false },
 //                 { text: 'Nixon / Fauna', isCorrect: false },
@@ -334,7 +66,7 @@ export const questions = [
 //         },
 //         {
 //             'question': "Once again, as in olden days<br>Happy golden days of ____<br>Faithful friends who are ____ to us<br>Will be near to us once more",
-//             'image': './images/frank.png',
+//             // 'image': './images/questionimgs/frank.png',
 //             'answers': [
 //                 { text: 'Yore / Dear', isCorrect: true },
 //                 { text: 'Yours / Close', isCorrect: false },
@@ -344,7 +76,7 @@ export const questions = [
 //         },
 //         {
 //             'question': "In the meadow, we can build a snowman<br>We'll pretend that he is ______ Brown<br>He'll say, are you ______?<br>We'll say, no man<br>But you can do the job when you're in town",
-//             'image': '.images/winter.png',
+//             // 'image': '.images/questionimgs/winter.png',
 //             'answers': [
 //                 { text: 'Carson / Tired', isCorrect: false },
 //                 { text: 'Parson / Married', isCorrect: true },
@@ -354,7 +86,7 @@ export const questions = [
 //         },
 //         {
 //             'question': "Here comes Santa Claus, here comes Santa Claus, right down ______<br>He's got a bag that's filled with toys for boys and girls again.<br>Hear those sleigh bells jingle jangle, oh what a beautiful ______<br>So jump in bed and cover your head, 'cause Santa Claus comes tonight",
-//             'image': '.images/santa.gif',
+//             // 'image': '.images/questionimgs/santa.gif',
 //             'answers': [
 //                 { text: 'Santa Claus Lane / Sight', isCorrect: true },
 //                 { text: 'Candy Cane Lane / Night', isCorrect: false },
@@ -364,7 +96,7 @@ export const questions = [
 //         },   
 //         {
 //             'question': 'Children carry through the streets,<br>A brightly painted ______,<br>Angels gather round the ______,<br>Strumming on guitars',
-//             'image': '',
+//             // 'image': '',
 //             'answers': [
 //                 { text: 'Barre / Tree', isCorrect: false },
 //                 { text: 'Shard / Scene', isCorrect: false },
@@ -430,7 +162,7 @@ export const questions = [
 //         // DAY 4 - IS THAT A CHRISTMAS MOVIE?
 //     {
 //         'question': 'What movie is this?',
-//         'image': './images/mclane.png',
+//         'image': './images/questionimgs/mclane.png',
 //         'answers': [
 //             { text: 'Lethal Weapon', isCorrect: false },
 //             { text: 'Die Hard', isCorrect: true },
@@ -440,7 +172,7 @@ export const questions = [
 //     },
 //     {
 //         'question': 'Die Hard\'s villain is played by Alan Rickman. What was his name?',
-//         'image': './images/gruber.png',
+//         'image': './images/questionimgs/gruber.png',
 //         'answers': [
 //             { text: 'Hans Gruber', isCorrect: true },
 //             { text: 'Otto Becker', isCorrect: false },
@@ -450,7 +182,7 @@ export const questions = [
 //     },
 //     {
 //         'question': 'In which city does John McLane work as a police officer?',
-//         'image': './images/mclane2.png',
+//         'image': './images/questionimgs/mclane2.png',
 //         'answers': [
 //             { text: 'Boston', isCorrect: false },
 //             { text: 'San Francisco', isCorrect: false },
@@ -460,7 +192,7 @@ export const questions = [
 //     },
 //     {
 //         'question': 'What is McLane\'s limo driver\'s fashion-inspired name?',
-//         'image': './images/argyle.png',
+//         'image': './images/questionimgs/argyle.png',
 //         'answers': [
 //             { text: 'Paisley', isCorrect: false },
 //             { text: 'Argyle', isCorrect: true },
@@ -470,7 +202,7 @@ export const questions = [
 //     },
 //     {
 //         'question': 'Which fictional company is attacked by the terrorists?',
-//         'image': './images/holly.png',
+//         'image': './images/questionimgs/holly.png',
 //         'answers': [
 //             { text: 'Fujitsu Corp', isCorrect: false },
 //             { text: 'Ishikawa Inc', isCorrect: false },
@@ -478,13 +210,12 @@ export const questions = [
 //             { text: 'Nintendo Ltd', isCorrect: false },
 //         ],
 //     }
-// ],
-        
+//     ],       
 //     [
 //         // DAY 5 - AROUND THE WORLD
 //         {
 //             'question': 'Which country starts every Christmas season by constructing a giant Yule goat?',
-//             'image': './images/gavlegoat.png',
+//             'image': './images/questionimgs/gavlegoat.png',
 //             'answers': [
 //                 { text: 'Sweden', isCorrect: true },
 //                 { text: 'Norway', isCorrect: false },
@@ -494,7 +225,7 @@ export const questions = [
 //         },
 //         {
 //             'question': 'Which fast food restaurant is the go-to Christmas dinner destination for Japanese locals?',
-//             'image': './images/japan.png',
+//             'image': './images/questionimgs/japan.png',
 //             'answers': [
 //                 { text: 'McDonalds', isCorrect: false },
 //                 { text: 'Wendy\'s', isCorrect: false },
@@ -504,7 +235,7 @@ export const questions = [
 //         },
 //         {
 //             'question': 'In Iceland, what do naughty boys and girls receive instead of coal?',
-//             'image': './images/iceland.png',
+//             'image': './images/questionimgs/iceland.png',
 //             'answers': [
 //                 { text: 'Rocks', isCorrect: false },
 //                 { text: 'A Rotten Potato', isCorrect: true },
@@ -514,7 +245,7 @@ export const questions = [
 //         },
 //         {
 //             'question': 'In Finland, children hope to find what lucky object hidden in their breakfast rice porridge?',
-//             'image': './images/ricepudding.png',
+//             'image': './images/questionimgs/ricepudding.png',
 //             'answers': [
 //                 { text: 'Coin', isCorrect: false },
 //                 { text: 'Pumpkin Seed', isCorrect: false },
@@ -524,7 +255,7 @@ export const questions = [
 //         },
 //         {
 //             'question': 'What is the local name for New Zealand\'s Christmas tree?',
-//             'image': './images/pohutukawa.png',
+//             'image': './images/questionimgs/pohutukawa.png',
 //             'answers': [
 //                 { text: 'Pohutukawa', isCorrect: true },
 //                 { text: 'Red Bonsai', isCorrect: false },
@@ -534,108 +265,108 @@ export const questions = [
 //         }
 //     ],
 //     [
-//         // DAY 6 - CHRISTMAS FACTS AND FIGURES
+//         // DAY 6 - SANTA FACTS
 //         {
-//             'question': '',
+//             'question': 'Which modern-day Christmas items are said to represent Saint Nicholas\'s <em>bishop\'s crozier</em>? ',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Fir Wreaths', isCorrect: false },
+//                 { text: 'Candy Canes', isCorrect: true },
+//                 { text: 'Christmas Bells', isCorrect: false },
+//                 { text: 'Gingerbread Men', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'What do children do with their shoes on Saint Nicholas Eve?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Put Them By The Door', isCorrect: true },
+//                 { text: 'Wear Them To Bed', isCorrect: false },
+//                 { text: 'Hide Them', isCorrect: false },
+//                 { text: 'Fill Them With Milk & Cookies', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'In Northern Germany, children put a <em>Nikolaus Boot</em> outside the front door in hopes of receiving candy and treats. What do the naughty kids get?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Dirty Socks', isCorrect: false },
+//                 { text: 'Mud', isCorrect: false },
+//                 { text: 'A Stick', isCorrect: true },
+//                 { text: 'Coal', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'In Poland, what omen is said to represent the angels busily baking Saint Nicholas\' Honey Cakes?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'A Power Outage', isCorrect: false },
+//                 { text: 'A Snow Storm', isCorrect: false },
+//                 { text: 'Aurora Borealis', isCorrect: false },
+//                 { text: 'A Red Sunset', isCorrect: true },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'What common stocking stuffers are meant to symbolize Saint Nicholas\' generosity towards needy children?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Mandarin Oranges', isCorrect: false },
+//                 { text: 'Chocolate Coins', isCorrect: true },
+//                 { text: 'Batteries', isCorrect: false },
+//                 { text: 'Travel Toiletries', isCorrect: false },
 //             ],
 //         }
 //     ],
 //     [
-//         // DAY 7 - MOVIE - HOME ALONE
+//         // DAY 7 - HANUKKAH
 //         {
-//             'question': "What movie is this?",
-//             'image': '/images/homealone.png',
+//             'question': 'Which of these colours is <em>not</em> typically associated with Hanukkah?',
+//             'image': '',
 //             'answers': [
-//                 { text: 'The Santa Clause', isCorrect: false },
-//                 { text: 'The Grinch', isCorrect: false },
-//                 { text: 'Elf', isCorrect: false },
-//                 { text: 'Home Alone', isCorrect: true },
+//                 { text: 'Blue', isCorrect: false },
+//                 { text: 'Red', isCorrect: true },
+//                 { text: 'Silver', isCorrect: false },
+//                 { text: 'White', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': 'What criminal nickname does Marv give himself and Harry?',
-//             'image': '/images/homealonebadguys.png',
+//             'question': '<em>Latkes</em> are a traditional food often served at Hanukkah meals. What are they made of?',
+//             'image': '',
 //             'answers': [
-//                 { text: 'The Goodfellas', isCorrect: false },
-//                 { text: 'The Sticky Bandits', isCorrect: false },
-//                 { text: 'The Wet Bandits', isCorrect: true },
-//                 { text: 'Team Rocket', isCorrect: false },
+//                 { text: 'Corn', isCorrect: false },
+//                 { text: 'Apples', isCorrect: false },
+//                 { text: 'Challah Bread', isCorrect: false },
+//                 { text: 'Potatoes', isCorrect: true },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'Which of the following is <strong>prohibited</strong> during the eight nights of Hanukkah?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//             ],
-//         }, 
-//         {
-//             'question': '',
-//             'image': '',
-//             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Fasting', isCorrect: true },
+//                 { text: 'Driving a Car', isCorrect: false },
+//                 { text: 'Drinking Alcohol', isCorrect: false },
+//                 { text: 'Doing Exercise', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'What animal did Ross Geller dress up as in order to teach his son Ben about Hanukkah?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Rabbit', isCorrect: false },
+//                 { text: 'Rhinocerous', isCorrect: false },
+//                 { text: 'Armadillo', isCorrect: true },
+//                 { text: 'Alligator', isCorrect: false },
+//             ],
+//         },
+//         {
+//             'question': 'Which comedian performed his <em>Hanukkah Song</em> on Saturday Night Live for the first time in 1994? ',
+//             'image': '',
+//             'answers': [
+//                 { text: 'Will Ferrell', isCorrect: false },
+//                 { text: 'Mike Myers', isCorrect: false },
+//                 { text: 'Adam Sandler', isCorrect: true },
+//                 { text: 'Dan Aykroyd', isCorrect: false },
 //             ],
 //         }
 //     ],
@@ -652,43 +383,43 @@ export const questions = [
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'In order to visit every household that celebrates Christmas within the hours of Christmas Day, how much time would Santa spend at each house?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: '1 Second', isCorrect: false },
+//                 { text: '0.05 Seconds', isCorrect: false },
+//                 { text: '0.0003 Seconds', isCorrect: true },
+//                 { text: 'As Much Time As He Wants', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': '<em>Jingle Bells</em> was originally called <em>The One Horse Open Sleigh</em> and was written for which non-Christmas holiday?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'New Years Day', isCorrect: false },
+//                 { text: 'National Day of the Horse', isCorrect: false },
+//                 { text: 'Martin Luther King Jr. Day', isCorrect: false },
+//                 { text: 'Thanksgiving', isCorrect: true },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'In the Middle Ages, the English celebrated Christmas dinner not with turkey but with what?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Roast Goose', isCorrect: false },
+//                 { text: 'A Boar\'s Head', isCorrect: true },
+//                 { text: 'Pancakes & Bacon', isCorrect: false },
+//                 { text: 'Partridge Pie', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'If you totalled all the gifts mentioned in each verse of <em>Twelve Days of Christmas</em>, how many gifts would you have?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: '78', isCorrect: false },
+//                 { text: '936', isCorrect: false },
+//                 { text: '364', isCorrect: true },
+//                 { text: '12', isCorrect: false },
 //             ],
 //         }
 //     ],
@@ -696,7 +427,7 @@ export const questions = [
 //         // DAY 9 - MOVIE - LOVE ACTUALLY
 //         {
 //             'question': 'Which movie is this?',
-//             'image': './images/hugh.gif',
+//             'image': './images/questionimgs/hugh.gif',
 //             'answers': [
 //                 { text: 'Deck The Halls', isCorrect: false },
 //                 { text: 'The Santa Clause', isCorrect: false },
@@ -706,7 +437,7 @@ export const questions = [
 //         },
 //         {
 //             'question': 'In Love Actually, who plays the President of the United States?',
-//             'image': './images/whitehouse.png',
+//             'image': './images/questionimgs/whitehouse.png',
 //             'answers': [
 //                 { text: 'Tim McGraw', isCorrect: false },
 //                 { text: 'Billy Bob Thornton', isCorrect: true },
@@ -716,7 +447,7 @@ export const questions = [
 //         },
 //         {
 //             'question': 'What language does Jamie (Colin Firth) learn in hopes of dating his housekeeper?',
-//             'image': './images/jamie.gif',
+//             'image': './images/questionimgs/jamie.gif',
 //             'answers': [
 //                 { text: 'Spanish', isCorrect: false },
 //                 { text: 'Italian', isCorrect: false },
@@ -746,7 +477,60 @@ export const questions = [
 //         }
 //     ],
 //     [
-//         // DAY 10 - AROUND THE WORLD
+//         // DAY 10
+//         {
+//             'question': 'Where do partridges commonly establish their nests?',
+//             'image': '',
+//             'answers': [
+//                 { text: 'In Pear Trees', isCorrect: false },
+//                 { text: 'On The Ground', isCorrect: true },
+//                 { text: 'In Roosting Boxes', isCorrect: false },
+//                 { text: 'Under Bridges', isCorrect: false },
+//             ],
+//         },
+//         {
+//             'question': 'In 2014, a turtle dove named <em>Titan</em> was fixed with a tracker before his migration. On average, how far did he travel each night?',
+//             'image': '',
+//             'answers': [
+//                 { text: '50km', isCorrect: false },
+//                 { text: '150km', isCorrect: false },
+//                 { text: '300km', isCorrect: false },
+//                 { text: '600km', isCorrect: true },
+//             ],
+//         },
+//         {
+//             'question': 'What is a reindeer\'s favourite item to graze on?',
+//             'image': '',
+//             'answers': [
+//                 { text: 'Feskue Grass', isCorrect: false },
+//                 { text: 'Bamboo', isCorrect: false },
+//                 { text: 'Lichen', isCorrect: true },
+//                 { text: 'Poinsettia Leaves', isCorrect: false },
+//             ],
+//         },
+//         {
+//             'question': 'In Australia, what animals substitute for reindeer in the pulling of Santa\'s sleigh?',
+//             'image': '',
+//             'answers': [
+//                 { text: 'Koala Bears', isCorrect: false },
+//                 { text: 'Quokkas', isCorrect: false },
+//                 { text: 'Dingos', isCorrect: false },
+//                 { text: 'Kangaroos', isCorrect: true },
+//             ],
+//         },
+//         {
+//             'question': 'What are a camel\'s humps used for?',
+//             'image': '',
+//             'answers': [
+//                 { text: 'Storing Fat', isCorrect: true },
+//                 { text: 'Making A Comfy Seat', isCorrect: false },
+//                 { text: 'Storing Water', isCorrect: false },
+//                 { text: 'Mating Displays', isCorrect: false },
+//             ],
+//         }
+//     ],
+//     [
+//         // DAY 11 - AROUND THE WORLD
 //         {
 //             'question': 'In Norway, they celebrate Little Christmas Eve on which day?',
 //             'image': '',
@@ -795,59 +579,6 @@ export const questions = [
 //                 { text: 'Indonesia', isCorrect: false },
 //                 { text: 'The Philippines', isCorrect: true },
 //                 { text: 'Fiji', isCorrect: false },
-//             ],
-//         }
-//     ],
-//     [
-//         // DAY 11
-//         {
-//             'question': '',
-//             'image': '',
-//             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': '',
-//             'image': '',
-//             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': '',
-//             'image': '',
-//             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': '',
-//             'image': '',
-//             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': '',
-//             'image': '',
-//             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
 //             ],
 //         }
 //     ],
@@ -904,16 +635,26 @@ export const questions = [
 //             ],
 //         }
 //     ],
-//     [
-//         // DAY 13
+//      [
+//         // DAY 13 - MOVIE - HOME ALONE
 //         {
-//             'question': '',
-//             'image': '',
+//             'question': "What movie is this?",
+//             'image': '/images/questionimgs/homealone.png',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'The Santa Clause', isCorrect: false },
+//                 { text: 'The Grinch', isCorrect: false },
+//                 { text: 'Elf', isCorrect: false },
+//                 { text: 'Home Alone', isCorrect: true },
+//             ],
+//         },
+//         {
+//             'question': 'What criminal nickname does Marv give himself and Harry?',
+//             'image': '/images/questionimgs/homealonebadguys.png',
+//             'answers': [
+//                 { text: 'The Goodfellas', isCorrect: false },
+//                 { text: 'The Sticky Bandits', isCorrect: false },
+//                 { text: 'The Wet Bandits', isCorrect: true },
+//                 { text: 'Team Rocket', isCorrect: false },
 //             ],
 //         },
 //         {
@@ -925,17 +666,7 @@ export const questions = [
 //                 { text: '', isCorrect: false },
 //                 { text: '', isCorrect: false },
 //             ],
-//         },
-//         {
-//             'question': '',
-//             'image': '',
-//             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//             ],
-//         },
+//         }, 
 //         {
 //             'question': '',
 //             'image': '',
@@ -1117,55 +848,55 @@ export const questions = [
 //         }
 //     ],
 //     [
-//         // DAY 17
+//         // DAY 17 - THE SANTA CLAUSE
 //         {
-//             'question': '',
+//             'question': 'What movie is this?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'The Santa Clause', isCorrect: true },
+//                 { text: 'Miracle on 34th Street', isCorrect: false },
+//                 { text: 'Fred Claus', isCorrect: false },
+//                 { text: 'Christmas With The Kranks', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'What is the name of Santa\'s Head Elf?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Barry', isCorrect: false },
+//                 { text: 'Bernard', isCorrect: true },
+//                 { text: 'Bobby', isCorrect: false },
+//                 { text: 'Charlie', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'What company makes Santa\'s Ladder?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Featherlite', isCorrect: false },
+//                 { text: 'Werner Ladders', isCorrect: false },
+//                 { text: 'Rose Suchak Ladders', isCorrect: true },
+//                 { text: 'Black & Decker', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'After Scott burns the turkey, where do he and Charlie go for dinner?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'McDonalds', isCorrect: false },
+//                 { text: 'Outback Steak House', isCorrect: false },
+//                 { text: 'IHOP', isCorrect: false },
+//                 { text: 'Dennys', isCorrect: true },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'When Scott gains 45 pounds in one week, what does he say is the cause?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'A Bee Sting', isCorrect: true },
+//                 { text: 'Too Much BBQ', isCorrect: false },
+//                 { text: 'A Few Beers', isCorrect: false },
+//                 { text: 'Old Age', isCorrect: false },
 //             ],
 //         }
 //     ],
@@ -1382,55 +1113,55 @@ export const questions = [
 //         }
 //     ],
 //     [
-//         // DAY 22
+//         // DAY 22 - HOW THE GRINCH STOLE CHRISTMAS
 //         {
-//             'question': '',
+//             'question': 'What movie is this?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'How The Grinch Stole Christmas', isCorrect: true },
+//                 { text: 'The Santa Clause 2', isCorrect: false },
+//                 { text: 'A Christmas Carol', isCorrect: false },
+//                 { text: 'The Polar Express', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'What is the name of the Grinch\'s dog?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Comet', isCorrect: false },
+//                 { text: 'Dasher', isCorrect: false },
+//                 { text: 'Max', isCorrect: true },
+//                 { text: 'Jack', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'What award is the Grinch given before being granted the gift of a Christmas shave?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Greenest In Whoville', isCorrect: false },
+//                 { text: 'Best Grinch', isCorrect: false },
+//                 { text: 'Holiday Cheermeister', isCorrect: true },
+//                 { text: 'Nutcracker King', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'What was the name of the Grinch\'s high school crush?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Maggie May Parker', isCorrect: false },
+//                 { text: 'Marge Bouvier', isCorrect: false },
+//                 { text: 'Martha May Whovier', isCorrect: true },
+//                 { text: 'Tiffany Amber Thiessen', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'Which SNL alumnus played Betty Lou Who (Cindy Lou\'s mother)?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Tina Fey', isCorrect: false },
+//                 { text: 'Cheri Oteri', isCorrect: false },
+//                 { text: 'Maya Rudolph', isCorrect: false },
+//                 { text: 'Molly Shannon', isCorrect: true },
 //             ],
 //         }
 //     ],
@@ -1541,3 +1272,272 @@ export const questions = [
 //         }
 //     ]
 // ];
+
+export const questions = [
+    [
+        // DAY 1
+        {
+            'question': 'What color is the sky?',
+            // 'image': './images/questionimgs/questionimgs/sky.gif',
+            'answers': [
+                { text: 'Green', isCorrect: false },
+                { text: 'Blue', isCorrect: true },
+                { text: 'Red', isCorrect: false },
+                { text: 'Orange', isCorrect: false },
+            ],
+        },
+        {
+            'question': 'Which is not a fruit?',
+            'image': './images/questionimgs/fruits.gif',
+            'answers': [
+                { text: 'Apple', isCorrect: false },
+                { text: 'Orange', isCorrect: false },
+                { text: 'Carrot', isCorrect: true },
+                { text: 'Canteloupe', isCorrect: false },
+            ],
+        },
+        {
+            'question': 'What is 2 + 2?',
+            // 'image': './images/questionimgs/math.gif',
+            'answers': [
+                { text: '3', isCorrect: false },
+                { text: '4', isCorrect: true },
+                { text: '5', isCorrect: false },
+                { text: '6', isCorrect: false },
+            ],
+        },
+        {
+            'question': 'What sound does a doggy make?',
+            'image': './images/questionimgs/dog.gif',
+            'answers': [
+                { text: 'Bow Wow', isCorrect: true },
+                { text: 'Meow', isCorrect: false },
+                { text: 'Rawr', isCorrect: false },
+                { text: 'Hello, I\'m a Doggy', isCorrect: false },
+            ],
+        },
+        {
+            'question': 'Who was not a Beatle?',
+            'image': './images/questionimgs/beatles.gif',
+            'answers': [
+                { text: 'Ringo Starr', isCorrect: false },
+                { text: 'John Lennon', isCorrect: false },
+                { text: 'George Harrison', isCorrect: false },
+                { text: 'Mick Jagger', isCorrect: true },
+            ],
+        }
+    ],
+    [
+        // DAY 2
+        {
+            'question': 'What color is the sky?',
+            'image': './images/questionimgs/sky.gif',
+            'answers': [
+                { text: 'Green', isCorrect: false },
+                { text: 'Blue', isCorrect: true },
+                { text: 'Red', isCorrect: false },
+                { text: 'Orange', isCorrect: false },
+            ],
+        },
+        {
+            'question': 'Which is not a fruit?',
+            'image': './images/questionimgs/fruits.gif',
+            'answers': [
+                { text: 'Apple', isCorrect: false },
+                { text: 'Orange', isCorrect: false },
+                { text: 'Carrot', isCorrect: true },
+                { text: 'Canteloupe', isCorrect: false },
+            ],
+        },
+        {
+            'question': 'What is 2 + 2?',
+            'image': './images/questionimgs/math.gif',
+            'answers': [
+                { text: '3', isCorrect: false },
+                { text: '4', isCorrect: true },
+                { text: '5', isCorrect: false },
+                { text: '6', isCorrect: false },
+            ],
+        },
+        {
+            'question': 'What sound does a doggy make?',
+            'image': './images/questionimgs/dog.gif',
+            'answers': [
+                { text: 'Bow Wow', isCorrect: true },
+                { text: 'Meow', isCorrect: false },
+                { text: 'Rawr', isCorrect: false },
+                { text: 'Hello, I\'m a Doggy', isCorrect: false },
+            ],
+        },
+        {
+            'question': 'Who was not a Beatle?',
+            'image': './images/questionimgs/beatles.gif',
+            'answers': [
+                { text: 'Ringo Starr', isCorrect: false },
+                { text: 'John Lennon', isCorrect: false },
+                { text: 'George Harrison', isCorrect: false },
+                { text: 'Mick Jagger', isCorrect: true },
+            ],
+        }
+    ],
+    [
+        // DAY 3
+        {
+            'question': 'What color is the sky?',
+            'image': './images/questionimgs/sky.gif',
+            'answers': [
+                { text: 'Green', isCorrect: false },
+                { text: 'Blue', isCorrect: true },
+                { text: 'Red', isCorrect: false },
+                { text: 'Orange', isCorrect: false },
+            ],
+        },
+        {
+            'question': 'Which is not a fruit?',
+            'image': './images/questionimgs/fruits.gif',
+            'answers': [
+                { text: 'Apple', isCorrect: false },
+                { text: 'Orange', isCorrect: false },
+                { text: 'Carrot', isCorrect: true },
+                { text: 'Canteloupe', isCorrect: false },
+            ],
+        },
+        {
+            'question': 'What is 2 + 2?',
+            'image': './images/questionimgs/math.gif',
+            'answers': [
+                { text: '3', isCorrect: false },
+                { text: '4', isCorrect: true },
+                { text: '5', isCorrect: false },
+                { text: '6', isCorrect: false },
+            ],
+        },
+        {
+            'question': 'What sound does a doggy make?',
+            'image': './images/questionimgs/dog.gif',
+            'answers': [
+                { text: 'Bow Wow', isCorrect: true },
+                { text: 'Meow', isCorrect: false },
+                { text: 'Rawr', isCorrect: false },
+                { text: 'Hello, I\'m a Doggy', isCorrect: false },
+            ],
+        },
+        {
+            'question': 'Who was not a Beatle?',
+            'image': './images/questionimgs/beatles.gif',
+            'answers': [
+                { text: 'Ringo Starr', isCorrect: false },
+                { text: 'John Lennon', isCorrect: false },
+                { text: 'George Harrison', isCorrect: false },
+                { text: 'Mick Jagger', isCorrect: true },
+            ],
+        }
+    ],
+    [
+        // DAY 4
+        {
+            'question': 'What color is the sky?',
+            'image': './images/questionimgs/sky.gif',
+            'answers': [
+                { text: 'Green', isCorrect: false },
+                { text: 'Blue', isCorrect: true },
+                { text: 'Red', isCorrect: false },
+                { text: 'Orange', isCorrect: false },
+            ],
+        },
+        {
+            'question': 'Which is not a fruit?',
+            // 'image': './images/questionimgs/fruits.gif',
+            'answers': [
+                { text: 'Apple', isCorrect: false },
+                { text: 'Orange', isCorrect: false },
+                { text: 'Carrot', isCorrect: true },
+                { text: 'Canteloupe', isCorrect: false },
+            ],
+        },
+        {
+            'question': 'What is 2 + 2?',
+            'image': './images/questionimgs/math.gif',
+            'answers': [
+                { text: '3', isCorrect: false },
+                { text: '4', isCorrect: true },
+                { text: '5', isCorrect: false },
+                { text: '6', isCorrect: false },
+            ],
+        },
+        {
+            'question': 'What sound does a doggy make?',
+            // 'image': './images/questionimgs/dog.gif',
+            'answers': [
+                { text: 'Bow Wow', isCorrect: true },
+                { text: 'Meow', isCorrect: false },
+                { text: 'Rawr', isCorrect: false },
+                { text: 'Hello, I\'m a Doggy', isCorrect: false },
+            ],
+        },
+        {
+            'question': 'Who was not a Beatle?',
+            'image': './images/questionimgs/beatles.gif',
+            'answers': [
+                { text: 'Ringo Starr', isCorrect: false },
+                { text: 'John Lennon', isCorrect: false },
+                { text: 'George Harrison', isCorrect: false },
+                { text: 'Mick Jagger', isCorrect: true },
+            ],
+        }
+    ],
+    [
+        // DAY 5
+        {
+            'question': 'What color is the sky?',
+            'image': './images/questionimgs/sky.gif',
+            'answers': [
+                { text: 'Green', isCorrect: false },
+                { text: 'Blue', isCorrect: true },
+                { text: 'Red', isCorrect: false },
+                { text: 'Orange', isCorrect: false },
+            ],
+        },
+        {
+            'question': 'Which is not a fruit?',
+            'image': './images/questionimgs/fruits.gif',
+            'answers': [
+                { text: 'Apple', isCorrect: false },
+                { text: 'Orange', isCorrect: false },
+                { text: 'Carrot', isCorrect: true },
+                { text: 'Canteloupe', isCorrect: false },
+            ],
+        },
+        {
+            'question': 'What is 2 + 2?',
+            'image': './images/questionimgs/math.gif',
+            'answers': [
+                { text: '3', isCorrect: false },
+                { text: '4', isCorrect: true },
+                { text: '5', isCorrect: false },
+                { text: '6', isCorrect: false },
+            ],
+        },
+        {
+            'question': 'What sound does a doggy make?',
+            'image': './images/questionimgs/dog.gif',
+            'answers': [
+                { text: 'Bow Wow', isCorrect: true },
+                { text: 'Meow', isCorrect: false },
+                { text: 'Rawr', isCorrect: false },
+                { text: 'Hello, I\'m a Doggy', isCorrect: false },
+            ],
+        },
+        {
+            'question': 'Who was not a Beatle?',
+            'image': './images/questionimgs/beatles.gif',
+            'answers': [
+                { text: 'Ringo Starr', isCorrect: false },
+                { text: 'John Lennon', isCorrect: false },
+                { text: 'George Harrison', isCorrect: false },
+                { text: 'Mick Jagger', isCorrect: true },
+            ],
+        }
+    ],
+]
+

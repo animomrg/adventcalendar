@@ -13,7 +13,7 @@ const greenToggle = document.getElementById('green-theme');
 
 function greenTheme() {
     root.style.setProperty('--clr-primary-1', '#00DB1D');
-    root.style.setProperty('--clr-primary-2', '#22A834');
+    root.style.setProperty('--clr-primary-2', '#21fb3e');
     root.style.setProperty('--clr-primary-3', '#2F7538');
     root.style.setProperty('--clr-primary-4', '#124819');
     root.style.setProperty('--clr-primary-5', '#29332A');
@@ -25,7 +25,7 @@ function greenTheme() {
 function redTheme() {
     root.style.setProperty('--clr-primary-1', '#A82222');
     root.style.setProperty('--clr-primary-2', '#DB0000');
-    root.style.setProperty('--clr-primary-3', '#752F2F');
+    root.style.setProperty('--clr-primary-3', '#990606');
     root.style.setProperty('--clr-primary-4', '#4b0f0f');
     root.style.setProperty('--clr-primary-5', '#331010');
     redToggle.style.color = 'var(--clr-primary-2)';
@@ -35,9 +35,9 @@ function redTheme() {
 
 function snowTheme() {
     root.style.setProperty('--clr-primary-1', '#CDFFFF');
-    root.style.setProperty('--clr-primary-2', '#A6FFFF');
+    root.style.setProperty('--clr-primary-2', '#ffffff');
     root.style.setProperty('--clr-primary-3', '#00FFFF');
-    root.style.setProperty('--clr-primary-4', '#02E6E6');
+    root.style.setProperty('--clr-primary-4', 'rgb(15, 251, 247)');
     root.style.setProperty('--clr-primary-5', '#14a8fe');
     redToggle.style.color = 'var(--clr-primary-2)';
     greenToggle.style.color = 'var(--clr-primary-2)';
@@ -46,63 +46,90 @@ function snowTheme() {
 
 redToggle.addEventListener('click', () => {
     redTheme();
+    localStorage.setItem('theme-color', 'red');
 });
 
 snowToggle.addEventListener('click', () => {
     snowTheme();
+    localStorage.setItem('theme-color', 'snow');
 });
 
 greenToggle.addEventListener('click', () => {
     greenTheme();
+    localStorage.setItem('theme-color', 'green');
 });
 
 // BACKGROUND TOGGLE
 const backgroundToggle = document.getElementById('background-btn');
 const mainContainer = document.querySelector('.main-container');
 const titleContent = document.querySelector('.title-content');
-const bgImgs = ['none', 'url(./images/backgroundimgs/greenbg.png)', 'url(./images/backgroundimgs/redbg.png)', 'url(./images/backgroundimgs/neonbg.png)', 'url(./images/backgroundimgs/snowbg.png)'];
+const bgImgs = ['none', 'url(./images/backgroundimgs/greenbg.png)', 'url(./images/backgroundimgs/redbg.png)', 'url(./images/backgroundimgs/neonbg.png)'];
 let bgIndex = 0;
-backgroundToggle.addEventListener('click', () => {
+
+backgroundToggle.addEventListener('click', bgToggle);
+
+function bgToggle() {
     if (bgIndex === bgImgs.length - 1) {
         bgIndex = 0;
         titleContent.classList.remove('title-content-border');
+        mainContainer.style.setProperty('background', '')
     } else {
         bgIndex += 1;
         titleContent.classList.add('title-content-border');
+        mainContainer.style.setProperty('background-image', bgImgs[bgIndex]);
     }
-    mainContainer.style.setProperty('background-image', bgImgs[bgIndex]);
-});
+    localStorage.setItem('bg-image', bgImgs[bgIndex]);
+};
 
 // FONT TOGGLE
-const fontToggle = document.getElementById('font-btn');
-const fonts = ['Mountains of Christmas', 'Comic Neue', 'St Nicholas'];
+const fontToggleBtn = document.getElementById('font-btn');
+const fonts = ['Mountains of Christmas', 'Comic Neue'];
 const root = document.querySelector(':root');
 let fontIndex = 0;
-fontToggle.addEventListener('click', () => {
+fontToggleBtn.addEventListener('click', fontToggle);
+
+function fontToggle() {
     if (fontIndex === fonts.length - 1) {
         fontIndex = 0;
     } else {
         fontIndex += 1;
     }
     root.style.setProperty('--ff-primary', fonts[fontIndex]);
-});
+    localStorage.setItem('font', fonts[fontIndex]);
+};
 
 // NUMBER SIZE TOGGLE
 const numSizeToggle = document.getElementById('num-size-btn');
+let numSize = 'small';
 const dayNumbers = document.querySelectorAll('.day-number');
 const sizeIcon = document.getElementById('size-icon');
 
-numSizeToggle.addEventListener('click', () => {
-    sizeIcon.classList.toggle('fa-maximize');
-    sizeIcon.classList.toggle('fa-minimize');
-    for (let i = 0; i < dayNumbers.length; i++) {
-        dayNumbers[i].classList.toggle('large-numbers');
-    };
-});
+numSizeToggle.addEventListener('click', setNumSize);
+
+function setNumSize() {
+    if (numSize === 'small') {
+        numSize = 'large';
+        sizeIcon.classList.toggle('fa-minimize');
+        localStorage.setItem('num-size', numSize);
+        for (let i = 0; i < dayNumbers.length; i++) {
+            dayNumbers[i].classList.add('large-numbers'); 
+        };
+    } else {
+        numSize = 'small';
+        sizeIcon.classList.toggle('fa-maximize');
+        localStorage.setItem('num-size', numSize);
+        for (let i = 0; i < dayNumbers.length; i++) {
+            dayNumbers[i].classList.remove('large-numbers'); 
+        };
+    }
+}
 
 // DAY BUTTONS
-// const currentDate = new Date().getDate();
 const currentDate = 5
+// const currentDate = new Date().getDate();
+let completedDays = [];
+
+// const currentDate = 5;
 const dayBtns = document.querySelectorAll('.btn-day');
 const modalOverlay = document.querySelector('.modal-overlay');
 const introModal = document.querySelector('.intro-modal');
@@ -146,8 +173,14 @@ playBtn.addEventListener('click', () => {
 });
 
 // DAY BUTTON EVENT LISTENERS
+
 dayBtns.forEach(button => {
     let btnDay = button.textContent;
+    if (currentDate >= btnDay) {
+        button.classList.add('unlocked-day');
+    } else {
+        button.classList.add('locked-day');
+    }
     button.addEventListener('click', () => {
         if (currentDate >= btnDay) {
             modalActivate();
@@ -226,7 +259,12 @@ function triviaStart(date) {
 
 function loadQuestion(date) {
     elQuestion.innerHTML = dayQuestions[currentQuestion].question;
-    elImage.src = dayQuestions[currentQuestion].image;
+    if (dayQuestions[currentQuestion].image) {
+        elImage.src = dayQuestions[currentQuestion].image;
+    } else {
+        questionImgContainer.style.display = 'none';
+        questionContainer.style.height = '80%';    
+    }
     answerContainer.innerHTML = "";
 
     for (let i = 0; i < dayQuestions.length - 1; i++) {
@@ -237,9 +275,6 @@ function loadQuestion(date) {
         answerLabel.textContent = dayQuestions[currentQuestion].answers[i].text;
         answerLabel.classList.add('answer-label');
         answerLabel.htmlFor = i;
-        if (answerLabel.textContent.length > 20) {
-            answerLabel.classList.add('label-small-font');
-        }
 
         answer.type = 'submit';
         answer.name = 'answer';
@@ -335,5 +370,95 @@ function returnHome() {
 };
 
 function updateBtn(date) {
-    console.log(date);
-}
+    const btnNum = Number(date);
+    const completedDayBtn = document.querySelector(`button[value="${btnNum}"]`);
+    completedDayBtn.classList.add('completed-day');
+};
+
+// function updateCompleteDays(date) {
+//     let completeDays = getCompleteDays();
+// }
+
+
+// function getCompleteDays() {
+//     return localStorage.getItem('complete-days')
+//         ? JSON.parse(localStorage.getItem('complete-days'))
+//         : [];
+// }
+
+const welcomeMsg = document.querySelector('.welcome-msg');
+const welcomeHeader = document.getElementById('welcome-header');
+const welcomeText = document.getElementById('welcome-text');
+const welcomeBtn = document.getElementById('welcome-btn');
+const welcomeForm = document.getElementById('welcome-form');
+const nameInput = document.getElementById('user-name-input');
+const readyBtn = document.getElementById('ready-btn');
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (localStorage.getItem('username')) {
+        const name = localStorage.getItem('username');
+        welcomeHeader.textContent = `Welcome back, ${name}!`
+        welcomeText.style.display = 'block';
+        welcomeText.textContent =  'Ready to get started?';
+        welcomeForm.style.display = 'none';
+        welcomeMsg.style.display = 'block';
+        readyBtn.style.display = 'block';
+    } else {
+        welcomeMsg.style.display = 'block';
+    }
+    if (localStorage.getItem('theme-color')) {
+        let themeColor = localStorage.getItem('theme-color');
+        if (themeColor === 'green') {
+            greenTheme();
+        } else if (themeColor === 'snow') {
+            snowTheme();
+        } else {
+            redTheme();
+        }
+    }
+    if (localStorage.getItem('bg-image')) {
+        let bgImage = localStorage.getItem('bg-image');
+        mainContainer.style.setProperty('background-image', bgImage);
+        titleContent.classList.add('title-content-border');
+    }
+    if (localStorage.getItem('font')) {
+        let font = localStorage.getItem('font');
+        root.style.setProperty('--ff-primary', font);
+    }
+    if (localStorage.getItem('num-size')) {
+        let size = localStorage.getItem('num-size');
+        if (size === 'large') {
+            numSize = 'large';
+            sizeIcon.classList.toggle('fa-minimize');
+            localStorage.setItem('num-size', numSize);
+            for (let i = 0; i < dayNumbers.length; i++) {
+                dayNumbers[i].classList.add('large-numbers'); 
+            };
+        } 
+    }
+});
+
+readyBtn.addEventListener('click', () => {
+    welcomeMsg.style.display = 'none';
+});
+
+welcomeForm.addEventListener('submit', (e) => e.preventDefault());
+
+welcomeBtn.addEventListener('click', () => {
+    localStorage.setItem('username', nameInput.value);
+    nameDisplayCheck();
+});
+
+function nameDisplayCheck() {
+    if (localStorage.getItem('username')) {
+        const name = localStorage.getItem('username');
+        welcomeHeader.textContent = `Welcome, ${name}!`
+        welcomeText.style.display = 'block';
+        welcomeText.textContent =  'Ready to get started?'; 
+    } else {
+        welcomeText.style.display = 'block';
+        welcomeText.textContent = 'Ready to get started?'
+    }
+    welcomeForm.style.display = 'none';
+    readyBtn.style.display = 'block';
+};

@@ -7,28 +7,27 @@ Colors/Fonts
 :root {
     /* red shades*/
     --clr-primary-1: #A82222;
-    --clr-primary-2: #DB0000;
-    --clr-primary-3: #990606;
-    --clr-primary-4: #4b0f0f;
+    --clr-primary-2: #f20000;
+    --clr-primary-3: #820101;
+    --clr-primary-4: #670209;
     --clr-primary-5: #331010;
     /* green shades*/
     --clr-primary-6: #00DB1D;
-    --clr-primary-7: #22A834;
+    --clr-primary-7: #21fb3e;
     --clr-primary-8: #2F7538;
     --clr-primary-9: #124819;
     --clr-primary-10: #29332A;
     /* snow shades */
-    --clr-primary-11: #CDFFFF;
-    --clr-primary-12: #A6FFFF;
+    --clr-primary-11: #7efcfc;
+    --clr-primary-12: #ffffff;
     --clr-primary-13: #00FFFF;
-    --clr-primary-14: #02E6E6;
+    --clr-primary-14: rgb(15, 251, 247);
     --clr-primary-15: #14a8fe;
     /* other props */
     --clr-white: #fff;
     --clr-black: #222;
     --ff-primary: 'Mountains of Christmas', serif;
-    --ff-secondary: 'St Nicholas', serif;
-    --ff-tertiary: "Comic Neue", sans-serif;
+    --ff-secondary: "Comic Neue", sans-serif;
     --transition: all 0.3s ease-in;
     --spacing: 0.25rem;
     --radius: 0.5rem;
@@ -38,10 +37,10 @@ Colors/Fonts
     --fixed-width: 620px;
 }
 
-@font-face {
+/* @font-face {
     font-family: St Nicholas;
     src: url(./stnicholas.ttf);
-}
+} */
 
 
 /*
@@ -61,7 +60,7 @@ Global Styles
 body {
     font-family: var(--ff-primary);
     height: 100vh;
-    background: radial-gradient(circle at top right, var(--clr-primary-5) 0, var(--clr-primary-3) 50%, var(--clr-primary-5) 100%);
+    background-color: var(--clr-primary-5);
     line-height: 1.5;
     font-size: 0.875rem;
 }
@@ -131,12 +130,17 @@ Classes
     transform: translate(-50%, -50%);
     width: 90vw;
     max-width: 600px;
-    height: 90vh;
+    height: 80vh;
     border: 2px solid var(--clr-primary-2);
-    background-color: var(--clr-primary-5);
+    /* background-color: var(--clr-primary-4); */
     border-radius: 10px;
     overflow: hidden;
     background-image: none;
+    background: radial-gradient(
+        circle at top right, 
+        var(--clr-primary-4) 0, 
+        var(--clr-primary-3) 50%, 
+        var(--clr-primary-4) 100%);
 }
 
 .title {
@@ -150,7 +154,8 @@ Classes
 .title-content {
     width: 55%;
     margin: 2% auto;
-    border: 2px solid var(--clr-primary-5);
+    border: 2px solid transparent;
+    border-radius: 10px;
     text-shadow: 0 0 5px var(--clr-primary-3)
 }
 
@@ -204,7 +209,7 @@ Classes
       transform: scale(1);
     }
     50% {
-      transform: scale(1.25);
+      transform: scale(1.15);
     }
     100% {
       transform: scale(1);
@@ -212,21 +217,21 @@ Classes
   }
 
 .day-boxes {
-    height: 80%;
+    height: 75%;
+    width: 90%;
     display: grid;
+    margin: auto;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
+    column-gap: 5%;
     justify-items: center;
     align-items: center;
-}
-
-.completed-day {
-    background-image: './images/star.png';
+    
 }
 
 .day {
-    width: 60%;
-    height: 80%;
+    width: 80%;
+    height: 90%;
     position: relative;
 }
 
@@ -254,13 +259,61 @@ Classes
     background-color: var(--clr-primary-5);
     border-radius: 5px;
     border: 2px solid var(--clr-primary-2);
-    z-index: 10;
 }
 
-.btn-day:hover {
+.unlocked-day:hover {
     background-color: var(--clr-primary-5); 
-    border: 4px solid var(--clr-primary-2);
+    border: 3px solid var(--clr-primary-2);
     animation: bounce 2s ease-in-out infinite;
+}
+
+.locked-day {
+    background-color: var(--clr-primary-5);
+    border: 2px solid var(--clr-primary-1);
+}
+
+.locked-day > h4{
+    color: var(--clr-primary-1);
+
+}
+
+.unlocked-day {
+    animation: wiggle 2s linear infinite;
+    background-color: var(--clr-primary-4);
+    border: 3px solid var(--clr-primary-2);
+}
+
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-8deg);
+    }
+    20% {
+      transform: rotateZ(6deg);
+    }
+    25% {
+      transform: rotateZ(-6deg);
+    }
+    30% {
+      transform: rotateZ(4deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+
+.completed-day {
+    background-image: url('./images/star.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--clr-primary-5);
+    border: 2px groove var(--clr-primary-2);
+    animation: none;
 }
 
 .modal-overlay {
@@ -373,8 +426,7 @@ Classes
     width: 80%;
 }
 
-.intro-btn-container,
-.question-btn-container {
+.intro-btn-container {
     position: absolute;
     bottom: 3rem;
     width: 100%;
@@ -387,7 +439,7 @@ Classes
     background: var(--clr-primary-2);
     font-family: var(--ff-primary);
     color: var(--clr-primary-5);
-    font-size: 1.5rem;
+    font-size: 2rem;
     border: none;
     border-radius: 25px;
     padding: 1% 5%;
@@ -445,9 +497,8 @@ TRIVIA MODAL
 .question-container {
     display: block;
     position: relative;
-    height: 20%;
-    width: 80%;
-    margin: 10% 10% 0 10%;
+    height: 30%;
+    width: 100%;
 }
 
 #question-number {
@@ -455,16 +506,21 @@ TRIVIA MODAL
 }
 
 #question-text {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
     text-align: center;
-    margin: 5% auto 5% auto;
+    margin: 0;
 }
 
 .question-img-container {
     position: relative;
+    margin: auto;
     display: block;
+    height: 60%;
     width: 100%;
-    height: 30%;
 }
 
 #question-image {
@@ -476,38 +532,43 @@ TRIVIA MODAL
     border-radius: 20px;
 }
 
+.question-info {
+    position: relative;
+    margin: 5% auto 5% auto;
+    height: 50%;
+    width: 80%;
+}
+
 .answer-container {
     position: relative;
-    width: 100%;
-    padding: 5% 10%;
+    width: 80%;
+    height: 30%;
+    margin: 5% auto 5% auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
 .answer-div {
     margin: auto;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
 }
 
 .answer-label {
     display: block;
-    width: 100%;
-    height: 100%;
-    padding: 5px 5px;
+    width: 80%;
+    height: 80%;
+    padding: 5%;
+    margin: auto;
     border-radius: 25px;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: var(--clr-primary-2);
     background-color: var(--clr-primary-5);
     border: 3px solid var(--clr-primary-2);
     cursor: pointer;
     transition: var(--transition);
     box-shadow: 0 4px 8px 0 var(--clr-primary-2), 0 6px 10px 0 var(--clr-primary-3);
-}
-
-.label-small-font {
-    font-size: 1.0rem;
 }
 
 .answer-label:hover {
@@ -585,7 +646,84 @@ TRIVIA MODAL
     text-align: center;
 }
 
-@media only screen and (max-width: 850px) {
+.welcome-msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    border: 5px double var(--clr-primary-1);
+    border-radius: 10px;
+    text-align: center;
+    z-index: 10;
+    background-color: var(--clr-primary-5);
+    display: block;
+}
+
+#welcome-header {
+    position: absolute;
+    width: 80%;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#welcome-text {
+    position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#welcome-btn,
+#ready-btn {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    margin: auto;
+    color: var(--clr-primary-2);
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.name-entry {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#user-name-label {
+    color: var(--clr-primary-2);
+    font-size: 1.25rem;
+}
+
+#user-name-input {
+    background-color: var(--clr-black);
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+    margin: 5% auto;
+    color: var(--clr-primary-2);
+    font-family: (var(--ff-primary));
+}
+
+#ready-btn {
+    top: 80%;
+    display: none;
+}
+
+/* @media only screen and (max-width: 850px) {
     .main-container {
         height: 75vh;
     }
@@ -636,4 +774,4 @@ TRIVIA MODAL
     #advent-title {
         font-size: 1.00rem;
     }
-}
+} */
