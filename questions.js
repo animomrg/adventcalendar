@@ -1,6 +1,5 @@
 // export const questions = [
-//     [
-//         // DAY 1 - MOVIE - ELF
+//     [// DAY 1 - MOVIE - ELF
 //         {
 //             'question': "What movie is this?",
 //             'image': '/images/questionimgs/elf1.png',
@@ -52,326 +51,7 @@
 //             ],
 //         }
 //     ],
-//     [
-//         // DAY 2 - LYRICS
-//         {
-//             'question': "You know Dasher and Dancer and Prancer and _____<br>Comet and Cupid and ______ and Blitzen<br>But do you recall<br>The most famous reindeer of all?",
-//             // 'image': './images/questionimgs/rudolph.gif',
-//             'answers': [
-//                 { text: 'Dixon / Rona', isCorrect: false },
-//                 { text: 'Nixon / Fauna', isCorrect: false },
-//                 { text: 'Billy / Reginald', isCorrect: false },
-//                 { text: 'Vixen / Donner', isCorrect: true },
-//             ],
-//         },
-//         {
-//             'question': "Once again, as in olden days<br>Happy golden days of ____<br>Faithful friends who are ____ to us<br>Will be near to us once more",
-//             // 'image': './images/questionimgs/frank.png',
-//             'answers': [
-//                 { text: 'Yore / Dear', isCorrect: true },
-//                 { text: 'Yours / Close', isCorrect: false },
-//                 { text: 'Snow / Good', isCorrect: false },
-//                 { text: 'Lore / Feared', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': "In the meadow, we can build a snowman<br>We'll pretend that he is ______ Brown<br>He'll say, are you ______?<br>We'll say, no man<br>But you can do the job when you're in town",
-//             // 'image': '.images/questionimgs/winter.png',
-//             'answers': [
-//                 { text: 'Carson / Tired', isCorrect: false },
-//                 { text: 'Parson / Married', isCorrect: true },
-//                 { text: 'Mister / Cranky', isCorrect: false },
-//                 { text: 'Jerry / Richard', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': "Here comes Santa Claus, here comes Santa Claus, right down ______<br>He's got a bag that's filled with toys for boys and girls again.<br>Hear those sleigh bells jingle jangle, oh what a beautiful ______<br>So jump in bed and cover your head, 'cause Santa Claus comes tonight",
-//             // 'image': '.images/questionimgs/santa.gif',
-//             'answers': [
-//                 { text: 'Santa Claus Lane / Sight', isCorrect: true },
-//                 { text: 'Candy Cane Lane / Night', isCorrect: false },
-//                 { text: 'Sugar Drop Lane / Day', isCorrect: false },
-//                 { text: 'The Opposite Lane / Light', isCorrect: false },
-//             ],
-//         },   
-//         {
-//             'question': 'Children carry through the streets,<br>A brightly painted ______,<br>Angels gather round the ______,<br>Strumming on guitars',
-//             // 'image': '',
-//             'answers': [
-//                 { text: 'Barre / Tree', isCorrect: false },
-//                 { text: 'Shard / Scene', isCorrect: false },
-//                 { text: 'Star / Hearth', isCorrect: true },
-//                 { text: 'Tsar / Kids', isCorrect: false },
-//             ],
-//         }
-//     ],
-//     [
-//         // DAY 3 - CHRISTMAS POTPURRI
-//         {
-//             'question': 'Which member of the British Royalty is credited with popularizing the in-house Christmas Tree?',
-//             'image': '',
-//             'answers': [
-//                 { text: 'King Edward VIII', isCorrect: false },
-//                 { text: 'Queen Elizabeth', isCorrect: false },
-//                 { text: 'King George VI', isCorrect: false },
-//                 { text: 'Prince Albert', isCorrect: true },
-//             ],
-//         },
-//         {
-//             'question': 'In 1931, what company first depicted Santa Claus as a jolly old man with a long white beard?',
-//             'image': '',
-//             'answers': [
-//                 { text: 'Ford', isCorrect: false },
-//                 { text: 'Coca Cola', isCorrect: true },
-//                 { text: 'Sears', isCorrect: false },
-//                 { text: 'Marlboro', isCorrect: false },
-//             ],
-//         },   
-//         {
-//             'question': 'Which beloved Christmas character was created by the Montgomery Ward department store in a 1939 advertising campaign?',
-//             'image': '',
-//             'answers': [
-//                 { text: 'Frosty The Snowman', isCorrect: false },
-//                 { text: 'Jack Frost', isCorrect: false },
-//                 { text: 'Rudolph The Red-Nosed Reindeer', isCorrect: true },
-//                 { text: 'Mrs. Claus', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': 'Which Christmas carol was broadcast back to NASA command by the crew of Gemini 6 in a prank related to a possible UFO coming from the north pole?',
-//             'image': '',
-//             'answers': [
-//                 { text: 'I\'ll Be Home For Christmas', isCorrect: false },
-//                 { text: 'All I Want For Christmas Is You', isCorrect: false },
-//                 { text: 'Last Christmas', isCorrect: false },
-//                 { text: 'Jingle Bells', isCorrect: true },
-//             ],
-//         },
-//         {
-//             'question': 'Which traditional Christmas item is also an ancient symbol of fertility and virility <em>(aka. an aphrodisiac)</em>?',
-//             'image': '',
-//             'answers': [
-//                 { text: 'Mistletoe', isCorrect: true },
-//                 { text: 'A Fir Wreath', isCorrect: false },
-//                 { text: 'Chocolate Chip Cookies', isCorrect: false },
-//                 { text: 'A Dancing Santa', isCorrect: false },
-//             ],
-//         }
-//     ],
-//     [
-//         // DAY 4 - IS THAT A CHRISTMAS MOVIE?
-//     {
-//         'question': 'What movie is this?',
-//         'image': './images/questionimgs/mclane.png',
-//         'answers': [
-//             { text: 'Lethal Weapon', isCorrect: false },
-//             { text: 'Die Hard', isCorrect: true },
-//             { text: 'The Fifth Element', isCorrect: false },
-//             { text: '12 Monkeys', isCorrect: false },
-//         ],
-//     },
-//     {
-//         'question': 'Die Hard\'s villain is played by Alan Rickman. What was his name?',
-//         'image': './images/questionimgs/gruber.png',
-//         'answers': [
-//             { text: 'Hans Gruber', isCorrect: true },
-//             { text: 'Otto Becker', isCorrect: false },
-//             { text: 'Frans Fischer', isCorrect: false },
-//             { text: 'Severus Snape', isCorrect: false },
-//         ],
-//     },
-//     {
-//         'question': 'In which city does John McLane work as a police officer?',
-//         'image': './images/questionimgs/mclane2.png',
-//         'answers': [
-//             { text: 'Boston', isCorrect: false },
-//             { text: 'San Francisco', isCorrect: false },
-//             { text: 'Chicago', isCorrect: false },
-//             { text: 'New York', isCorrect: true },
-//         ],
-//     },
-//     {
-//         'question': 'What is McLane\'s limo driver\'s fashion-inspired name?',
-//         'image': './images/questionimgs/argyle.png',
-//         'answers': [
-//             { text: 'Paisley', isCorrect: false },
-//             { text: 'Argyle', isCorrect: true },
-//             { text: 'Pinstripe', isCorrect: false },
-//             { text: 'Polka Dot', isCorrect: false },
-//         ],
-//     },
-//     {
-//         'question': 'Which fictional company is attacked by the terrorists?',
-//         'image': './images/questionimgs/holly.png',
-//         'answers': [
-//             { text: 'Fujitsu Corp', isCorrect: false },
-//             { text: 'Ishikawa Inc', isCorrect: false },
-//             { text: 'Nakatomi Corp', isCorrect: true },
-//             { text: 'Nintendo Ltd', isCorrect: false },
-//         ],
-//     }
-//     ],       
-//     [
-//         // DAY 5 - AROUND THE WORLD
-//         {
-//             'question': 'Which country starts every Christmas season by constructing a giant Yule goat?',
-//             'image': './images/questionimgs/gavlegoat.png',
-//             'answers': [
-//                 { text: 'Sweden', isCorrect: true },
-//                 { text: 'Norway', isCorrect: false },
-//                 { text: 'Estonia', isCorrect: false },
-//                 { text: 'Denmark', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': 'Which fast food restaurant is the go-to Christmas dinner destination for Japanese locals?',
-//             'image': './images/questionimgs/japan.png',
-//             'answers': [
-//                 { text: 'McDonalds', isCorrect: false },
-//                 { text: 'Wendy\'s', isCorrect: false },
-//                 { text: 'Burger King', isCorrect: false },
-//                 { text: 'KFC', isCorrect: true },
-//             ],
-//         },
-//         {
-//             'question': 'In Iceland, what do naughty boys and girls receive instead of coal?',
-//             'image': './images/questionimgs/iceland.png',
-//             'answers': [
-//                 { text: 'Rocks', isCorrect: false },
-//                 { text: 'A Rotten Potato', isCorrect: true },
-//                 { text: 'Dog Poop', isCorrect: false },
-//                 { text: 'Black Licorice', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': 'In Finland, children hope to find what lucky object hidden in their breakfast rice porridge?',
-//             'image': './images/questionimgs/ricepudding.png',
-//             'answers': [
-//                 { text: 'Coin', isCorrect: false },
-//                 { text: 'Pumpkin Seed', isCorrect: false },
-//                 { text: 'Almond', isCorrect: true },
-//                 { text: 'Cookie', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': 'What is the local name for New Zealand\'s Christmas tree?',
-//             'image': './images/questionimgs/pohutukawa.png',
-//             'answers': [
-//                 { text: 'Pohutukawa', isCorrect: true },
-//                 { text: 'Red Bonsai', isCorrect: false },
-//                 { text: 'Cabbage Tree', isCorrect: false },
-//                 { text: 'Douglas Fir', isCorrect: false },
-//             ],
-//         }
-//     ],
-//     [
-//         // DAY 6 - SANTA FACTS
-//         {
-//             'question': 'Which modern-day Christmas items are said to represent Saint Nicholas\'s <em>bishop\'s crozier</em>? ',
-//             'image': '',
-//             'answers': [
-//                 { text: 'Fir Wreaths', isCorrect: false },
-//                 { text: 'Candy Canes', isCorrect: true },
-//                 { text: 'Christmas Bells', isCorrect: false },
-//                 { text: 'Gingerbread Men', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': 'What do children do with their shoes on Saint Nicholas Eve?',
-//             'image': '',
-//             'answers': [
-//                 { text: 'Put Them By The Door', isCorrect: true },
-//                 { text: 'Wear Them To Bed', isCorrect: false },
-//                 { text: 'Hide Them', isCorrect: false },
-//                 { text: 'Fill Them With Milk & Cookies', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': 'In Northern Germany, children put a <em>Nikolaus Boot</em> outside the front door in hopes of receiving candy and treats. What do the naughty kids get?',
-//             'image': '',
-//             'answers': [
-//                 { text: 'Dirty Socks', isCorrect: false },
-//                 { text: 'Mud', isCorrect: false },
-//                 { text: 'A Stick', isCorrect: true },
-//                 { text: 'Coal', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': 'In Poland, what omen is said to represent the angels busily baking Saint Nicholas\' Honey Cakes?',
-//             'image': '',
-//             'answers': [
-//                 { text: 'A Power Outage', isCorrect: false },
-//                 { text: 'A Snow Storm', isCorrect: false },
-//                 { text: 'Aurora Borealis', isCorrect: false },
-//                 { text: 'A Red Sunset', isCorrect: true },
-//             ],
-//         },
-//         {
-//             'question': 'What common stocking stuffers are meant to symbolize Saint Nicholas\' generosity towards needy children?',
-//             'image': '',
-//             'answers': [
-//                 { text: 'Mandarin Oranges', isCorrect: false },
-//                 { text: 'Chocolate Coins', isCorrect: true },
-//                 { text: 'Batteries', isCorrect: false },
-//                 { text: 'Travel Toiletries', isCorrect: false },
-//             ],
-//         }
-//     ],
-//     [
-//         // DAY 7 - HANUKKAH
-//         {
-//             'question': 'Which of these colours is <em>not</em> typically associated with Hanukkah?',
-//             'image': '',
-//             'answers': [
-//                 { text: 'Blue', isCorrect: false },
-//                 { text: 'Red', isCorrect: true },
-//                 { text: 'Silver', isCorrect: false },
-//                 { text: 'White', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': '<em>Latkes</em> are a traditional food often served at Hanukkah meals. What are they made of?',
-//             'image': '',
-//             'answers': [
-//                 { text: 'Corn', isCorrect: false },
-//                 { text: 'Apples', isCorrect: false },
-//                 { text: 'Challah Bread', isCorrect: false },
-//                 { text: 'Potatoes', isCorrect: true },
-//             ],
-//         },
-//         {
-//             'question': 'Which of the following is <strong>prohibited</strong> during the eight nights of Hanukkah?',
-//             'image': '',
-//             'answers': [
-//                 { text: 'Fasting', isCorrect: true },
-//                 { text: 'Driving a Car', isCorrect: false },
-//                 { text: 'Drinking Alcohol', isCorrect: false },
-//                 { text: 'Doing Exercise', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': 'What animal did Ross Geller dress up as in order to teach his son Ben about Hanukkah?',
-//             'image': '',
-//             'answers': [
-//                 { text: 'Rabbit', isCorrect: false },
-//                 { text: 'Rhinocerous', isCorrect: false },
-//                 { text: 'Armadillo', isCorrect: true },
-//                 { text: 'Alligator', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': 'Which comedian performed his <em>Hanukkah Song</em> on Saturday Night Live for the first time in 1994? ',
-//             'image': '',
-//             'answers': [
-//                 { text: 'Will Ferrell', isCorrect: false },
-//                 { text: 'Mike Myers', isCorrect: false },
-//                 { text: 'Adam Sandler', isCorrect: true },
-//                 { text: 'Dan Aykroyd', isCorrect: false },
-//             ],
-//         }
-//     ],
-//     [
-//         // DAY 8 - CHRISTMAS POTPURRI
+//     [// DAY 2 - CHRISTMAS POTPURRI
 //         {
 //             'question': 'What is the highest grossing Christmas movie of all time?',
 //             'image': '',
@@ -423,8 +103,267 @@
 //             ],
 //         }
 //     ],
-//     [
-//         // DAY 9 - MOVIE - LOVE ACTUALLY
+//     [// DAY 3 - PIANO TUNES
+//         {
+//             'question': 'Name the Christmas Carol:<br><br>E E E E E E E G C D E',
+//             // 'image': '',
+//             'answers': [
+//                 { text: 'O Holy Night', isCorrect: false },
+//                 { text: 'Let It Snow', isCorrect: false },
+//                 { text: 'Silent Night', isCorrect: false },
+//                 { text: 'Jingle Bells', isCorrect: true },
+//             ],
+//         },
+//         {
+//             'question': 'Name the Christmas Carol:<br><br>G C C D C B A A A<br>D D E D C B G G',
+//             // 'image': '',
+//             'answers': [
+//                 { text: 'Rudolph The Red Nosed Reindeer', isCorrect: false },
+//                 { text: 'Jingle Bell Rock', isCorrect: false },
+//                 { text: 'We Wish You A Merry Christmas', isCorrect: true },
+//                 { text: 'Deck The Halls', isCorrect: false },
+//             ],
+//         },
+//         {
+//             'question': 'Name the Christmas Carol:<br><br>D C B A G A B G<br>A B C A B A G F# G',
+//             // 'image': '',
+//             'answers': [
+//                 { text: 'Deck The Halls', isCorrect: true },
+//                 { text: 'We Three Kings', isCorrect: false },
+//                 { text: 'Let It Snow', isCorrect: false },
+//                 { text: 'The First Noel', isCorrect: false },
+//             ],
+//         },
+//         {
+//             'question': 'Name the Christmas Carol:<br><br>D G G F# G B B A<br>D D D C B A B',
+//             // 'image': '',
+//             'answers': [
+//                 { text: 'Auld Lang Syne', isCorrect: false },
+//                 { text: 'Hark! The Herald Angels Sing', isCorrect: true },
+//                 { text: 'Silent Night', isCorrect: false },
+//                 { text: 'Joy To The World', isCorrect: false },
+//             ],
+//         },
+//         {
+//             'question': 'Name the Christmas Carol:<br><br>B A G E F# G F# E<br>G G A A B B D C B',
+//             // 'image': '',
+//             'answers': [
+//                 { text: 'Deck The Halls', isCorrect: false },
+//                 { text: 'O Holy Night', isCorrect: false },
+//                 { text: 'The First Noel', isCorrect: false },
+//                 { text: 'We Three Kings', isCorrect: true },
+//             ],
+//         }
+//     ],
+//     [// DAY 4 - MOVIE - DIE HARD
+//     {
+//         'question': 'What movie is this?',
+//         'image': './images/questionimgs/mclane.png',
+//         'answers': [
+//             { text: 'Lethal Weapon', isCorrect: false },
+//             { text: 'Die Hard', isCorrect: true },
+//             { text: 'The Fifth Element', isCorrect: false },
+//             { text: '12 Monkeys', isCorrect: false },
+//         ],
+//     },
+//     {
+//         'question': 'Die Hard\'s villain is played by Alan Rickman. What was his name?',
+//         'image': './images/questionimgs/gruber.png',
+//         'answers': [
+//             { text: 'Hans Gruber', isCorrect: true },
+//             { text: 'Otto Becker', isCorrect: false },
+//             { text: 'Frans Fischer', isCorrect: false },
+//             { text: 'Severus Snape', isCorrect: false },
+//         ],
+//     },
+//     {
+//         'question': 'In which city does John McLane work as a police officer?',
+//         'image': './images/questionimgs/mclane2.png',
+//         'answers': [
+//             { text: 'Boston', isCorrect: false },
+//             { text: 'San Francisco', isCorrect: false },
+//             { text: 'Chicago', isCorrect: false },
+//             { text: 'New York', isCorrect: true },
+//         ],
+//     },
+//     {
+//         'question': 'What is McLane\'s limo driver\'s fashion-inspired name?',
+//         'image': './images/questionimgs/argyle.png',
+//         'answers': [
+//             { text: 'Paisley', isCorrect: false },
+//             { text: 'Argyle', isCorrect: true },
+//             { text: 'Pinstripe', isCorrect: false },
+//             { text: 'Polka Dot', isCorrect: false },
+//         ],
+//     },
+//     {
+//         'question': 'Which fictional company is attacked by the terrorists?',
+//         'image': './images/questionimgs/holly.png',
+//         'answers': [
+//             { text: 'Fujitsu Corp', isCorrect: false },
+//             { text: 'Ishikawa Inc', isCorrect: false },
+//             { text: 'Nakatomi Corp', isCorrect: true },
+//             { text: 'Nintendo Ltd', isCorrect: false },
+//         ],
+//     }
+//     ],       
+//     [// DAY 5 - CHRISTMAS AROUND THE WORLD
+//         {
+//             'question': 'Which country starts every Christmas season by constructing a giant Yule goat?',
+//             'image': './images/questionimgs/gavlegoat.png',
+//             'answers': [
+//                 { text: 'Sweden', isCorrect: true },
+//                 { text: 'Norway', isCorrect: false },
+//                 { text: 'Estonia', isCorrect: false },
+//                 { text: 'Denmark', isCorrect: false },
+//             ],
+//         },
+//         {
+//             'question': 'Which fast food restaurant is the go-to Christmas dinner destination for Japanese locals?',
+//             'image': './images/questionimgs/japan.png',
+//             'answers': [
+//                 { text: 'McDonalds', isCorrect: false },
+//                 { text: 'Wendy\'s', isCorrect: false },
+//                 { text: 'Burger King', isCorrect: false },
+//                 { text: 'KFC', isCorrect: true },
+//             ],
+//         },
+//         {
+//             'question': 'In Iceland, what do naughty boys and girls receive instead of coal?',
+//             'image': './images/questionimgs/iceland.png',
+//             'answers': [
+//                 { text: 'Rocks', isCorrect: false },
+//                 { text: 'A Rotten Potato', isCorrect: true },
+//                 { text: 'Dog Poop', isCorrect: false },
+//                 { text: 'Black Licorice', isCorrect: false },
+//             ],
+//         },
+//         {
+//             'question': 'In Finland, children hope to find what lucky object hidden in their breakfast rice porridge?',
+//             'image': './images/questionimgs/ricepudding.png',
+//             'answers': [
+//                 { text: 'Coin', isCorrect: false },
+//                 { text: 'Pumpkin Seed', isCorrect: false },
+//                 { text: 'Almond', isCorrect: true },
+//                 { text: 'Cookie', isCorrect: false },
+//             ],
+//         },
+//         {
+//             'question': 'What is the local name for New Zealand\'s Christmas tree?',
+//             'image': './images/questionimgs/pohutukawa.png',
+//             'answers': [
+//                 { text: 'Pohutukawa', isCorrect: true },
+//                 { text: 'Red Bonsai', isCorrect: false },
+//                 { text: 'Cabbage Tree', isCorrect: false },
+//                 { text: 'Douglas Fir', isCorrect: false },
+//             ],
+//         }
+//     ],
+//     [// DAY 6 - SAINT NICHOLAS FACTS
+//         {
+//             'question': 'Which modern-day Christmas items are said to represent Saint Nicholas\'s <em>bishop\'s crozier</em>? ',
+//             'image': '',
+//             'answers': [
+//                 { text: 'Fir Wreaths', isCorrect: false },
+//                 { text: 'Candy Canes', isCorrect: true },
+//                 { text: 'Christmas Bells', isCorrect: false },
+//                 { text: 'Gingerbread Men', isCorrect: false },
+//             ],
+//         },
+//         {
+//             'question': 'What do children do with their shoes on Saint Nicholas Eve?',
+//             'image': '',
+//             'answers': [
+//                 { text: 'Put Them By The Door', isCorrect: true },
+//                 { text: 'Wear Them To Bed', isCorrect: false },
+//                 { text: 'Hide Them', isCorrect: false },
+//                 { text: 'Fill Them With Milk & Cookies', isCorrect: false },
+//             ],
+//         },
+//         {
+//             'question': 'In Northern Germany, children put a <em>Nikolaus Boot</em> outside the front door in hopes of receiving candy and treats. What do the naughty kids get?',
+//             'image': '',
+//             'answers': [
+//                 { text: 'Dirty Socks', isCorrect: false },
+//                 { text: 'Mud', isCorrect: false },
+//                 { text: 'A Stick', isCorrect: true },
+//                 { text: 'Coal', isCorrect: false },
+//             ],
+//         },
+//         {
+//             'question': 'In Poland, what omen is said to represent the angels busily baking Saint Nicholas\' Honey Cakes?',
+//             'image': '',
+//             'answers': [
+//                 { text: 'A Power Outage', isCorrect: false },
+//                 { text: 'A Snow Storm', isCorrect: false },
+//                 { text: 'Aurora Borealis', isCorrect: false },
+//                 { text: 'A Red Sunset', isCorrect: true },
+//             ],
+//         },
+//         {
+//             'question': 'What common stocking stuffers are meant to symbolize Saint Nicholas\' generosity towards needy children?',
+//             'image': '',
+//             'answers': [
+//                 { text: 'Mandarin Oranges', isCorrect: false },
+//                 { text: 'Chocolate Coins', isCorrect: true },
+//                 { text: 'Batteries', isCorrect: false },
+//                 { text: 'Travel Toiletries', isCorrect: false },
+//             ],
+//         }
+//     ],
+//     [// DAY 7 - HANUKKAH
+//         {
+//             'question': 'Which of these colours is <em>not</em> typically associated with Hanukkah?',
+//             'image': '',
+//             'answers': [
+//                 { text: 'Blue', isCorrect: false },
+//                 { text: 'Red', isCorrect: true },
+//                 { text: 'Silver', isCorrect: false },
+//                 { text: 'White', isCorrect: false },
+//             ],
+//         },
+//         {
+//             'question': '<em>Latkes</em> are a traditional food often served at Hanukkah meals. What are they made of?',
+//             'image': '',
+//             'answers': [
+//                 { text: 'Corn', isCorrect: false },
+//                 { text: 'Apples', isCorrect: false },
+//                 { text: 'Challah Bread', isCorrect: false },
+//                 { text: 'Potatoes', isCorrect: true },
+//             ],
+//         },
+//         {
+//             'question': 'Which of the following is <strong>prohibited</strong> during the eight nights of Hanukkah?',
+//             'image': '',
+//             'answers': [
+//                 { text: 'Fasting', isCorrect: true },
+//                 { text: 'Driving a Car', isCorrect: false },
+//                 { text: 'Drinking Alcohol', isCorrect: false },
+//                 { text: 'Doing Exercise', isCorrect: false },
+//             ],
+//         },
+//         {
+//             'question': 'What animal did Ross Geller dress up as in order to teach his son Ben about Hanukkah?',
+//             'image': '',
+//             'answers': [
+//                 { text: 'Rabbit', isCorrect: false },
+//                 { text: 'Rhinocerous', isCorrect: false },
+//                 { text: 'Armadillo', isCorrect: true },
+//                 { text: 'Alligator', isCorrect: false },
+//             ],
+//         },
+//         {
+//             'question': 'Which comedian performed his <em>Hanukkah Song</em> on Saturday Night Live for the first time in 1994? ',
+//             'image': '',
+//             'answers': [
+//                 { text: 'Will Ferrell', isCorrect: false },
+//                 { text: 'Mike Myers', isCorrect: false },
+//                 { text: 'Adam Sandler', isCorrect: true },
+//                 { text: 'Dan Aykroyd', isCorrect: false },
+//             ],
+//         }
+//     ],
+//     [// DAY 8 - MOVIE - LOVE ACTUALLY
 //         {
 //             'question': 'Which movie is this?',
 //             'image': './images/questionimgs/hugh.gif',
@@ -476,8 +415,59 @@
 //             ],
 //         }
 //     ],
-//     [
-//         // DAY 10
+//     [// DAY 9 - PIANO TUNES
+//         {
+//             'question': 'Name the Christmas Carol:<br><br>G G G A G G D<br>E D E F# G G',
+//             'image': '',
+//             'answers': [
+//                 { text: 'The Little Drummer Boy', isCorrect: false },
+//                 { text: 'Deck The Halls', isCorrect: false },
+//                 { text: 'Good King Wenceslas', isCorrect: true },
+//                 { text: 'Silver Bells', isCorrect: false },
+//             ],
+//         },
+//         {
+//             'question': 'Name the Christmas Carol:<br><br>E D C D E F G<br>A B C B A G',
+//             'image': '',
+//             'answers': [
+//                 { text: 'The First Noel', isCorrect: true },
+//                 { text: 'I\'ll Be Home For Christmas', isCorrect: false },
+//                 { text: 'Jingle Bell Rock', isCorrect: false },
+//                 { text: 'Silent Night', isCorrect: false },
+//             ],
+//         },
+//         {
+//             'question': 'Name the Christmas Carol:<br><br>D G G A B G G<br>B C D D E C',
+//             'image': '',
+//             'answers': [
+//                 { text: 'O Holy Night', isCorrect: false },
+//                 { text: 'The Twelve Days of Christmas', isCorrect: false },
+//                 { text: 'Jingle Bells', isCorrect: false },
+//                 { text: 'Away In A Manger', isCorrect: true },
+//             ],
+//         },
+//         {
+//             'question': 'Name the Christmas Carol:<br><br>D C# B A G F# E D<br>A B B C# C# D',
+//             'image': '',
+//             'answers': [
+//                 { text: 'The Christmas Song', isCorrect: false },
+//                 { text: 'Frosty The Snowman', isCorrect: false },
+//                 { text: 'Joy To The World', isCorrect: true },
+//                 { text: 'Winter Wonderland', isCorrect: false },
+//             ],
+//         },
+//         {
+//             'question': 'Name the Christmas Carol:<br><br>D G G G B A G A<br>B G G B D E',
+//             'image': '',
+//             'answers': [
+//                 { text: 'Silver Bells', isCorrect: false },
+//                 { text: 'Auld Lang Syne', isCorrect: true },
+//                 { text: 'We Three Kings', isCorrect: false },
+//                 { text: 'This Christmas', isCorrect: false },
+//             ],
+//         }
+//     ],
+//     [// DAY 10 - ANIMAL RIGHTS DAY
 //         {
 //             'question': 'Where do partridges commonly establish their nests?',
 //             'image': '',
@@ -529,8 +519,7 @@
 //             ],
 //         }
 //     ],
-//     [
-//         // DAY 11 - AROUND THE WORLD
+//     [// DAY 11 - CHRISTMAS AROUND THE WORLD
 //         {
 //             'question': 'In Norway, they celebrate Little Christmas Eve on which day?',
 //             'image': '',
@@ -582,61 +571,59 @@
 //             ],
 //         }
 //     ],
-//     [
-//         // DAY 12
+//     [// DAY 12 - LYRICS
 //         {
-//             'question': '',
-//             'image': '',
+//             'question': "You know Dasher and Dancer and Prancer and _____<br>Comet and Cupid and ______ and Blitzen<br>But do you recall<br>The most famous reindeer of all?",
+//             // 'image': './images/questionimgs/rudolph.gif',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Dixon / Rona', isCorrect: false },
+//                 { text: 'Nixon / Fauna', isCorrect: false },
+//                 { text: 'Billy / Reginald', isCorrect: false },
+//                 { text: 'Vixen / Donner', isCorrect: true },
 //             ],
 //         },
 //         {
-//             'question': '',
-//             'image': '',
+//             'question': "Once again, as in olden days<br>Happy golden days of ____<br>Faithful friends who are ____ to us<br>Will be near to us once more",
+//             // 'image': './images/questionimgs/frank.png',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Yore / Dear', isCorrect: true },
+//                 { text: 'Yours / Close', isCorrect: false },
+//                 { text: 'Snow / Good', isCorrect: false },
+//                 { text: 'Lore / Feared', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
-//             'image': '',
+//             'question': "In the meadow, we can build a snowman<br>We'll pretend that he is ______ Brown<br>He'll say, are you ______?<br>We'll say, no man<br>But you can do the job when you're in town",
+//             // 'image': '.images/questionimgs/winter.png',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Carson / Tired', isCorrect: false },
+//                 { text: 'Parson / Married', isCorrect: true },
+//                 { text: 'Mister / Cranky', isCorrect: false },
+//                 { text: 'Jerry / Richard', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
-//             'image': '',
+//             'question': "Here comes Santa Claus, here comes Santa Claus, right down ______<br>He's got a bag that's filled with toys for boys and girls again.<br>Hear those sleigh bells jingle jangle, oh what a beautiful ______<br>So jump in bed and cover your head, 'cause Santa Claus comes tonight",
+//             // 'image': '.images/questionimgs/santa.gif',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Santa Claus Lane / Sight', isCorrect: true },
+//                 { text: 'Candy Cane Lane / Night', isCorrect: false },
+//                 { text: 'Sugar Drop Lane / Day', isCorrect: false },
+//                 { text: 'The Opposite Lane / Light', isCorrect: false },
 //             ],
-//         },
+//         },   
 //         {
-//             'question': '',
-//             'image': '',
+//             'question': 'Children carry through the streets,<br>A brightly painted ______,<br>Angels gather round the ______,<br>Strumming on guitars',
+//             // 'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Barre / Tree', isCorrect: false },
+//                 { text: 'Shard / Scene', isCorrect: false },
+//                 { text: 'Star / Hearth', isCorrect: true },
+//                 { text: 'Tsar / Kids', isCorrect: false },
 //             ],
 //         }
 //     ],
-//      [
-//         // DAY 13 - MOVIE - HOME ALONE
+//     [// DAY 13 - MOVIE - HOME ALONE
 //         {
 //             'question': "What movie is this?",
 //             'image': '/images/questionimgs/homealone.png',
@@ -649,7 +636,7 @@
 //         },
 //         {
 //             'question': 'What criminal nickname does Marv give himself and Harry?',
-//             'image': '/images/questionimgs/homealonebadguys.png',
+//             // 'image': '/images/questionimgs/homealonebadguys.png',
 //             'answers': [
 //                 { text: 'The Goodfellas', isCorrect: false },
 //                 { text: 'The Sticky Bandits', isCorrect: false },
@@ -658,91 +645,89 @@
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'What kind of pizza is Kevin\'s favourite?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Plain Cheese', isCorrect: true },
+//                 { text: 'Pepperoni', isCorrect: false },
+//                 { text: 'Mushroom', isCorrect: false },
+//                 { text: 'Deluxe', isCorrect: false },
 //             ],
 //         }, 
 //         {
-//             'question': '',
-//             'image': '',
+//             'question': 'Who played Kevin\'s cousin <em>Fuller</em>, who always peed the bed?',
+//             'image': './images/questionimgs/fuller.gif',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Rory Culkin', isCorrect: false },
+//                 { text: 'Paul Dano', isCorrect: false },
+//                 { text: 'Kieran Culkin', isCorrect: true },
+//                 { text: 'Jesse Eisenberg', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'Which of the following is <strong>not</strong> one of the booby traps Kevin sets for Harry and Marv?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Nail On The Stairs', isCorrect: false },
+//                 { text: 'Swinging Paint Can', isCorrect: false },
+//                 { text: 'Searing Hot Door Knob', isCorrect: false },
+//                 { text: 'Electrified Bath Tub', isCorrect: true },
 //             ],
 //         }
 //     ],
-//     [
-//         // DAY 14
+//     [// DAY 14 - CHRISTMAS POTPURRI
 //         {
-//             'question': '',
+//             'question': 'Which member of the British Royalty is credited with popularizing the in-house Christmas Tree?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'King Edward VIII', isCorrect: false },
+//                 { text: 'Queen Elizabeth', isCorrect: false },
+//                 { text: 'King George VI', isCorrect: false },
+//                 { text: 'Prince Albert', isCorrect: true },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'In 1931, what company first depicted Santa Claus as a jolly old man with a long white beard?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Ford', isCorrect: false },
+//                 { text: 'Coca Cola', isCorrect: true },
+//                 { text: 'Sears', isCorrect: false },
+//                 { text: 'Marlboro', isCorrect: false },
+//             ],
+//         },   
+//         {
+//             'question': 'Which beloved Christmas character was created by the Montgomery Ward department store in a 1939 advertising campaign?',
+//             'image': '',
+//             'answers': [
+//                 { text: 'Frosty The Snowman', isCorrect: false },
+//                 { text: 'Jack Frost', isCorrect: false },
+//                 { text: 'Rudolph The Red-Nosed Reindeer', isCorrect: true },
+//                 { text: 'Mrs. Claus', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'Which Christmas carol was broadcast back to NASA command by the crew of Gemini 6 in a prank related to a possible UFO coming from the north pole?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'I\'ll Be Home For Christmas', isCorrect: false },
+//                 { text: 'All I Want For Christmas Is You', isCorrect: false },
+//                 { text: 'Last Christmas', isCorrect: false },
+//                 { text: 'Jingle Bells', isCorrect: true },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'Which traditional Christmas item is also an ancient symbol of fertility and virility <em>(aka. an aphrodisiac)</em>?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': '',
-//             'image': '',
-//             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Mistletoe', isCorrect: true },
+//                 { text: 'A Fir Wreath', isCorrect: false },
+//                 { text: 'Chocolate Chip Cookies', isCorrect: false },
+//                 { text: 'A Dancing Santa', isCorrect: false },
 //             ],
 //         }
 //     ],
-//     [
-//         // DAY 15 - CHRISTMAS AROUND THE WORLD
+//     [// DAY 15 - CHRISTMAS AROUND THE WORLD
 //         {
 //             'question': 'In Iceland, which folklore character eats people who do not receive new clothes before Christmas Eve?',
 //             'image': '',
@@ -794,61 +779,59 @@
 //             ],
 //         }
 //     ],
-//     [
-//         // DAY 16
+//     [// DAY 16 - PIANO TUNES
 //         {
-//             'question': '',
+//             'question': 'Name the Christmas Song:<br><br>C A Bb C C C D E F F<br>A Bb C C C D C Bb Bb',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'The Christmas Song', isCorrect: false },
+//                 { text: 'Santa Claus is Comin\' To Town', isCorrect: true },
+//                 { text: 'Hark! The Herald Angels Sing', isCorrect: false },
+//                 { text: 'Joy To The World', isCorrect: false },
+//             ],
+//         },
+//         {
+//             'question': 'Name the Christmas Song:<br><br>G B D F# G F# E D<br>A G G F# G F# E D',
+//             'image': '',
+//             'answers': [
+//                 { text: 'All I Want For Christmas Is You', isCorrect: true },
+//                 { text: 'Mele Kelikimaka', isCorrect: false },
+//                 { text: 'Blue Christmas', isCorrect: false },
+//                 { text: 'Winter Wonderland', isCorrect: false },
+//             ],
+//         },
+//         {
+//             'question': 'Name the Christmas Song:<br><br>G C A C<br>D D# E D# E D C A G',
+//             'image': '',
+//             'answers': [
+//                 { text: 'It\'s The Most Wonderful Time', isCorrect: false },
+//                 { text: 'Christmastime Is Here', isCorrect: false },
+//                 { text: 'This Christmas', isCorrect: false },
+//                 { text: 'Santa Baby', isCorrect: true },
+//             ],
+//         },
+//         {
+//             'question': 'Name the Christmas Song:<br><br>Bb G Bb C G Bb Bb C<br>C C D C G# F D',
+//             'image': '',
+//             'answers': [
+//                 { text: 'Feliz Navidad', isCorrect: false },
+//                 { text: 'Rockin\' Around The Christmas Tree', isCorrect: true },
+//                 { text: 'Wonderful Christmastime', isCorrect: false },
 //                 { text: '', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'Name the Christmas Song:<br><br>C C D C A C D C<br>C C B A G E',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': '',
-//             'image': '',
-//             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': '',
-//             'image': '',
-//             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': '',
-//             'image': '',
-//             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Jingle Bell Rock', isCorrect: true },
+//                 { text: 'Deck The Halls', isCorrect: false },
+//                 { text: 'We Wish You A Merry Christmas', isCorrect: false },
+//                 { text: 'Joy To The World', isCorrect: false },
 //             ],
 //         }
 //     ],
-//     [
-//         // DAY 17 - THE SANTA CLAUSE
+//     [// DAY 17 - MOVIE - THE SANTA CLAUSE
 //         {
 //             'question': 'What movie is this?',
 //             'image': '',
@@ -900,167 +883,163 @@
 //             ],
 //         }
 //     ],
-//     [
-//         // DAY 18
+//     [// DAY 18 - BAKE COOKIES DAY
 //         {
-//             'question': '',
+//             'question': 'From which country did Moravian settlers bring <em>sugar cookies</em> to America in the 1700s?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Belgium', isCorrect: false },
+//                 { text: 'Germany', isCorrect: true },
+//                 { text: 'France', isCorrect: false },
+//                 { text: 'The Netherlands', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'What kind of Christmas cookie did Queen Elizabeth the 1st <em>(allegedly)</em> commission for her favourite people in court?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Snickerdoodles', isCorrect: false },
+//                 { text: 'Chocolate Chip', isCorrect: false },
+//                 { text: 'Gingerbread Men', isCorrect: true },
+//                 { text: 'English Shortbread', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'What gave rise to the tradition of leaving cookies out for Santa Claus?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'The Great Depression', isCorrect: true },
+//                 { text: 'An Oreo Radio Ad', isCorrect: false },
+//                 { text: 'An Offhand Remark From The President', isCorrect: false },
+//                 { text: 'A Betty Crocker Recipe', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'Which of the following is not an ingredient in modern mincemeat filling?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Apples', isCorrect: false },
+//                 { text: 'Raisins', isCorrect: false },
+//                 { text: 'Brandy', isCorrect: false },
+//                 { text: 'Peaches', isCorrect: true },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'What is the unique feature of Austrian Linzer Cookies?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'A Jam Center', isCorrect: true },
+//                 { text: 'They Have No Sugar', isCorrect: false },
+//                 { text: 'The Spice Mixture', isCorrect: false },
+//                 { text: 'They Are Vegan', isCorrect: false },
 //             ],
 //         }
 //     ],
-//     [
-//         // DAY 19
+//     [// DAY 19 - OG GRINCH LINES
 //         {
-//             'question': '',
+//             'question': 'If I can\'t find a reindeer, I\'ll ______ one instead.<br>So he took his dog, Max, and he took some black thread,<br>and he tied a _______ on the top of his head.',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Fake / Red Nose', isCorrect: false },
+//                 { text: 'Make / Big Horn', isCorrect: true },
+//                 { text: 'Create / Red Hat', isCorrect: false },
+//                 { text: 'Make / Green Hat', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'He cleaned out the icebox as quick as a ______.<br>Why, that Grinch even took the last can of _______.',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Cat / Beast Fat', isCorrect: false },
+//                 { text: 'Dash / Baked Hash', isCorrect: false },
+//                 { text: 'Snap / Who-Sap', isCorrect: false },
+//                 { text: 'Flash / Who-Hash', isCorrect: true },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'You\'re a monster, Mr. Grinch<br>Your heart\'s ______.<br>Your brain is full of spiders,<br>you\'ve got ______ in your soul,<br>Mr. Griiii-INCH.',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'A Piece of Coal / Malice', isCorrect: false },
+//                 { text: 'An Empty Bowl / Poison', isCorrect: false },
+//                 { text: 'An Empty Hole / Garlic', isCorrect: true },
+//                 { text: 'A Warty Mole / Nothing', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'You\'re a crooked jerky jockey and you drive a crooked hoss, Mr. Grinch!<br>You\'re a three decker ______ and toadstool sandwich...with ______ sauce!',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Pickle / Flavourless', isCorrect: false },
+//                 { text: 'Who Slug / Spider Leg', isCorrect: false },
+//                 { text: 'Frog Leg / Salt Herring', isCorrect: false },
+//                 { text: 'Sauerkraut / Arsenic', isCorrect: true },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'On their walls he left nothing but ______ and some wire.<br>And the one speck of food that he left in the house...<br>Was a ______ that was even too small for a mouse',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Hooks / Crumb', isCorrect: true },
+//                 { text: 'Dust / Crumb', isCorrect: false },
+//                 { text: 'The Paint / Seed', isCorrect: false },
+//                 { text: 'Hooks / Seed', isCorrect: false },
 //             ],
 //         }
 //     ],
-//     [
-//         // DAY 20
-//         {
-//             'question': '',
-//             'image': '',
-//             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': '',
-//             'image': '',
-//             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': '',
-//             'image': '',
-//             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': '',
-//             'image': '',
-//             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': '',
-//             'image': '',
-//             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//             ],
-//         }
-//     ],
-//     [
-//         // DAY 21 - CHRISTMAS AROUND THE WORLD
+//     [// DAY 20 - MOVIE - HOW THE GRINCH STOLE CHRISTMAS
+//             {
+//                 'question': 'What movie is this?',
+//                 'image': '',
+//                 'answers': [
+//                     { text: 'How The Grinch Stole Christmas', isCorrect: true },
+//                     { text: 'The Santa Clause 2', isCorrect: false },
+//                     { text: 'A Christmas Carol', isCorrect: false },
+//                     { text: 'The Polar Express', isCorrect: false },
+//                 ],
+//             },
+//             {
+//                 'question': 'What is the name of the Grinch\'s dog?',
+//                 'image': '',
+//                 'answers': [
+//                     { text: 'Comet', isCorrect: false },
+//                     { text: 'Dasher', isCorrect: false },
+//                     { text: 'Max', isCorrect: true },
+//                     { text: 'Jack', isCorrect: false },
+//                 ],
+//             },
+//             {
+//                 'question': 'What award is the Grinch given before being granted the gift of a Christmas shave?',
+//                 'image': '',
+//                 'answers': [
+//                     { text: 'Greenest In Whoville', isCorrect: false },
+//                     { text: 'Best Grinch', isCorrect: false },
+//                     { text: 'Holiday Cheermeister', isCorrect: true },
+//                     { text: 'Nutcracker King', isCorrect: false },
+//                 ],
+//             },
+//             {
+//                 'question': 'What was the name of the Grinch\'s high school crush?',
+//                 'image': '',
+//                 'answers': [
+//                     { text: 'Maggie May Parker', isCorrect: false },
+//                     { text: 'Marge Bouvier', isCorrect: false },
+//                     { text: 'Martha May Whovier', isCorrect: true },
+//                     { text: 'Tiffany Amber Thiessen', isCorrect: false },
+//                 ],
+//             },
+//             {
+//                 'question': 'Which SNL alumnus played Betty Lou Who (Cindy Lou\'s mother)?',
+//                 'image': '',
+//                 'answers': [
+//                     { text: 'Tina Fey', isCorrect: false },
+//                     { text: 'Cheri Oteri', isCorrect: false },
+//                     { text: 'Maya Rudolph', isCorrect: false },
+//                     { text: 'Molly Shannon', isCorrect: true },
+//                 ],
+//             }
+//     ],  
+//     [// DAY 21 - CHRISTMAS AROUND THE WORLD
 //         {
 //             'question': 'In Germany, what kind of ornament is hidden in the Christmas tree for children to find?',
 //             'image': '',
@@ -1112,162 +1091,159 @@
 //             ],
 //         }
 //     ],
-//     [
-//         // DAY 22 - HOW THE GRINCH STOLE CHRISTMAS
+//     [// DAY 22 - CLASSIC CHRISTMAS SPECIALS
+//     {
+//         'question': 'What is the name of the elf from 1964\'s <em>Rudolph the Red-Nosed Reindeer</em>?',
+//         'image': './images/questionimgs/hermey.png',
+//         'answers': [
+//             { text: 'Eric', isCorrect: false },
+//             { text: 'Harry', isCorrect: false },
+//             { text: 'Hermey', isCorrect: true },
+//             { text: 'Gary', isCorrect: false },
+//         ],
+//     },
+//     {
+//         'question': 'Which of Santa\'s reindeer is the Head Coach for the Reindeer Games?',
+//         'image': '',
+//         'answers': [
+//             { text: 'Dasher', isCorrect: false },
+//             { text: 'Comet', isCorrect: true },
+//             { text: 'Blitzen', isCorrect: false },
+//             { text: 'Donner', isCorrect: false },
+//         ],
+//     },
+//     {
+//         'question': 'What was the name of the magician from 1969\'s <em>Frosty The Snowman</em>?',
+//         'image': './images/questionimgs/hinkle.png',
+//         'answers': [
+//             { text: 'Hocus Pocus', isCorrect: false },
+//             { text: 'Mr. Doolittle', isCorrect: false },
+//             { text: 'Mr. Van Sickle', isCorrect: false },
+//             { text: 'Professor Hinkle', isCorrect: true },
+//         ],
+//     },
+//     {
+//         'question': 'How many times does Santa tell Professor Hinkle he must write an apology to Frosty before he will give him another Christmas present?',
+//         'image': '',
+//         'answers': [
+//             { text: 'One Hundred Thousand', isCorrect: false },
+//             { text: 'One Hundred Zillion', isCorrect: true },
+//             { text: 'One Hundred Billion', isCorrect: false },
+//             { text: 'One Hundred Million', isCorrect: false },
+//         ],
+//     },
+//     {
+//         'question': 'In 1987\'s <em>A Garfield Christmas</em>, what does Odie get Garlfied for Christmas?',
+//         'image': '',
+//         'answers': [
+//             { text: 'A Homemade Backscratcher', isCorrect: true },
+//             { text: 'An Extra Large Lasagna', isCorrect: false },
+//             { text: 'A New Bed & Blanket', isCorrect: false },
+//             { text: 'A Pot of Sausage Gravy', isCorrect: false },
+//         ],
+//     }
+// ],
+//     [// DAY 23 - PIANO TUNES
 //         {
-//             'question': 'What movie is this?',
+//             'question': 'Name the Christmas Song:<br><br>E F E D E F F# G<br>A B C D C B A G',
 //             'image': '',
 //             'answers': [
-//                 { text: 'How The Grinch Stole Christmas', isCorrect: true },
-//                 { text: 'The Santa Clause 2', isCorrect: false },
-//                 { text: 'A Christmas Carol', isCorrect: false },
-//                 { text: 'The Polar Express', isCorrect: false },
+//                 { text: 'Frosty The Snowman', isCorrect: false },
+//                 { text: 'Jingle Bell Rock', isCorrect: false },
+//                 { text: 'White Christmas', isCorrect: true },
+//                 { text: 'I\'ll Be Home For Christmas', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': 'What is the name of the Grinch\'s dog?',
+//             'question': 'Name the Christmas Song:<br><br>G G F C G G A F<br>D D G G A F D E F E D',
 //             'image': '',
 //             'answers': [
-//                 { text: 'Comet', isCorrect: false },
-//                 { text: 'Dasher', isCorrect: false },
-//                 { text: 'Max', isCorrect: true },
-//                 { text: 'Jack', isCorrect: false },
+//                 { text: 'Baby Please Come Home', isCorrect: false },
+//                 { text: 'Last Christmas', isCorrect: true },
+//                 { text: 'Santa Baby', isCorrect: false },
+//                 { text: 'Blue Christmas', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': 'What award is the Grinch given before being granted the gift of a Christmas shave?',
+//             'question': 'Name the Christmas Song:<br><br>C C C C Bb A G F C<br>G F G F G F E C',
 //             'image': '',
 //             'answers': [
-//                 { text: 'Greenest In Whoville', isCorrect: false },
-//                 { text: 'Best Grinch', isCorrect: false },
-//                 { text: 'Holiday Cheermeister', isCorrect: true },
-//                 { text: 'Nutcracker King', isCorrect: false },
+//                 { text: 'Joy To The World', isCorrect: false },
+//                 { text: 'O Come All Ye Faithful', isCorrect: false },
+//                 { text: 'The Christmas Waltz', isCorrect: false },
+//                 { text: 'Let It Snow', isCorrect: true },
 //             ],
 //         },
 //         {
-//             'question': 'What was the name of the Grinch\'s high school crush?',
+//             'question': 'Name the Christmas Song:<br><br>C E G C G F E D C D<br>C E G C G<br>C E G C D C B A G F E',
 //             'image': '',
 //             'answers': [
-//                 { text: 'Maggie May Parker', isCorrect: false },
-//                 { text: 'Marge Bouvier', isCorrect: false },
-//                 { text: 'Martha May Whovier', isCorrect: true },
-//                 { text: 'Tiffany Amber Thiessen', isCorrect: false },
+//                 { text: 'Have Yourself A Merry Little Christmas', isCorrect: true },
+//                 { text: 'Winter Wonderland', isCorrect: false },
+//                 { text: 'Christmastime Is Here', isCorrect: false },
+//                 { text: 'Do You Hear What I Hear?', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': 'Which SNL alumnus played Betty Lou Who (Cindy Lou\'s mother)?',
+//             'question': 'Name the Christmas Song:<br><br>C C B A G F E E E<br>C A G F E D C',
 //             'image': '',
 //             'answers': [
-//                 { text: 'Tina Fey', isCorrect: false },
-//                 { text: 'Cheri Oteri', isCorrect: false },
-//                 { text: 'Maya Rudolph', isCorrect: false },
-//                 { text: 'Molly Shannon', isCorrect: true },
+//                 { text: 'This Christmas', isCorrect: false },
+//                 { text: 'Wonderful Christmastime', isCorrect: false },
+//                 { text: 'The Christmas Song (Chestnuts Roasting)', isCorrect: true },
+//                 { text: 'O Holy Night', isCorrect: false },
 //             ],
 //         }
 //     ],
-//     [
-//         // DAY 23
+//     [// DAY 24 - CHRISTMAS EVE FACTS
 //         {
-//             'question': '',
+//             'question': 'What was the original name of the poem commonly known as <em>\'Twas the Night Before Christmas</em>?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'The Story of St. Nicholas', isCorrect: false },
+//                 { text: 'Happy Christmas To All', isCorrect: false },
+//                 { text: 'Eight Tiny Reindeer', isCorrect: false },
+//                 { text: 'Account of a Visit From St. Nicholas', isCorrect: true },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'Which North African nation celebrates its Independence Day on December 24th?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Tunisia', isCorrect: false },
+//                 { text: 'Libya', isCorrect: true },
+//                 { text: 'Algeria', isCorrect: false },
+//                 { text: 'Morocco', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'In Norway, what do people hide on Christmas Eve to prevent the appearance of evil spirits?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Their Shoes', isCorrect: false },
+//                 { text: 'Brooms', isCorrect: true },
+//                 { text: 'Sugar Bowls', isCorrect: false },
+//                 { text: 'Firewood', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'In which city was the <em>Ugly Christmas Sweater Party</em> tradition first introduced?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: 'Vancouver', isCorrect: true },
+//                 { text: 'Oslo', isCorrect: false },
+//                 { text: 'London', isCorrect: false },
+//                 { text: 'Chicago', isCorrect: false },
 //             ],
 //         },
 //         {
-//             'question': '',
+//             'question': 'According to American data, what percentage of Christmas sales take place between Dec 15th and Dec 24th?',
 //             'image': '',
 //             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//             ],
-//         }
-//     ],
-//     [
-//         // DAY 24
-//         {
-//             'question': '',
-//             'image': '',
-//             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': '',
-//             'image': '',
-//             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': '',
-//             'image': '',
-//             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': '',
-//             'image': '',
-//             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//             ],
-//         },
-//         {
-//             'question': '',
-//             'image': '',
-//             'answers': [
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
-//                 { text: '', isCorrect: false },
+//                 { text: '40%', isCorrect: true },
+//                 { text: '25%', isCorrect: false },
+//                 { text: '50%', isCorrect: false },
+//                 { text: '75%', isCorrect: false },
 //             ],
 //         }
 //     ]

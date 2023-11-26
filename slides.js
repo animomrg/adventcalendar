@@ -1,5 +1,3 @@
-
-
 // export const warningSlides = [
 //     {
 //         header: 'No Peeking!',
@@ -26,8 +24,6 @@
 //         img: './images/warningimgs/frank.png'
 //     }
 // ];
-
-
 
 // export const introSlides = [
 //     [

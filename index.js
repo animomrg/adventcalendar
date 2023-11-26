@@ -24,9 +24,9 @@ function greenTheme() {
 
 function redTheme() {
     root.style.setProperty('--clr-primary-1', '#A82222');
-    root.style.setProperty('--clr-primary-2', '#DB0000');
-    root.style.setProperty('--clr-primary-3', '#990606');
-    root.style.setProperty('--clr-primary-4', '#4b0f0f');
+    root.style.setProperty('--clr-primary-2', '#f20000');
+    root.style.setProperty('--clr-primary-3', '#490000');
+    root.style.setProperty('--clr-primary-4', '#670216');
     root.style.setProperty('--clr-primary-5', '#331010');
     redToggle.style.color = 'var(--clr-primary-2)';
     greenToggle.style.color = 'var(--clr-primary-1)';
@@ -34,7 +34,7 @@ function redTheme() {
 };
 
 function snowTheme() {
-    root.style.setProperty('--clr-primary-1', '#CDFFFF');
+    root.style.setProperty('--clr-primary-1', '#7efcfc');
     root.style.setProperty('--clr-primary-2', '#ffffff');
     root.style.setProperty('--clr-primary-3', '#00FFFF');
     root.style.setProperty('--clr-primary-4', 'rgb(15, 251, 247)');
@@ -125,7 +125,7 @@ function setNumSize() {
 }
 
 // DAY BUTTONS
-const currentDate = 5
+const currentDate = 7
 // const currentDate = new Date().getDate();
 
 // const currentDate = 5;
@@ -239,39 +239,72 @@ function warningActivate() {
 };
 
 // // TRIVIA VARIABLES
-let currentQuestion = 0;
-let userScore = 0;
-let dayQuestions = [];
+
 const triviaModal = document.querySelector('.trivia-modal');
+const pianoSection = document.querySelector('.piano-section');
 const questionContainer = document.querySelector('.question-container');
+const questionInfo = document.querySelector('.question-info');
 const questionImgContainer = document.querySelector('.question-img-container');
 const answerContainer = document.querySelector('.answer-container');
-const elQuestion = document.getElementById('question-text');
+const elQuestion = document.querySelector('.question-text');
 const elImage = document.getElementById('question-image');
 
 function triviaStart(date) {
-    triviaModal.style.display = 'block';
+    let currentQuestion = 0;
+    let score = 0;
+    let dayQuestions = questions[date - 1];
     introModal.style.display = 'none';
-    dayQuestions = questions[date - 1];
-    loadQuestion(date);
+    triviaModal.style.display = 'block';
+    questionInfo.style.display = 'block';
+    if (date == 3 || date == 9 || date == 16 || date == 23) {
+        pianoSection.style.display = 'block';
+        elQuestion.classList.add('piano-question');
+
+        const keys = document.querySelectorAll(".key");
+        const note = document.querySelector(".nowplaying");
+
+        function playNote(e) {
+            const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
+            const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+
+            if (!key) return;
+
+            const keyNote = key.getAttribute("data-note");
+
+            key.classList.add("playing");
+            note.innerHTML = keyNote;
+            audio.currentTime = 0;
+            audio.play();
+        }
+
+        function removeTransition(e) {
+            if (e.propertyName !== "transform") return;
+            this.classList.remove("playing");
+        }
+
+        keys.forEach(key => key.addEventListener("transitionend", removeTransition));
+        window.addEventListener("keydown", playNote);
+    }
+    
+    loadQuestion(date, dayQuestions, currentQuestion, score);
 };
 
-function loadQuestion(date) {
-    elQuestion.innerHTML = dayQuestions[currentQuestion].question;
-    if (dayQuestions[currentQuestion].image) {
-        elImage.src = dayQuestions[currentQuestion].image;
+function loadQuestion(date, questions, currentQ, score) {
+    elQuestion.innerHTML = questions[currentQ].question;
+    if (questions[currentQ].image) {
+        elImage.src = questions[currentQ].image;
     } else {
         questionImgContainer.style.display = 'none';
         questionContainer.style.height = '80%';    
     }
     answerContainer.innerHTML = "";
 
-    for (let i = 0; i < dayQuestions.length - 1; i++) {
+    for (let i = 0; i < questions.length - 1; i++) {
         const answerDiv = document.createElement('div');
         const answer = document.createElement('input');
         const answerLabel = document.createElement('label');
         
-        answerLabel.textContent = dayQuestions[currentQuestion].answers[i].text;
+        answerLabel.textContent = questions[currentQ].answers[i].text;
         answerLabel.classList.add('answer-label');
         answerLabel.htmlFor = i;
 
@@ -281,17 +314,17 @@ function loadQuestion(date) {
         answer.id = i;
         answer.className = 'answer-button';
         answer.addEventListener('click', () => {
-            if (dayQuestions[currentQuestion].answers[answer.id].isCorrect) {
-                userScore++;
+            if (questions[currentQ].answers[answer.id].isCorrect) {
+                score++;
                 answerLabel.classList.add('correct-answer');
                 setTimeout(() => {
-                    nextQuestion(date);
+                    nextQuestion(date, questions, currentQ, score);
                 }, 2000);
 
             } else {
                 answerLabel.classList.add('incorrect-answer');
                 setTimeout(() => {
-                    nextQuestion(date);
+                    nextQuestion(date, questions, currentQ, score);
                 }, 2000);
             }
         });
@@ -304,19 +337,20 @@ function loadQuestion(date) {
     }
 };
 
-function nextQuestion(date) {
-    if (currentQuestion < dayQuestions.length - 1) {
-        currentQuestion++;
-        loadQuestion(date);
+function nextQuestion(date, questions, currentQ, score) {
+    if (currentQ < questions.length - 1) {
+        currentQ++;
+        loadQuestion(date, questions, currentQ, score);
+        
     } else {
         questionContainer.style.display = 'none';
         questionImgContainer.style.display = 'none';
         answerContainer.style.display = 'none';
-        loadScore(date);
+        loadScore(date, questions, score);
     }
 };
 
-function loadScore(date) {
+function loadScore(date, questions, score) {
     const scoreContainer = document.querySelector('.score-container');
     const scoreText = document.getElementById('score-text');
     const scoreImgContainer = document.querySelector('.score-img-container');
@@ -329,29 +363,27 @@ function loadScore(date) {
         questionContainer.style.display = 'block';
         questionImgContainer.style.display = 'block';
         answerContainer.style.display = 'grid';
-        userScore = 0;
         currentSlide = 0;
-        currentQuestion = 0;
         returnHome();
     });
 
-    updateBtn(date, userScore);
+    updateBtn(date, score);
 
     scoreContainer.style.display = 'block';
     scoreImgContainer.style.display = 'block';
     scoreImg.style.display = 'block';
     homeBtnContainer.style.display = 'block';
 
-    scoreText.textContent = `You scored ${userScore} out of ${dayQuestions.length}!`;
-    if (userScore === 5) {
+    scoreText.textContent = `You scored ${score} out of ${questions.length}!`;
+    if (score === 5) {
         scoreImg.src = './images/scoregifs/kidthumbsup.gif';
-    } else if (userScore === 4) {
+    } else if (score === 4) {
         scoreImg.src = './images/scoregifs/babythumbsup.gif';
-    } else if (userScore === 3) {
+    } else if (score === 3) {
         scoreImg.src = './images/scoregifs/notbad.gif';
-    } else if (userScore === 2) {
+    } else if (score === 2) {
         scoreImg.src = './images/scoregifs/larry.gif';
-    } else if (userScore === 1) {
+    } else if (score === 1) {
         scoreImg.src = './images/scoregifs/ouch.gif';
     } else {
         scoreImg.src = './images/scoregifs/youch.gif';
@@ -365,7 +397,6 @@ function returnHome() {
     triviaModal.style.display = 'none';
     titleSection.style.display = 'flex';
     dayBoxes.style.display = 'grid';
-    dayQuestions = [];
 };
 
 function updateBtn(date, score) {
@@ -395,27 +426,27 @@ function initializeCalendar() {
     }
 };
 
-const welcomeMsg = document.querySelector('.welcome-msg');
-const welcomeHeader = document.getElementById('welcome-header');
-const welcomeText = document.getElementById('welcome-text');
-const welcomeBtn = document.getElementById('welcome-btn');
-const welcomeForm = document.getElementById('welcome-form');
-const nameInput = document.getElementById('user-name-input');
-const readyBtn = document.getElementById('ready-btn');
+// const welcomeMsg = document.querySelector('.welcome-msg');
+// const welcomeHeader = document.getElementById('welcome-header');
+// const welcomeText = document.getElementById('welcome-text');
+// const welcomeBtn = document.getElementById('welcome-btn');
+// const welcomeForm = document.getElementById('welcome-form');
+// const nameInput = document.getElementById('user-name-input');
+// const readyBtn = document.getElementById('ready-btn');
 
-function initializeUsername() {
-    if (localStorage.getItem('username')) {
-        const name = localStorage.getItem('username');
-        welcomeHeader.textContent = `Welcome back, ${name}!`
-        welcomeText.style.display = 'block';
-        welcomeText.textContent =  'Ready to get started?';
-        welcomeForm.style.display = 'none';
-        welcomeMsg.style.display = 'block';
-        readyBtn.style.display = 'block';
-    } else {
-        welcomeMsg.style.display = 'block';
-    }
-};
+// function initializeUsername() {
+//     if (localStorage.getItem('username')) {
+//         const name = localStorage.getItem('username');
+//         welcomeHeader.textContent = `Welcome back, ${name}!`
+//         welcomeText.style.display = 'block';
+//         welcomeText.textContent =  'Ready to get started?';
+//         welcomeForm.style.display = 'none';
+//         welcomeMsg.style.display = 'block';
+//         readyBtn.style.display = 'block';
+//     } else {
+//         welcomeMsg.style.display = 'block';
+//     }
+// };
 
 function initializeTheme() {
         if (localStorage.getItem('theme-color')) {
@@ -460,7 +491,7 @@ function initializeNumSize() {
 };  
 
 document.addEventListener("DOMContentLoaded", () => {
-    initializeUsername();
+    // initializeUsername();
     initializeTheme();
     initializeBackground();
     initializeFont();
@@ -468,27 +499,30 @@ document.addEventListener("DOMContentLoaded", () => {
     initializeCalendar();
 });
 
-readyBtn.addEventListener('click', () => {
-    welcomeMsg.style.display = 'none';
-});
+// readyBtn.addEventListener('click', () => {
+//     welcomeMsg.style.display = 'none';
+// });
 
-welcomeForm.addEventListener('submit', (e) => e.preventDefault());
+// welcomeForm.addEventListener('submit', (e) => e.preventDefault());
 
-welcomeBtn.addEventListener('click', () => {
-    localStorage.setItem('username', nameInput.value);
-    nameDisplayCheck();
-});
+// welcomeBtn.addEventListener('click', () => {
+//     localStorage.setItem('username', nameInput.value);
+//     nameDisplayCheck();
+// });
 
-function nameDisplayCheck() {
-    if (localStorage.getItem('username')) {
-        const name = localStorage.getItem('username');
-        welcomeHeader.textContent = `Welcome, ${name}!`
-        welcomeText.style.display = 'block';
-        welcomeText.textContent =  'Ready to get started?'; 
-    } else {
-        welcomeText.style.display = 'block';
-        welcomeText.textContent = 'Ready to get started?'
-    }
-    welcomeForm.style.display = 'none';
-    readyBtn.style.display = 'block';
-};
+// function nameDisplayCheck() {
+//     if (localStorage.getItem('username')) {
+//         const name = localStorage.getItem('username');
+//         welcomeHeader.textContent = `Welcome, ${name}!`
+//         welcomeText.style.display = 'block';
+//         welcomeText.textContent =  'Ready to get started?'; 
+//     } else {
+//         welcomeText.style.display = 'block';
+//         welcomeText.textContent = 'Ready to get started?'
+//     }
+//     welcomeForm.style.display = 'none';
+//     readyBtn.style.display = 'block';
+// };
+
+
+

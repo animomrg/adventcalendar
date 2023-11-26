@@ -130,7 +130,7 @@ Classes
     transform: translate(-50%, -50%);
     width: 90vw;
     max-width: 600px;
-    height: 80vh;
+    height: 90vh;
     border: 2px solid var(--clr-primary-2);
     /* background-color: var(--clr-primary-4); */
     border-radius: 10px;
@@ -390,7 +390,7 @@ Classes
     position: absolute;
     color: var(--clr-primary-2);
     font-size: 1.75rem;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
@@ -505,7 +505,7 @@ TRIVIA MODAL
     text-align: center;
 }
 
-#question-text {
+.question-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -513,6 +513,10 @@ TRIVIA MODAL
     width: 100%;
     text-align: center;
     margin: 0;
+}
+
+.piano-question {
+    top: 100%;
 }
 
 .question-img-container {
@@ -526,17 +530,25 @@ TRIVIA MODAL
 #question-image {
     position: relative;
     display: block;
-    margin: auto;
+    margin: 5% auto;
     width: 50%;
     border: 3px solid var(--clr-primary-2);
     border-radius: 20px;
 }
 
 .question-info {
+    display: none;
     position: relative;
     margin: 5% auto 5% auto;
     height: 50%;
     width: 80%;
+}
+
+.piano-section {
+    display: none;
+    position: relative;
+    height: 80%;
+    width: 100%;
 }
 
 .answer-container {
@@ -723,7 +735,89 @@ TRIVIA MODAL
     display: none;
 }
 
-/* @media only screen and (max-width: 850px) {
+#piano-wrap {
+    position: relative;
+    height: 80%;
+    width: 100%;
+    margin: auto;
+}
+
+.nowplaying {
+    display: none;
+}
+
+.keys {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 880px;
+    position: relative;
+    margin: 10% auto;
+    cursor: pointer;
+}
+
+.key {
+    position: relative;
+    border: 4px solid black;
+    border-radius: .5rem;
+    transition: all .07s ease;
+    display: block;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.key:not(.sharp) {
+    float: left;
+    width: 10%;
+    height: 100%;
+    background: rgba(255, 255, 255, .8);    
+}
+
+.key.sharp {
+    position: absolute;
+    width: 6%;
+    height: 60%;
+    background: #000;
+    color: #eee;
+    top: 0;
+    z-index: 3;
+  }
+
+.key[data-key="87"] {
+    left: 7%;
+  }
+
+.key[data-key="69"] {
+    left: 17%;
+  }
+
+.key[data-key="84"]  {
+    left: 37%;
+  }
+
+.key[data-key="89"] {
+    left: 47%;
+  }
+
+.key[data-key="85"] {
+    left: 57%;    
+  }
+
+.key[data-key="79"] {
+    left: 77%;    
+  }
+
+.key[data-key="80"] {
+    left: 87%;    
+  }
+
+.playing {
+    transform: scale(.95);
+    border-color: #028ae9;
+    box-shadow: 0 0 1rem #028ae9;
+}
+
+@media only screen and (max-width: 850px) {
     .main-container {
         height: 75vh;
     }
@@ -774,4 +868,4 @@ TRIVIA MODAL
     #advent-title {
         font-size: 1.00rem;
     }
-} */
+}
