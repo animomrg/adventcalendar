@@ -1,5 +1,6 @@
 import { questions } from "./questions.js";
 import { introSlides, warningSlides } from "./slides.js";
+import { postTrivia, welcomeText } from "./content.js";
 "use strict";
 
 /*
@@ -125,10 +126,8 @@ function setNumSize() {
 }
 
 // DAY BUTTONS
-const currentDate = 7
-// const currentDate = new Date().getDate();
+const currentDate = new Date().getDate();
 
-// const currentDate = 5;
 const dayBtns = document.querySelectorAll('.btn-day');
 const modalOverlay = document.querySelector('.modal-overlay');
 const introModal = document.querySelector('.intro-modal');
@@ -199,7 +198,7 @@ function modalActivate() {
 };
 
 function dailyIntro(date) {
-    introSlideArray = introSlides[date - 1];
+    introSlideArray = introSlides[date * 1];
     introHeader.textContent = `December ${date}`;
     updateSlide(); 
     playBtn.addEventListener('click', () => {
@@ -256,7 +255,7 @@ function triviaStart(date) {
     introModal.style.display = 'none';
     triviaModal.style.display = 'block';
     questionInfo.style.display = 'block';
-    if (date == 3 || date == 9 || date == 16 || date == 23) {
+    if (date == 3 || date == 16 || date == 23) {
         pianoSection.style.display = 'block';
         elQuestion.classList.add('piano-question');
 
@@ -357,9 +356,11 @@ function loadScore(date, questions, score) {
     const scoreImg = document.getElementById('score-img');
     const homeBtnContainer = document.querySelector('.home-btn-container');
     const homeBtn = document.getElementById('home-btn');
+    const reminderText = document.getElementById('reminder-text');
 
     homeBtn.addEventListener('click', () => {
         scoreContainer.style.display = 'none';
+        pianoSection.style.display = 'none';
         questionContainer.style.display = 'block';
         questionImgContainer.style.display = 'block';
         answerContainer.style.display = 'grid';
@@ -375,18 +376,25 @@ function loadScore(date, questions, score) {
     homeBtnContainer.style.display = 'block';
 
     scoreText.textContent = `You scored ${score} out of ${questions.length}!`;
+    let randomNum = Math.floor(Math.random() * 3);
     if (score === 5) {
-        scoreImg.src = './images/scoregifs/kidthumbsup.gif';
+        scoreImg.src = './images/scoregifs/santa.gif';
+        reminderText.textContent = postTrivia[0][randomNum];
     } else if (score === 4) {
-        scoreImg.src = './images/scoregifs/babythumbsup.gif';
+        scoreImg.src = './images/scoregifs/santawink.gif';
+        reminderText.textContent = postTrivia[1][randomNum];
     } else if (score === 3) {
-        scoreImg.src = './images/scoregifs/notbad.gif';
+        scoreImg.src = './images/scoregifs/ralphieshrug.gif';
+        reminderText.textContent = postTrivia[2][randomNum];
     } else if (score === 2) {
-        scoreImg.src = './images/scoregifs/larry.gif';
+        scoreImg.src = './images/scoregifs/sketch.gif';
+        reminderText.textContent = postTrivia[3][randomNum];
     } else if (score === 1) {
-        scoreImg.src = './images/scoregifs/ouch.gif';
+        scoreImg.src = './images/scoregifs/christmasangry.gif';
+        reminderText.textContent = postTrivia[4][randomNum];
     } else {
-        scoreImg.src = './images/scoregifs/youch.gif';
+        scoreImg.src = './images/scoregifs/samuel.gif';
+        reminderText.textContent = postTrivia[5][randomNum];
     }
 };
 
@@ -426,27 +434,28 @@ function initializeCalendar() {
     }
 };
 
-// const welcomeMsg = document.querySelector('.welcome-msg');
-// const welcomeHeader = document.getElementById('welcome-header');
-// const welcomeText = document.getElementById('welcome-text');
-// const welcomeBtn = document.getElementById('welcome-btn');
-// const welcomeForm = document.getElementById('welcome-form');
-// const nameInput = document.getElementById('user-name-input');
-// const readyBtn = document.getElementById('ready-btn');
+const welcomeMsg = document.querySelector('.welcome-msg');
+const welcomeHeader = document.getElementById('welcome-header');
+const welcomeTextContent = document.getElementById('welcome-text');
+const welcomeBtn = document.getElementById('welcome-btn');
+const welcomeForm = document.getElementById('welcome-form');
+const nameInput = document.getElementById('user-name-input');
+const readyBtn = document.getElementById('ready-btn');
 
-// function initializeUsername() {
-//     if (localStorage.getItem('username')) {
-//         const name = localStorage.getItem('username');
-//         welcomeHeader.textContent = `Welcome back, ${name}!`
-//         welcomeText.style.display = 'block';
-//         welcomeText.textContent =  'Ready to get started?';
-//         welcomeForm.style.display = 'none';
-//         welcomeMsg.style.display = 'block';
-//         readyBtn.style.display = 'block';
-//     } else {
-//         welcomeMsg.style.display = 'block';
-//     }
-// };
+function initializeUsername() {
+    if (localStorage.getItem('username')) {
+        const name = localStorage.getItem('username');
+        let index = Math.floor(Math.random() * welcomeText.length)
+        welcomeHeader.textContent = `Welcome back, ${name}!`
+        welcomeTextContent.style.display = 'block';
+        welcomeTextContent.textContent = `${welcomeText[index]}`;
+        welcomeForm.style.display = 'none';
+        welcomeMsg.style.display = 'block';
+        readyBtn.style.display = 'block';
+    } else {
+        welcomeMsg.style.display = 'block';
+    }
+};
 
 function initializeTheme() {
         if (localStorage.getItem('theme-color')) {
@@ -491,7 +500,7 @@ function initializeNumSize() {
 };  
 
 document.addEventListener("DOMContentLoaded", () => {
-    // initializeUsername();
+    initializeUsername();
     initializeTheme();
     initializeBackground();
     initializeFont();
@@ -499,30 +508,28 @@ document.addEventListener("DOMContentLoaded", () => {
     initializeCalendar();
 });
 
-// readyBtn.addEventListener('click', () => {
-//     welcomeMsg.style.display = 'none';
-// });
+readyBtn.addEventListener('click', () => {
+    welcomeMsg.style.display = 'none';
+});
 
-// welcomeForm.addEventListener('submit', (e) => e.preventDefault());
+welcomeForm.addEventListener('submit', (e) => e.preventDefault());
 
-// welcomeBtn.addEventListener('click', () => {
-//     localStorage.setItem('username', nameInput.value);
-//     nameDisplayCheck();
-// });
+welcomeBtn.addEventListener('click', () => {
+    localStorage.setItem('username', nameInput.value);
+    nameDisplayCheck();
+});
 
-// function nameDisplayCheck() {
-//     if (localStorage.getItem('username')) {
-//         const name = localStorage.getItem('username');
-//         welcomeHeader.textContent = `Welcome, ${name}!`
-//         welcomeText.style.display = 'block';
-//         welcomeText.textContent =  'Ready to get started?'; 
-//     } else {
-//         welcomeText.style.display = 'block';
-//         welcomeText.textContent = 'Ready to get started?'
-//     }
-//     welcomeForm.style.display = 'none';
-//     readyBtn.style.display = 'block';
-// };
+function nameDisplayCheck() {
+    if (localStorage.getItem('username')) {
+        const name = localStorage.getItem('username');
+        welcomeHeader.textContent = `Welcome, ${name}!`
+    }
+    let index = Math.floor(Math.random() * welcomeText.length);
+    welcomeTextContent.style.display = 'block';
+    welcomeTextContent.textContent = `${welcomeText[index]}`; 
+    welcomeForm.style.display = 'none';
+    readyBtn.style.display = 'block';
+};
 
 
 
