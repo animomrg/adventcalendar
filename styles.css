@@ -20,8 +20,8 @@ Colors/Fonts
     /* snow shades */
     --clr-primary-11: #7efcfc;
     --clr-primary-12: #ffffff;
-    --clr-primary-13: #00FFFF;
-    --clr-primary-14: rgb(15, 251, 247);
+    --clr-primary-13: #00ccff;
+    --clr-primary-14: #00ffc8;
     --clr-primary-15: #14a8fe;
     /* other props */
     --clr-white: #fff;
@@ -314,7 +314,8 @@ Classes
 .completed-day {
     background-image: url(./images/star.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom left;
+    background-size: 40%;
     background-color: var(--clr-primary-5);
     border: 2px dotted var(--clr-primary-2);
     animation: none;

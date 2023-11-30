@@ -30,7 +30,7 @@ export const introSlides = [
         "It's great to have you here to join the fun!<br><br>Here are a few things to remember as you go along...",
         "You can use the toggle buttons in the top left and right to choose your favourite settings.",
         "Don't forget to come back every day until Christmas to fully test your knowledge of the holiday season.",
-        "Look out for a clue each day that will help unlock a special surprise on December 25th!",
+        "If you run into anything that doesn't work, or feels broken, you can refresh the page and try again, or let me know and I'll try to fix it.",
         "Last but not least, don't forget to have fun and enjoy the holidays!",
     ],
     [ // DEC 1

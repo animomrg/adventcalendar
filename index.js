@@ -115,6 +115,7 @@ function setNumSize() {
         for (let i = 0; i < dayNumbers.length; i++) {
             dayNumbers[i].classList.add('large-numbers'); 
         };
+
     } else {
         numSize = 'small';
         sizeIcon.classList.toggle('fa-maximize');
@@ -132,7 +133,7 @@ const dayBtns = document.querySelectorAll('.btn-day');
 const modalOverlay = document.querySelector('.modal-overlay');
 const introModal = document.querySelector('.intro-modal');
 const titleSection = document.querySelector('.title');
-const dayBoxes = document.querySelector('.day-boxes')
+const dayBoxes = document.querySelector('.day-boxes');
 
 // MODAL RESET FUNCTION
 const introHeader = document.getElementById('intro-header');
@@ -174,13 +175,13 @@ playBtn.addEventListener('click', () => {
 
 dayBtns.forEach(button => {
     let btnDay = button.textContent;
-    if (currentDate >= btnDay) {
+    if (currentDate >= btnDay && currentDate < 25) {
         button.classList.add('unlocked-day');
     } else {
         button.classList.add('locked-day');
     }
     button.addEventListener('click', () => {
-        if (currentDate >= btnDay) {
+        if (currentDate >= btnDay && currentDate < 25) {
             modalActivate();
             introModal.style.display = 'block';
             dailyIntro(btnDay);
@@ -411,7 +412,17 @@ function updateBtn(date, score) {
     const btnNum = Number(date);
     let completedDayBtn = document.querySelector(`button[value="${btnNum}"]`);
     completedDayBtn.classList.add('completed-day');
-    let completeDay = { btnNum, score }
+    completedDayBtn.removeEventListener('click', () => {
+        if (currentDate >= btnDay) {
+            modalActivate();
+            introModal.style.display = 'block';
+            dailyIntro(btnDay);
+        } else {
+            modalActivate();
+            warningActivate();
+        };
+    });
+    let completeDay = { btnNum, score };
     let completedDays = getCompletedDays();
     completedDays.push(completeDay);
     localStorage.setItem('complete-days', JSON.stringify(completedDays));
@@ -429,7 +440,7 @@ function initializeCalendar() {
         completedDays.forEach((item) => {
             let btnNum = item.btnNum;
             let completedDayBtn = document.querySelector(`button[value="${btnNum}"]`);
-            completedDayBtn.classList.add('completed-day')
+            completedDayBtn.classList.add('completed-day');
         });
     }
 };
