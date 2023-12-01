@@ -39,5 +39,4 @@ export const welcomeText = [
     "Christmas Day will always be, just as long as we have we.",
     "Cheer up, dude. It's Christmas!",
     "Good tidings we bring to you and your kin. We wish you a merry Christmas, and a Happy New Year!",
-    "You will get a sentimental feeling when you hear... Voices singing, let's be jolly. Deck the halls with boughs of holly!",
 ]
