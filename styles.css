@@ -898,11 +898,16 @@ TRIVIA MODAL
     }
 
     #score-text {
-        margin-top: 8%;
+        margin-top: 8% auto;
+        width: 80%;
     }
 
     .score-img-container {
         height: 30%;
+    }
+
+    .score-img {
+        width: 67%;
     }
 
     #welcome-text {
