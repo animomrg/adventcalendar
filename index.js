@@ -127,8 +127,7 @@ function setNumSize() {
 }
 
 // DAY BUTTONS
-// const currentDate = new Date().getDate();
-const currentDate = 3;
+const currentDate = new Date().getDate();
 
 const dayBtns = document.querySelectorAll('.btn-day');
 const modalOverlay = document.querySelector('.modal-overlay');
@@ -547,6 +546,3 @@ function welcomeModal() {
     welcomeForm.style.display = 'none';
     readyBtn.style.display = 'block';
 };
-
-
-

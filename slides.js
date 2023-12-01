@@ -13,11 +13,7 @@ export const warningSlides = [
     },
     {
         header: 'Still The Cowboy, Mr. McLane?',
-        img: './images/warningimgs/hans.png'
-    },
-    {
-        header: 'What Do We Have Here?',
-        img: './images/warningimgs/oogie.png'
+        img: './images/warningimgs/gruber.png'
     },
     {
         header: 'What Do You Think You\'re Doing?',
@@ -35,7 +31,8 @@ export const introSlides = [
     ],
     [ // DEC 1
         "I'm sure we'd all agree that the best thing about turning the calendar to December is getting to open the first door of the advent calendar...", 
-        "Unless, that is, you happen to be a huge <a href='https://blog.williams-sonoma.com/peppermint-bark-day/' target='_blank'>peppermint bark</a> fan.",
+        "Unless, that is, you happen to celebrate <a href='https://blog.williams-sonoma.com/peppermint-bark-day/' target='_blank'>National Peppermint Bark Day</a>...",
+        "If that's news to you I'm sure you're not the only one. Here's a <a href='https://sallysbakingaddiction.com/peppermint-bark/' target='_blank'>recipe</a> if you want to join in the celebration!",
         "No chocolates <em>(or peppermint bark)</em> here unfortunately. But we do have round one of our trivia advent-ure queued up and ready!",
         "All you need to do is click or tap the correct multiple choice option to make your answer. Sound easy? Alright then. Let's go!",
     ],
