@@ -459,7 +459,7 @@ function initializeUsername() {
     if (localStorage.getItem('username')) {
         const name = localStorage.getItem('username');
         let index = Math.floor(Math.random() * welcomeText.length)
-        welcomeHeader.textContent = `Welcome back, ${name}!`
+        welcomeHeader.textContent = `Welcome Back, ${name}!`
         welcomeTextContent.style.display = 'block';
         welcomeTextContent.textContent = `${welcomeText[index]}`;
         welcomeForm.style.display = 'none';
