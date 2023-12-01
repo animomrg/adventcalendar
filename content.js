@@ -32,12 +32,12 @@ export const postTrivia = [
 ];
 
 export const welcomeText = [
-    "Lovely to see you again. Let's get started!",
+    "Lovely to see you again. Let's get this party started!",
     "Hope you are having a wonderful December day. Let's get to it, shall we?",
     "Had a cookie yet today? Better fuel up before you get started!",
     "No matter how different a Who may appear, he will always be welcomed with holiday cheer!",
     "Christmas Day will always be, just as long as we have we.",
     "Cheer up, dude. It's Christmas!",
     "Good tidings we bring to you and your kin. We wish you a merry Christmas, and a Happy New Year!",
-    "You will get a sentimental feeling when you hear. Voices singing, let's be jolly. Deck the halls with boughs of holly!",
+    "You will get a sentimental feeling when you hear... Voices singing, let's be jolly. Deck the halls with boughs of holly!",
 ]
