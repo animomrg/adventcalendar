@@ -57,14 +57,14 @@ export const questions = [
             'image': '',
             'answers': [
                 { text: 'The Grinch (2018)', isCorrect: true },
-                { text: 'Home Alone', isCorrect: false },
+                { text: 'Home Alone (1990)', isCorrect: false },
                 { text: 'A Christmas Carol (2009)', isCorrect: false },
                 { text: 'The Polar Express (2004)', isCorrect: false },
             ],
         },
         {
             'question': 'In order to visit every household in the world that celebrates Christmas, how much time would Santa have to spend at each house?',
-            'image': '',
+            'image': './images/questionimgs/santadog.gif',
             'answers': [
                 { text: '1 Second', isCorrect: false },
                 { text: '0.05 Seconds', isCorrect: false },
@@ -83,8 +83,8 @@ export const questions = [
             ],
         },
         {
-            'question': 'In the Middle Ages, the English celebrated Christmas dinner not with turkey but with what?',
-            'image': '',
+            'question': 'In the Middle Ages, the English traditionally celebrated Christmas dinner not with turkey but with what?',
+            'image': './images/questionimgs/dinner.gif',
             'answers': [
                 { text: 'Roast Goose', isCorrect: false },
                 { text: 'A Boar\'s Head', isCorrect: true },
@@ -93,7 +93,7 @@ export const questions = [
             ],
         },
         {
-            'question': 'If you totalled all the gifts mentioned in each verse of <em>Twelve Days of Christmas</em>, how many gifts would you have?',
+            'question': 'If you totalled all of the gifts mentioned in each verse of <em>Twelve Days of Christmas</em>, how many gifts would you have?',
             'image': '',
             'answers': [
                 { text: '78', isCorrect: false },

@@ -128,6 +128,7 @@ function setNumSize() {
 
 // DAY BUTTONS
 const currentDate = new Date().getDate();
+// const currentDate = 2
 
 const dayBtns = document.querySelectorAll('.btn-day');
 const modalOverlay = document.querySelector('.modal-overlay');
@@ -461,7 +462,7 @@ function initializeUsername() {
         let index = Math.floor(Math.random() * welcomeText.length)
         welcomeHeader.textContent = `Welcome Back, ${name}!`
         welcomeTextContent.style.display = 'block';
-        welcomeTextContent.textContent = `${welcomeText[index]}`;
+        welcomeTextContent.innerHTML = `${welcomeText[index]}`;
         welcomeForm.style.display = 'none';
         welcomeMsg.style.display = 'block';
         readyBtn.style.display = 'block';

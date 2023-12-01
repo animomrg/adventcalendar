@@ -18,6 +18,18 @@ export const warningSlides = [
     {
         header: 'What Do You Think You\'re Doing?',
         img: './images/warningimgs/frank.png'
+    },
+    {
+        header: 'Impatience Is One Thing I Can\'t Stand In The Least!',
+        img: './images/warningimgs/grinch.gif'
+    },
+    {
+        header: 'Welcome To The Naughty List!',
+        img: './images/warningimgs/dog.gif'
+    },
+    {
+        header: 'No! Stop That!',
+        img: './images/warningimgs/treedog.gif'
     }
 ];
 
@@ -37,8 +49,9 @@ export const introSlides = [
         "All you need to do is click or tap the correct multiple choice option to make your answer. Sound easy? Alright then. Let's go!",
     ],
     [ // DEC 2
+        "Welcome back for day number <strong>2</strong> of this wonderful, winding, whimsical trivia adventure...",
         "Did you know that <a href='https://growerdirect.com/potpourri/' target='_blank'><em>potpourri</em></a> has been around since at least the 12th century?",
-        "Back then they'd soak herbs and spices in liquor until they were rotten and sometimes even wear them as a form of deodorant...",
+        "Back then they'd soak herbs and spices in liquor until they were rotten and would sometimes wear them as a form of deodorant...",
         "Or, more accurately perhaps, a kind of B.O.-covering axe body spray type concoction.",
         "Why the discourse on potpourri, you might ask?",
         "Because it's what I call a category that isn't really a category at all. Just an amalgam of rotten questions that were thrown together and repurposed for good.",
