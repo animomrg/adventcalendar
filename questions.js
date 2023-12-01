@@ -2,7 +2,7 @@ export const questions = [
     [// DAY 1 - MOVIE - ELF
         {
             'question': "What movie is this?",
-            'image': '/images/questionimgs/elf1.png',
+            'image': '/images/questionimgs/elfclap.gif',
             'answers': [
                 { text: 'Home Alone', isCorrect: false },
                 { text: 'The Grinch', isCorrect: false },
@@ -11,7 +11,7 @@ export const questions = [
             ],
         },
         {
-            'question': 'According to Buddy, which of the following is not a main food group?',
+            'question': 'According to Buddy, which of the following is not one of the main food groups for elves?',
             // 'image': '/images/questionimgs/food.png',
             'answers': [
                 { text: 'Chocolate', isCorrect: true },
@@ -21,7 +21,7 @@ export const questions = [
             ],
         },
         {
-            'question': 'What epithet does Buddy use to describe himself when he only makes 85 etch-a-sketches?',
+            'question': 'What epithet does Buddy use to describe himself when he only makes 85 etch-a-sketches <em>(compared to the standard quota of 1,000)</em>?',
             // 'image': './images/questionimgs/etch.png',
             'answers': [
                 { text: 'Bumbling Stumbling Doofus', isCorrect: false },
@@ -31,7 +31,7 @@ export const questions = [
             ],    
         },
         {
-            'question': 'What is the final leg of Buddy\'s journey from the North Pole?',
+            'question': 'On his way to New York City from the North Pole, what is the final leg of Buddy\'s journey?',
             // 'image': './images/questionimgs/narwhal.png',
             'answers': [
                 { text: 'The Sea of Swirly Twirly Gumdrops', isCorrect: false },
@@ -41,7 +41,7 @@ export const questions = [
             ],
         },
         {
-            'question': 'What Christmas Carol does the amassed crowd sing in order to power Santa\'s sleigh?',
+            'question': 'At the end of <em>Elf</em>, what Christmas Carol does the crowd sing in order to provide enough <em>Christmas Cheer</em> for Santa\'s sleigh?',
             // 'image': './images/questionimgs/elfsanta.png',
             'answers': [
                 { text: 'Rudolph The Red Nosed Reindeer', isCorrect: false },

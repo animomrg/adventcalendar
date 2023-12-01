@@ -84,7 +84,7 @@ function bgToggle() {
 
 // FONT TOGGLE
 const fontToggleBtn = document.getElementById('font-btn');
-const fonts = ['Mountains of Christmas', 'Comic Neue'];
+const fonts = ['Mountains of Christmas', 'Comic Neue', 'Montserrat'];
 const root = document.querySelector(':root');
 let fontIndex = 0;
 fontToggleBtn.addEventListener('click', fontToggle);
@@ -127,7 +127,8 @@ function setNumSize() {
 }
 
 // DAY BUTTONS
-const currentDate = new Date().getDate();
+// const currentDate = new Date().getDate();
+const currentDate = 3;
 
 const dayBtns = document.querySelectorAll('.btn-day');
 const modalOverlay = document.querySelector('.modal-overlay');
@@ -295,6 +296,8 @@ function loadQuestion(date, questions, currentQ, score) {
         elImage.src = questions[currentQ].image;
     } else {
         questionImgContainer.style.display = 'none';
+        questionInfo.style.height = '40%';
+        answerContainer.style.height = '40%';
         questionContainer.style.height = '80%';    
     }
     answerContainer.innerHTML = "";
@@ -527,17 +530,20 @@ welcomeForm.addEventListener('submit', (e) => e.preventDefault());
 
 welcomeBtn.addEventListener('click', () => {
     localStorage.setItem('username', nameInput.value);
-    nameDisplayCheck();
+    welcomeModal();
 });
 
-function nameDisplayCheck() {
-    if (localStorage.getItem('username')) {
-        const name = localStorage.getItem('username');
-        welcomeHeader.textContent = `Welcome, ${name}!`
-    }
-    let index = Math.floor(Math.random() * welcomeText.length);
+function welcomeModal() {
+    const name = localStorage.getItem('username');
+    welcomeHeader.style.display = "none";
     welcomeTextContent.style.display = 'block';
-    welcomeTextContent.textContent = `${welcomeText[index]}`; 
+    welcomeTextContent.innerHTML = `
+    <h4>Welcome to your advent calendar, ${name}! Hope you have some fun while you're here!</h4>
+    <br>
+    <h4>If you run into any issues, try refreshing the page <em>(classic, I know)</em> and let me know if something is broken.</h4>
+    <br>
+    <h4>Other than that, I hope you have fun and enjoy a little trivia challenge each day. Good luck!</h4>
+        `; 
     welcomeForm.style.display = 'none';
     readyBtn.style.display = 'block';
 };

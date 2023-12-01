@@ -27,7 +27,7 @@ export const warningSlides = [
 
 export const introSlides = [
     [ // Welcome
-        "It's great to have you here to join the fun!<br><br>Here are a few things to remember as you go along...",
+        "Thank you for coming to check our your advent calendar. It's great to have you here to join the fun!<br><br>Here are a few things to remember as you go along...",
         "You can use the toggle buttons in the top left and right to choose your favourite settings.",
         "Don't forget to come back every day until Christmas to fully test your knowledge of the holiday season.",
         "If you run into anything that doesn't work, or feels broken, you can refresh the page and try again, or let me know and I'll try to fix it.",
@@ -37,7 +37,7 @@ export const introSlides = [
         "I'm sure we'd all agree that the best thing about turning the calendar to December is getting to open the first door of the advent calendar...", 
         "Unless, that is, you happen to be a huge <a href='https://blog.williams-sonoma.com/peppermint-bark-day/' target='_blank'>peppermint bark</a> fan.",
         "No chocolates <em>(or peppermint bark)</em> here unfortunately. But we do have round one of our trivia advent-ure queued up and ready!",
-        "Remember, all you need to do is click or tap the correct multiple choice option to make your answer. Sound easy? Let's go!",
+        "All you need to do is click or tap the correct multiple choice option to make your answer. Sound easy? Alright then. Let's go!",
     ],
     [ // DEC 2
         "Did you know that <a href='https://growerdirect.com/potpourri/' target='_blank'><em>potpourri</em></a> has been around since at least the 12th century?",
