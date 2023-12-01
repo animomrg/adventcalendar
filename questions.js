@@ -53,7 +53,7 @@ export const questions = [
     ],
     [// DAY 2 - CHRISTMAS POTPURRI
         {
-            'question': 'What is the highest grossing Christmas movie of all time?',
+            'question': 'What is the highest grossing Christmas movie of <strong>all time</strong>?',
             'image': '',
             'answers': [
                 { text: 'The Grinch (2018)', isCorrect: true },
@@ -63,13 +63,13 @@ export const questions = [
             ],
         },
         {
-            'question': 'In order to visit every household that celebrates Christmas within the hours of Christmas Day, how much time would Santa spend at each house?',
+            'question': 'In order to visit every household in the world that celebrates Christmas, how much time would Santa have to spend at each house?',
             'image': '',
             'answers': [
                 { text: '1 Second', isCorrect: false },
                 { text: '0.05 Seconds', isCorrect: false },
                 { text: '0.0003 Seconds', isCorrect: true },
-                { text: 'As Much Time As He Wants', isCorrect: false },
+                { text: '0.000005 Seconds', isCorrect: false },
             ],
         },
         {
