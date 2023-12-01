@@ -842,6 +842,10 @@ TRIVIA MODAL
         margin: auto;
     }
 
+    .day-boxes {
+        margin-top: 5%;
+    }
+
     #advent-title {
         font-size: 1.2rem;
     }
@@ -851,16 +855,19 @@ TRIVIA MODAL
     }
 
     .answer-label {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .intro-text-container {
         font-size: 1.25rem;
-        line-height: 1.15;
+        line-height: 1.35;
     }
 
     .answer-label:hover {
-        background-image: none;
+        background-image: unset;
         color: var(--clr-primary-2);
         font-weight: initial;
         box-shadow: 0 4px 8px 0 var(--clr-primary-2), 0 6px 10px 0 var(--clr-primary-3);
