@@ -831,6 +831,7 @@ TRIVIA MODAL
         height: 80vh;
         margin: 5% auto;
     }
+
     .title {
         height: 10%;
         margin-top: 2%;
@@ -843,6 +844,10 @@ TRIVIA MODAL
 
     #advent-title {
         font-size: 1.2rem;
+    }
+
+    #warning-img {
+        height: 20%;
     }
 
     .answer-container {
@@ -877,7 +882,8 @@ TRIVIA MODAL
 }
 
 @media only screen and (max-width: 475px) {
+    
     #advent-title {
-        font-size: 1.00rem;
+        font-size: 0.75rem;
     }
 }
