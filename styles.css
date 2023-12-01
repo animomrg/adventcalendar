@@ -850,9 +850,13 @@ TRIVIA MODAL
         height: 20%;
     }
 
-    .answer-container {
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-columns: 1;
+    .answer-label {
+        font-size: 0.9rem;
+    }
+
+    .intro-text-container {
+        font-size: 1.25rem;
+        line-height: 1.15;
     }
 
     .answer-label:hover {
@@ -878,6 +882,10 @@ TRIVIA MODAL
         color: rgb(100, 0, 0);
         animation: bounce 1s ease-in-out infinite;
         pointer-events: none;
+    }
+
+    #score-text {
+        margin-top: 0;
     }
 }
 
