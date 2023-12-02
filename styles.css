@@ -115,6 +115,11 @@ p {
     font-family: var(--ff-primary);
   }
 
+hr {
+    color: var(--clr-primary-2);
+
+}
+
 /*
 =============== 
 Classes
@@ -394,7 +399,7 @@ Classes
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
+    width: 65%;
     text-align: center;
 }
 
@@ -532,7 +537,7 @@ TRIVIA MODAL
     position: relative;
     display: block;
     margin: 5% auto;
-    width: 75%;
+    width: 60%;
     border: 3px solid var(--clr-primary-2);
     border-radius: 20px;
 }
@@ -554,8 +559,9 @@ TRIVIA MODAL
 
 .answer-container {
     position: relative;
+    justify-items: center;
     width: 80%;
-    height: 30%;
+    height: 40%;
     margin: 5% auto 5% auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -564,13 +570,13 @@ TRIVIA MODAL
 .answer-div {
     margin: auto;
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 .answer-label {
     display: block;
     width: 80%;
-    height: 80%;
+    height: 90%;
     padding: 5%;
     margin: auto;
     border-radius: 25px;
@@ -688,6 +694,7 @@ TRIVIA MODAL
     position: absolute;
     width: 75%;
     top: 40%;
+    font-size: 1.25rem;
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
@@ -821,11 +828,42 @@ TRIVIA MODAL
     box-shadow: 0 0 1rem #028ae9;
 }
 
-@media only screen and (max-width: 850px) {
+#bday-image {
+    width: 95%;
+    border-radius: 10px;
+    border: 2px solid var(--clr-primary-2)
+}
+
+@media only screen and (max-width: 700px) {
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 0.8rem;
+    }
 
     .main-container {
         height: 80vh;
-        margin: 5% auto;
+        margin: auto;
+    }
+
+    .theme-toggle,
+    .theme-radio {
+        font-size: 1.2rem;
+    }
+
+    #welcome-text {
+        top: 50%;
+    }
+
+    #welcome-header {
+        top: 20%;
     }
 
     .title {
@@ -838,6 +876,10 @@ TRIVIA MODAL
         margin: auto;
     }
 
+    #advent-title {
+        font-size: 0.75rem;
+    }
+
     .title-content-border {
         border: 1px dotted var(--clr-primary-2);
         background-color: var(--clr-primary-5);
@@ -845,27 +887,35 @@ TRIVIA MODAL
     }
 
     .day-boxes {
-        margin-top: 5%;
-    }
-
-    #advent-title {
-        font-size: 1.2rem;
+        margin: 7% auto;
     }
 
     #warning-img {
-        height: 40%;
+        height: 35%;
     }
 
-    .answer-label {
-        font-size: 0.95rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .header-container {
+        margin-top: 10%;
+    }
+
+    #play-btn {
+        font-size: 1.25rem;
     }
 
     .intro-text-container {
         font-size: 1.25rem;
         line-height: 1.35;
+    }
+
+    .question-info {
+        height: 40%;
+    }
+    
+    .answer-label {
+        font-size: 0.95rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .answer-label:hover {
@@ -876,44 +926,31 @@ TRIVIA MODAL
     }
 
     .correct-answer {
-        background-image: linear-gradient(to bottom right, green, rgb(0, 230, 0));
+        color: rgb(0, 40, 0);
+        background-color: rgb(0, 230, 0);
         border: 3px solid green;
         box-shadow: 0 4px 8px 0 green, 0 6px 10px 0 rgb(0, 230, 0);
-        color: rgb(0, 40, 0);
         animation: bounce 1s ease-in-out infinite;
         pointer-events: none;
     }
     
     .incorrect-answer {
-        background-image: linear-gradient(to bottom right, red, rgb(100, 0, 0));
+        color: black;
+        background-color: red;
         border: 3px solid red;
         box-shadow: 0 4px 8px 0 red, 0 6px 10px 0 rgb(100, 0, 0);
-        color: rgb(100, 0, 0);
         animation: bounce 1s ease-in-out infinite;
         pointer-events: none;
     }
 
     #score-text {
-        margin-top: 8% auto;
+        margin: 8% auto;
         width: 80%;
     }
 
-    .score-img-container {
-        height: 30%;
+    #score-img {
+        width: 80%;
     }
 
-    .score-img {
-        width: 67%;
-    }
 
-    #welcome-text {
-        top: 50%;
-    }
-}
-
-@media only screen and (max-width: 475px) {
-    
-    #advent-title {
-        font-size: 0.75rem;
-    }
 }

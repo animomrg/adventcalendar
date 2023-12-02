@@ -103,162 +103,157 @@ export const questions = [
             ],
         }
     ],
-    [// DAY 3 - PIANO TUNES
-        {
-            'question': 'Notes:<br><br>E E E E E E E G C D E',
-            // 'image': '',
-            'answers': [
-                { text: 'O Holy Night', isCorrect: false },
-                { text: 'Let It Snow', isCorrect: false },
-                { text: 'Silent Night', isCorrect: false },
-                { text: 'Jingle Bells', isCorrect: true },
-            ],
-        },
-        {
-            'question': 'Notes:<br><br>G C C D C B A A A<br>D D E D C B G G',
-            // 'image': '',
-            'answers': [
-                { text: 'Rudolph The Red Nosed Reindeer', isCorrect: false },
-                { text: 'Jingle Bell Rock', isCorrect: false },
-                { text: 'We Wish You A Merry Christmas', isCorrect: true },
-                { text: 'Deck The Halls', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'Notes:<br><br>D C B A G A B G<br>A B C A B A G F# G',
-            // 'image': '',
-            'answers': [
-                { text: 'Deck The Halls', isCorrect: true },
-                { text: 'We Three Kings', isCorrect: false },
-                { text: 'Let It Snow', isCorrect: false },
-                { text: 'The First Noel', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'Notes:<br><br>D G G F# G B B A<br>D D D C B A B',
-            // 'image': '',
-            'answers': [
-                { text: 'Auld Lang Syne', isCorrect: false },
-                { text: 'Hark! The Herald Angels Sing', isCorrect: true },
-                { text: 'Silent Night', isCorrect: false },
-                { text: 'Joy To The World', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'Notes:<br><br>B A G E F# G F# E<br>G G A A B B D C B',
-            // 'image': '',
-            'answers': [
-                { text: 'Deck The Halls', isCorrect: false },
-                { text: 'O Holy Night', isCorrect: false },
-                { text: 'The First Noel', isCorrect: false },
-                { text: 'We Three Kings', isCorrect: true },
-            ],
-        }
-    ],
-    [// DAY 4 - MOVIE - DIE HARD
+    [// DAY 3 - MOVIE - LOVE ACTUALLY
     {
-        'question': 'What movie is this?',
-        'image': './images/questionimgs/mclane.png',
+        'question': 'Which movie is this?',
+        'image': './images/questionimgs/hugh.gif',
         'answers': [
-            { text: 'Lethal Weapon', isCorrect: false },
-            { text: 'Die Hard', isCorrect: true },
-            { text: 'The Fifth Element', isCorrect: false },
-            { text: '12 Monkeys', isCorrect: false },
+            { text: 'Deck The Halls', isCorrect: false },
+            { text: 'The Santa Clause', isCorrect: false },
+            { text: 'Jingle All The Way', isCorrect: false },
+            { text: 'Love Actually', isCorrect: true },
         ],
     },
     {
-        'question': 'Die Hard\'s villain is played by Alan Rickman. What was the villain\'s name?',
-        'image': './images/questionimgs/gruber.png',
+        'question': 'In <em>Love Actually</em>, who plays the President of the United States?',
+        'image': '',
         'answers': [
-            { text: 'Hans Gruber', isCorrect: true },
-            { text: 'Otto Becker', isCorrect: false },
-            { text: 'Frans Fischer', isCorrect: false },
-            { text: 'Hans Landa', isCorrect: false },
+            { text: 'Tim McGraw', isCorrect: false },
+            { text: 'Billy Bob Thornton', isCorrect: true },
+            { text: 'Bruce Willis', isCorrect: false },
+            { text: 'Donald Sutherland', isCorrect: false },
         ],
     },
     {
-        'question': 'In which city does John McLane work as a police officer?',
-        // 'image': './images/questionimgs/mclane2.png',
+        'question': 'What language does Jamie <em>(Colin Firth)</em> learn in hopes of dating his housekeeper?',
+        'image': './images/questionimgs/jamie.gif',
         'answers': [
-            { text: 'Boston', isCorrect: false },
-            { text: 'San Francisco', isCorrect: false },
-            { text: 'Chicago', isCorrect: false },
-            { text: 'New York', isCorrect: true },
+            { text: 'Spanish', isCorrect: false },
+            { text: 'Italian', isCorrect: false },
+            { text: 'French', isCorrect: false },
+            { text: 'Portuguese', isCorrect: true },
         ],
     },
     {
-        'question': 'What is John McLane\'s limo driver\'s fashion-inspired name?',
-        // 'image': './images/questionimgs/argyle.png',
+        'question': 'Which supermodel has a cameo role as a potential love interest for Daniel (Liam Neeson)?',
+        'image': '',
         'answers': [
-            { text: 'Paisley', isCorrect: false },
-            { text: 'Argyle', isCorrect: true },
-            { text: 'Pinstripe', isCorrect: false },
-            { text: 'Polka Dot', isCorrect: false },
+            { text: 'Claudia Schiffer', isCorrect: true },
+            { text: 'Cindy Crawford', isCorrect: false },
+            { text: 'Tyra Banks', isCorrect: false },
+            { text: 'Heidi Klum', isCorrect: false },
         ],
     },
     {
-        'question': 'Which company is hosting the Christmas party that gets attacked by the terrorists?',
-        // 'image': './images/questionimgs/holly.png',
+        'question': 'What part does Daisy <em>(Emma Thompson\'s daughter)</em> play in the school Nativity play?',
+        'image': '',
         'answers': [
-            { text: 'Fujitsu Corp', isCorrect: false },
-            { text: 'Ishikawa Inc', isCorrect: false },
-            { text: 'Nakatomi Corp', isCorrect: true },
-            { text: 'Nintendo Ltd', isCorrect: false },
+            { text: 'Lucy The Lamb', isCorrect: false },
+            { text: 'The Virgin Mary', isCorrect: false },
+            { text: 'The First Lobster', isCorrect: true },
+            { text: 'The Third Wise Man', isCorrect: false },
         ],
     }
-    ],       
-    [// DAY 5 - CHRISTMAS AROUND THE WORLD
-        {
-            'question': 'Which country starts every Christmas season by constructing a giant Yule goat?',
-            'image': './images/questionimgs/gavlegoat.png',
-            'answers': [
-                { text: 'Sweden', isCorrect: true },
-                { text: 'Norway', isCorrect: false },
-                { text: 'Estonia', isCorrect: false },
-                { text: 'Denmark', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'Which fast food restaurant is the go-to Christmas dinner destination for Japanese locals?',
-            // 'image': './images/questionimgs/japan.png',
-            'answers': [
-                { text: 'McDonalds', isCorrect: false },
-                { text: 'Wendy\'s', isCorrect: false },
-                { text: 'Burger King', isCorrect: false },
-                { text: 'KFC', isCorrect: true },
-            ],
-        },
-        {
-            'question': 'In Iceland, what do naughty boys and girls receive instead of coal?',
-            // 'image': './images/questionimgs/iceland.png',
-            'answers': [
-                { text: 'Rocks', isCorrect: false },
-                { text: 'A Rotten Potato', isCorrect: true },
-                { text: 'Dog Poop', isCorrect: false },
-                { text: 'Black Licorice', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'In Finland, children hope to find what lucky object hidden in their breakfast rice porridge?',
-            // 'image': './images/questionimgs/ricepudding.png',
-            'answers': [
-                { text: 'Coin', isCorrect: false },
-                { text: 'Pumpkin Seed', isCorrect: false },
-                { text: 'Almond', isCorrect: true },
-                { text: 'Cookie', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'What is the local name for New Zealand\'s Christmas tree?',
-            'image': './images/questionimgs/pohutukawa.png',
-            'answers': [
-                { text: 'Pohutukawa', isCorrect: true },
-                { text: 'Red Bonsai', isCorrect: false },
-                { text: 'Cabbage Tree', isCorrect: false },
-                { text: 'Douglas Fir', isCorrect: false },
-            ],
-        }
+    ], 
+    [// DAY 4 - CHRISTMAS AROUND THE WORLD
+    {
+        'question': 'Which country starts every Christmas season by constructing a giant Yule goat?',
+        'image': './images/questionimgs/gavlegoat.png',
+        'answers': [
+            { text: 'Sweden', isCorrect: true },
+            { text: 'Norway', isCorrect: false },
+            { text: 'Estonia', isCorrect: false },
+            { text: 'Denmark', isCorrect: false },
+        ],
+    },
+    {
+        'question': 'Which fast food restaurant is the go-to Christmas dinner destination for Japanese locals?',
+        // 'image': './images/questionimgs/japan.png',
+        'answers': [
+            { text: 'McDonalds', isCorrect: false },
+            { text: 'Wendy\'s', isCorrect: false },
+            { text: 'Burger King', isCorrect: false },
+            { text: 'KFC', isCorrect: true },
+        ],
+    },
+    {
+        'question': 'In Iceland, what do naughty boys and girls receive instead of coal?',
+        // 'image': './images/questionimgs/iceland.png',
+        'answers': [
+            { text: 'Rocks', isCorrect: false },
+            { text: 'A Rotten Potato', isCorrect: true },
+            { text: 'Dog Poop', isCorrect: false },
+            { text: 'Black Licorice', isCorrect: false },
+        ],
+    },
+    {
+        'question': 'In Finland, children hope to find what lucky object hidden in their breakfast rice porridge?',
+        // 'image': './images/questionimgs/ricepudding.png',
+        'answers': [
+            { text: 'Coin', isCorrect: false },
+            { text: 'Pumpkin Seed', isCorrect: false },
+            { text: 'Almond', isCorrect: true },
+            { text: 'Cookie', isCorrect: false },
+        ],
+    },
+    {
+        'question': 'What is the local name for New Zealand\'s Christmas tree?',
+        'image': './images/questionimgs/pohutukawa.png',
+        'answers': [
+            { text: 'Pohutukawa', isCorrect: true },
+            { text: 'Red Bonsai', isCorrect: false },
+            { text: 'Cabbage Tree', isCorrect: false },
+            { text: 'Douglas Fir', isCorrect: false },
+        ],
+    }
     ],
+    [// DAY 5 - LYRICS
+    {
+        'question': "You know Dasher and Dancer and Prancer and ______.<br>Comet and Cupid and ______ and Blitzen.<br>But do you recall,<br>the most famous reindeer of all?",
+        'answers': [
+            { text: 'Dixon / Donna', isCorrect: false },
+            { text: 'Nixon / Fauna', isCorrect: false },
+            { text: 'Nixon / Donner', isCorrect: false },
+            { text: 'Vixen / Donner', isCorrect: true },
+        ],
+    },
+    {
+        'question': "Once again, as in olden days,<br>happy golden days of ______.<br>Faithful friends who are ______ to us,<br>will be near to us once more",
+        'answers': [
+            { text: 'Yore / Dear', isCorrect: true },
+            { text: 'Yours / Close', isCorrect: false },
+            { text: 'Yore / Good', isCorrect: false },
+            { text: 'Lore / Feared', isCorrect: false },
+        ],
+    },
+    {
+        'question': "In the meadow, we can build a snowman.<br>We'll pretend that he is ______<br>He'll say, are you ______?<br>We'll say, no man<br>But you can do the job when you're in town",
+        'answers': [
+            { text: 'Carson Pound / Tired', isCorrect: false },
+            { text: 'Parson Brown / Married', isCorrect: true },
+            { text: 'Mister Towne / Cranky', isCorrect: false },
+            { text: 'Bobby Brown / Insured', isCorrect: false },
+        ],
+    },
+    {
+        'question': "Here comes Santa Claus, here comes Santa Claus, right down ______<br>He's got a bag that's filled with toys for boys and girls again.<br>Hear those sleigh bells jingle jangle, oh what a beautiful ______<br>So jump in bed and cover your head, 'cause Santa Claus comes tonight",
+        'answers': [
+            { text: 'Santa Claus Lane / Sight', isCorrect: true },
+            { text: 'Candy Cane Lane / Night', isCorrect: false },
+            { text: 'Sugar Drop Lane / Day', isCorrect: false },
+            { text: 'Mrs Claus Lane / Light', isCorrect: false },
+        ],
+    },   
+    {
+        'question': 'Children carry through the streets,<br>A brightly painted ______,<br>Angels gather round the ______,<br>Strumming on guitars',
+        'answers': [
+            { text: 'Barre / Tree', isCorrect: false },
+            { text: 'Shard / Scene', isCorrect: false },
+            { text: 'Star / Hearth', isCorrect: true },
+            { text: 'Tsar / Kids', isCorrect: false },
+        ],
+    }
+    ],         
     [// DAY 6 - SAINT NICHOLAS FACTS
         {
             'question': 'Which modern-day Christmas items are said to represent Saint Nicholas\'s <em>bishop\'s crozier</em>? ',
@@ -363,57 +358,57 @@ export const questions = [
             ],
         }
     ],
-    [// DAY 8 - MOVIE - LOVE ACTUALLY
-        {
-            'question': 'Which movie is this?',
-            'image': './images/questionimgs/hugh.gif',
-            'answers': [
-                { text: 'Deck The Halls', isCorrect: false },
-                { text: 'The Santa Clause', isCorrect: false },
-                { text: 'Jingle All The Way', isCorrect: false },
-                { text: 'Love Actually', isCorrect: true },
-            ],
-        },
-        {
-            'question': 'In Love Actually, who plays the President of the United States?',
-            // 'image': './images/questionimgs/whitehouse.png',
-            'answers': [
-                { text: 'Tim McGraw', isCorrect: false },
-                { text: 'Billy Bob Thornton', isCorrect: true },
-                { text: 'Bruce Willis', isCorrect: false },
-                { text: 'Donald Sutherland', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'What language does Jamie (Colin Firth) learn in hopes of dating his housekeeper?',
-            'image': './images/questionimgs/jamie.gif',
-            'answers': [
-                { text: 'Spanish', isCorrect: false },
-                { text: 'Italian', isCorrect: false },
-                { text: 'French', isCorrect: false },
-                { text: 'Portuguese', isCorrect: true },
-            ],
-        },
-        {
-            'question': 'Which supermodel has a cameo role as potential love interest for Daniel (Liam Neeson)?',
-            'image': '',
-            'answers': [
-                { text: 'Claudia Schiffer', isCorrect: true },
-                { text: 'Cindy Crawford', isCorrect: false },
-                { text: 'Tyra Banks', isCorrect: false },
-                { text: 'Heidi Klum', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'What part does Daisy play in the school Nativity play?',
-            'image': '',
-            'answers': [
-                { text: 'Lucy The Lamb', isCorrect: false },
-                { text: 'The Virgin Mary', isCorrect: false },
-                { text: 'The First Lobster', isCorrect: true },
-                { text: 'The Third Wise Man', isCorrect: false },
-            ],
-        }
+    [// DAY 8 - CHRISTMAS AROUND THE WORLD
+    {
+        'question': 'In Norway, they celebrate Little Christmas Eve on which day?',
+        'image': '',
+        'answers': [
+            { text: 'December 23', isCorrect: true },
+            { text: 'December 19', isCorrect: false },
+            { text: 'December 26', isCorrect: false },
+            { text: 'December 24', isCorrect: false },
+        ],
+    },
+    {
+        'question': 'What do the Irish traditionally leave on the windowsill on Christmas Eve?',
+        'image': '',
+        'answers': [
+            { text: 'Potato Salad', isCorrect: false },
+            { text: 'A Glass of Whiskey', isCorrect: false },
+            { text: 'A Whole Cabbage', isCorrect: false },
+            { text: 'A Red Candle', isCorrect: true },
+        ],
+    },
+    {
+        'question': 'What is the name of the devil-like creature that joins Austria\'s Christmas festivities on December 6?',
+        'image': '',
+        'answers': [
+            { text: 'Krampus', isCorrect: true },
+            { text: 'Kreacher', isCorrect: false },
+            { text: 'Glockler', isCorrect: false },
+            { text: 'Perchten', isCorrect: false },
+        ],
+    },
+    {
+        'question': 'On which date do Ukranian Orthodox Christians celebrate Christmas?',
+        'image': '',
+        'answers': [
+            { text: 'December 25', isCorrect: false },
+            { text: 'December 31', isCorrect: false },
+            { text: 'January 7', isCorrect: true },
+            { text: 'January 25', isCorrect: false },
+        ],
+    },
+    {
+        'question': 'Which Island nation has a designated Christmas Capital city with a year-round Christmas theme park?',
+        'image': '',
+        'answers': [
+            { text: 'Japan', isCorrect: false },
+            { text: 'Indonesia', isCorrect: false },
+            { text: 'The Philippines', isCorrect: true },
+            { text: 'Fiji', isCorrect: false },
+        ],
+    }
     ],
     [// DAY 9 - CHRISTMAS PASTRIES
         {
@@ -519,104 +514,109 @@ export const questions = [
             ],
         }
     ],
-    [// DAY 11 - CHRISTMAS AROUND THE WORLD
-        {
-            'question': 'In Norway, they celebrate Little Christmas Eve on which day?',
-            'image': '',
-            'answers': [
-                { text: 'December 23', isCorrect: true },
-                { text: 'December 19', isCorrect: false },
-                { text: 'December 26', isCorrect: false },
-                { text: 'December 24', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'What do the Irish traditionally leave on the windowsill on Christmas Eve?',
-            'image': '',
-            'answers': [
-                { text: 'Potato Salad', isCorrect: false },
-                { text: 'A Glass of Whiskey', isCorrect: false },
-                { text: 'A Whole Cabbage', isCorrect: false },
-                { text: 'A Red Candle', isCorrect: true },
-            ],
-        },
-        {
-            'question': 'What is the name of the devil-like creature that joins Austria\'s Christmas festivities on December 6?',
-            'image': '',
-            'answers': [
-                { text: 'Krampus', isCorrect: true },
-                { text: 'Kreacher', isCorrect: false },
-                { text: 'Glockler', isCorrect: false },
-                { text: 'Perchten', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'On which date do Ukranian Orthodox Christians celebrate Christmas?',
-            'image': '',
-            'answers': [
-                { text: 'December 25', isCorrect: false },
-                { text: 'December 31', isCorrect: false },
-                { text: 'January 7', isCorrect: true },
-                { text: 'January 25', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'Which Island nation has a designated Christmas Capital city with a year-round Christmas theme park?',
-            'image': '',
-            'answers': [
-                { text: 'Japan', isCorrect: false },
-                { text: 'Indonesia', isCorrect: false },
-                { text: 'The Philippines', isCorrect: true },
-                { text: 'Fiji', isCorrect: false },
-            ],
-        }
+    [// DAY 11 - MOVIE - DIE HARD
+    {
+        'question': 'What movie is this?',
+        'image': './images/questionimgs/mclane.png',
+        'answers': [
+            { text: 'Lethal Weapon', isCorrect: false },
+            { text: 'Die Hard', isCorrect: true },
+            { text: 'The Fifth Element', isCorrect: false },
+            { text: '12 Monkeys', isCorrect: false },
+        ],
+    },
+    {
+        'question': 'Die Hard\'s villain is played by Alan Rickman. What was the villain\'s name?',
+        'image': './images/questionimgs/gruber.png',
+        'answers': [
+            { text: 'Hans Gruber', isCorrect: true },
+            { text: 'Otto Becker', isCorrect: false },
+            { text: 'Frans Fischer', isCorrect: false },
+            { text: 'Hans Landa', isCorrect: false },
+        ],
+    },
+    {
+        'question': 'In which city does John McLane work as a police officer?',
+        // 'image': './images/questionimgs/mclane2.png',
+        'answers': [
+            { text: 'Boston', isCorrect: false },
+            { text: 'San Francisco', isCorrect: false },
+            { text: 'Chicago', isCorrect: false },
+            { text: 'New York', isCorrect: true },
+        ],
+    },
+    {
+        'question': 'What is John McLane\'s limo driver\'s fashion-inspired name?',
+        // 'image': './images/questionimgs/argyle.png',
+        'answers': [
+            { text: 'Paisley', isCorrect: false },
+            { text: 'Argyle', isCorrect: true },
+            { text: 'Pinstripe', isCorrect: false },
+            { text: 'Polka Dot', isCorrect: false },
+        ],
+    },
+    {
+        'question': 'Which company is hosting the Christmas party that gets attacked by the terrorists?',
+        // 'image': './images/questionimgs/holly.png',
+        'answers': [
+            { text: 'Fujitsu Corp', isCorrect: false },
+            { text: 'Ishikawa Inc', isCorrect: false },
+            { text: 'Nakatomi Corp', isCorrect: true },
+            { text: 'Nintendo Ltd', isCorrect: false },
+        ],
+    }
     ],
-    [// DAY 12 - LYRICS
-        {
-            'question': "You know Dasher and Dancer and Prancer and ______.<br>Comet and Cupid and ______ and Blitzen.<br>But do you recall,<br>the most famous reindeer of all?",
-            'answers': [
-                { text: 'Dixon / Donna', isCorrect: false },
-                { text: 'Nixon / Fauna', isCorrect: false },
-                { text: 'Nixon / Donner', isCorrect: false },
-                { text: 'Vixen / Donner', isCorrect: true },
-            ],
-        },
-        {
-            'question': "Once again, as in olden days,<br>happy golden days of ______.<br>Faithful friends who are ______ to us,<br>will be near to us once more",
-            'answers': [
-                { text: 'Yore / Dear', isCorrect: true },
-                { text: 'Yours / Close', isCorrect: false },
-                { text: 'Yore / Good', isCorrect: false },
-                { text: 'Lore / Feared', isCorrect: false },
-            ],
-        },
-        {
-            'question': "In the meadow, we can build a snowman.<br>We'll pretend that he is ______<br>He'll say, are you ______?<br>We'll say, no man<br>But you can do the job when you're in town",
-            'answers': [
-                { text: 'Carson Pound / Tired', isCorrect: false },
-                { text: 'Parson Brown / Married', isCorrect: true },
-                { text: 'Mister Towne / Cranky', isCorrect: false },
-                { text: 'Bobby Brown / Insured', isCorrect: false },
-            ],
-        },
-        {
-            'question': "Here comes Santa Claus, here comes Santa Claus, right down ______<br>He's got a bag that's filled with toys for boys and girls again.<br>Hear those sleigh bells jingle jangle, oh what a beautiful ______<br>So jump in bed and cover your head, 'cause Santa Claus comes tonight",
-            'answers': [
-                { text: 'Santa Claus Lane / Sight', isCorrect: true },
-                { text: 'Candy Cane Lane / Night', isCorrect: false },
-                { text: 'Sugar Drop Lane / Day', isCorrect: false },
-                { text: 'Mrs Claus Lane / Light', isCorrect: false },
-            ],
-        },   
-        {
-            'question': 'Children carry through the streets,<br>A brightly painted ______,<br>Angels gather round the ______,<br>Strumming on guitars',
-            'answers': [
-                { text: 'Barre / Tree', isCorrect: false },
-                { text: 'Shard / Scene', isCorrect: false },
-                { text: 'Star / Hearth', isCorrect: true },
-                { text: 'Tsar / Kids', isCorrect: false },
-            ],
-        }
+    [// DAY 12 - PIANO TUNES
+    {
+        'question': 'Notes:<br><br>E E E E E E E G C D E',
+        // 'image': '',
+        'answers': [
+            { text: 'O Holy Night', isCorrect: false },
+            { text: 'Let It Snow', isCorrect: false },
+            { text: 'Silent Night', isCorrect: false },
+            { text: 'Jingle Bells', isCorrect: true },
+        ],
+    },
+    {
+        'question': 'Notes:<br><br>G C C D C B A A A<br>D D E D C B G G',
+        // 'image': '',
+        'answers': [
+            { text: 'Rudolph The Red Nosed Reindeer', isCorrect: false },
+            { text: 'Jingle Bell Rock', isCorrect: false },
+            { text: 'We Wish You A Merry Christmas', isCorrect: true },
+            { text: 'Deck The Halls', isCorrect: false },
+        ],
+    },
+    {
+        'question': 'Notes:<br><br>D C B A G A B G<br>A B C A B A G F# G',
+        // 'image': '',
+        'answers': [
+            { text: 'Deck The Halls', isCorrect: true },
+            { text: 'We Three Kings', isCorrect: false },
+            { text: 'Let It Snow', isCorrect: false },
+            { text: 'The First Noel', isCorrect: false },
+        ],
+    },
+    {
+        'question': 'Notes:<br><br>D G G F# G B B A<br>D D D C B A B',
+        // 'image': '',
+        'answers': [
+            { text: 'Auld Lang Syne', isCorrect: false },
+            { text: 'Hark! The Herald Angels Sing', isCorrect: true },
+            { text: 'Silent Night', isCorrect: false },
+            { text: 'Joy To The World', isCorrect: false },
+        ],
+    },
+    {
+        'question': 'Notes:<br><br>B A G E F# G F# E<br>G G A A B B D C B',
+        // 'image': '',
+        'answers': [
+            { text: 'Deck The Halls', isCorrect: false },
+            { text: 'O Holy Night', isCorrect: false },
+            { text: 'The First Noel', isCorrect: false },
+            { text: 'We Three Kings', isCorrect: true },
+        ],
+    }
     ],
     [// DAY 13 - MOVIE - HOME ALONE
         {

@@ -128,7 +128,7 @@ function setNumSize() {
 
 // DAY BUTTONS
 const currentDate = new Date().getDate();
-// const currentDate = 2
+// const currentDate = 4;
 
 const dayBtns = document.querySelectorAll('.btn-day');
 const modalOverlay = document.querySelector('.modal-overlay');
@@ -257,7 +257,7 @@ function triviaStart(date) {
     introModal.style.display = 'none';
     triviaModal.style.display = 'block';
     questionInfo.style.display = 'block';
-    if (date == 3 || date == 16 || date == 23) {
+    if (date == 12 || date == 16 || date == 23) {
         pianoSection.style.display = 'block';
         elQuestion.classList.add('piano-question');
 
@@ -459,13 +459,15 @@ const readyBtn = document.getElementById('ready-btn');
 function initializeUsername() {
     if (localStorage.getItem('username')) {
         const name = localStorage.getItem('username');
-        let index = Math.floor(Math.random() * welcomeText.length)
-        welcomeHeader.textContent = `Welcome Back, ${name}!`
+        const title = document.getElementById('advent-title');
+        let index = Math.floor(Math.random() * welcomeText.length);
+        welcomeHeader.textContent = `Welcome Back, ${name}!`;
         welcomeTextContent.style.display = 'block';
         welcomeTextContent.innerHTML = `${welcomeText[index]}`;
         welcomeForm.style.display = 'none';
         welcomeMsg.style.display = 'block';
         readyBtn.style.display = 'block';
+        title.innerHTML = `${name}'s Advent Calendar`  
     } else {
         welcomeMsg.style.display = 'block';
     }
@@ -488,8 +490,7 @@ function initializeBackground() {
     if (localStorage.getItem('bg-image')) {
         let bgImage = localStorage.getItem('bg-image');
         mainContainer.style.setProperty('background-image', bgImage);
-        titleContent.classList.add('title-content-border');
-    }
+        }
 };
   
 function initializeFont() {

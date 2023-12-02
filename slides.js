@@ -62,15 +62,15 @@ export const introSlides = [
         "Did you know that <em>technically</em> the Advent doesn't begin until the <a href='https://www.crosswalk.com/special-coverage/christmas-and-advent/when-does-advent-start.html' target='_blank'>fourth Sunday before Christmas</a>...",
         "...And that the first week of the Advent has a theme of <em>hope</em>?",
         "Sort of like, 'I <em>hope</em> these introductions get better or this thing is going to be a mighty slog...'?",
-        "At least today you'll be learning a new skill! Well, unless you can play the piano already, in which case you'll be doing something you already know how to do!",
-        "Each question will have a piano and a series of musical notes...",
-        "Play the notes using the keyboard (middle row for white keys, top row for black keys) and try to find the right timing to get the answer...",
-        "And don't forget to warm up with some scales, or a cookie!<br><br><p><em>Here's a <a href='https://www.piano-keyboard-guide.com/piano-keyboard-diagram.html' target='_blank'>link</a> to remind you of which key is which, just in case you need it!</em><p>"
+        "Or, 'I <em>hope</em> today's questions are easier than yesterday's...'?",
+        "Just remember that no matter what your score is today,<br><em>'It's the mooooost wonderful tiiiime of the yeaaaar!'</em>",   
     ],
     [ // DEC 4
-        "Today we're going back to the movies with a Christmas-<em>ish</em> hit from the 80s.",
-        "But before that let's digress for a minute with a quick non-Christmas sing-along interlude...",
-        'Happy birthday to Meg,<br>Happy birthday to Meg,<br>Happy birthday to Megaaannnnnn,<br>Happy birthday to you!<br><br><iframe src="https://giphy.com/embed/Qvns6NmhC1MBLKGbL1" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/bill-murray-happy-birthday-to-you-Qvns6NmhC1MBLKGbL1"></a></p>',
+        "Welcome back for day 4 of our little trivia adventure...",
+        "Speaking of which, today's theme just happens to be <em>Christmas Around The World</em>.",
+        "But before that allow me a quick digression for a non-Christmas sing-along interlude...",
+        'Happy birthday to Meg,<br>Happy birthday to Meg,<br>Happy birthday to Megaaannnnnn,<br>Happy birthday to you!',
+        '<img id="bday-image" src="./images/birthday.gif" />',
         "Phew, I'm tired after all that singing. I need a cookie to refuel before this one...",
         "Okay, I'm ready to go. How about you?",
     ],
@@ -95,11 +95,12 @@ export const introSlides = [
     ],
     [ // DEC 8
         "Holy smokes are we already one week down!? Christmas is practically here!",
-        "If you're getting sick of the usual Christmas tunes, not to worry! I've got you covered...",
-        "Check out this 3-hour <a href='https://www.youtube.com/watch?v=Ru8DQ5f5A6U' target='_blank'>YouTube video</a> of LoFi Christmas tunes for a twist on all of the classics that's a little more coffeehouse and a little less Mariah Carey.",
-        "By all means, though, you do you! But whatever you're listening to, let's get on with it!"
+        "At least today you'll be learning a new skill! Well, unless you can play the piano already, in which case you'll be doing something you already know how to do!",
+        "Each question will have a piano and a series of musical notes...",
+        "Play the notes using the keyboard (middle row for white keys, top row for black keys) and try to find the right timing to get the answer...",
+        "And don't forget to warm up with some scales, or a cookie!<br><br><p><em>Here's a <a href='https://www.piano-keyboard-guide.com/piano-keyboard-diagram.html' target='_blank'>link</a> to remind you of which key is which, just in case you need it!</em><p>"
     ],
-    [ // DEC 9
+    [ // DEC 9 
         "Hold the phone everyone! Stop what you're doing and get ready to recognize the December 9th holiday that is...",
         "National PASTRY Day!",
         "You could celebrate with <a href='https://www.foodandwine.com/recipes/sticky-toffee-pudding' target='_blank'>Sticky Toffee Pudding</a>... Or maybe a <a href='https://www.foodandwine.com/recipes/basque-cheesecake' target='_blank'>Basque Cheesecake</a>... Or even a <a href='https://www.foodandwine.com/recipes/butterscotch-pudding-parfait-gingersnap-crumble' target='_blank'>Butterscotch Pudding Parfait with Gingersnap Crumble</a>...",

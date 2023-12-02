@@ -50,7 +50,7 @@ export const welcomeText = [
     "What did one snowman say to the other snowman?<br><br><em>Do you smell carrots?</em>",
     "Why we're Rudolph's parents upset at his report card?<br><br><em>He went down in History!</em>",
     "What is Santa's biggest fear?<br><br><em>Claus-trophobia!</em>",
-    "What happened to the theif who stole an advent calendar?<br><br><em>He got 24 days!</em>",
+    "What happened to the thief who stole an advent calendar?<br><br><em>He got 24 days!</em>",
     "Why was the snowman looking through the carrots?<br><br><em>He was picking his nose!</em>",
     "Why do mummies like Christmas so much?<br><br><em>They love all the wrapping!</em>",
     "Why does Santa have three gardens?<br><br><em>So he can ho, ho, ho!</em>",
