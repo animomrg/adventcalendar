@@ -445,7 +445,7 @@ Classes
     background: var(--clr-primary-2);
     font-family: var(--ff-primary);
     color: var(--clr-primary-5);
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: none;
     border-radius: 25px;
     padding: 1% 5%;
@@ -910,12 +910,24 @@ TRIVIA MODAL
     .question-info {
         height: 40%;
     }
-    
+
+    .question-container {
+        height: 40%;
+    }
+
+    #question-image {
+        height: 100%;
+    }
+
     .answer-label {
         font-size: 0.95rem;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .answer-div {
+        height: 80%;
     }
 
     .answer-label:hover {

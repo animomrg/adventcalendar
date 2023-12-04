@@ -67,7 +67,7 @@ export const introSlides = [
     ],
     [ // DEC 4
         "Welcome back for day 4 of our little trivia adventure...",
-        "Speaking of which, today's theme just happens to be <em>Christmas Around The World</em>.",
+        "And speaking of adventures, today's theme just happens to be <em>Christmas Around The World</em>.",
         "But before that allow me a quick digression for a non-Christmas sing-along interlude...",
         'Happy birthday to Meg,<br>Happy birthday to Meg,<br>Happy birthday to Megaaannnnnn,<br>Happy birthday to you!',
         '<img id="bday-image" src="./images/birthday.gif" />',
