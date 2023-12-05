@@ -207,50 +207,50 @@ export const questions = [
         ],
     }
     ],
-    [// DAY 5 - LYRICS
+    [// DAY 5 - AMY LYRICS
     {
-        'question': "You know Dasher and Dancer and Prancer and ______.<br>Comet and Cupid and ______ and Blitzen.<br>But do you recall,<br>the most famous reindeer of all?",
+        'question': "I am waiting in a silent prayer<br>I am frightened by ______<br>In a world as cold as stone<br>Must I walk this path alone?",
         'answers': [
-            { text: 'Dixon / Donna', isCorrect: false },
-            { text: 'Nixon / Fauna', isCorrect: false },
-            { text: 'Nixon / Donner', isCorrect: false },
-            { text: 'Vixen / Donner', isCorrect: true },
+            { text: 'A Giant Bear', isCorrect: false },
+            { text: 'A Toad I Snared', isCorrect: false },
+            { text: 'The Road I Fare', isCorrect: false },
+            { text: 'The Load I Bear', isCorrect: true },
         ],
     },
     {
-        'question': "Once again, as in olden days,<br>happy golden days of ______.<br>Faithful friends who are ______ to us,<br>will be near to us once more",
+        'question': "Once again, as in olden days,<br>______ of yore.<br>Faithful friends who are dear to us,<br>will be near to us once more",
         'answers': [
-            { text: 'Yore / Dear', isCorrect: true },
-            { text: 'Yours / Close', isCorrect: false },
-            { text: 'Yore / Good', isCorrect: false },
-            { text: 'Lore / Feared', isCorrect: false },
+            { text: 'Happy Golden Days', isCorrect: true },
+            { text: 'The Good Old Days', isCorrect: false },
+            { text: 'The Snowy Days', isCorrect: false },
+            { text: 'Wintery Olden', isCorrect: false },
         ],
     },
     {
         'question': "In the meadow, we can build a snowman.<br>We'll pretend that he is ______<br>He'll say, are you ______?<br>We'll say, no man<br>But you can do the job when you're in town",
         'answers': [
-            { text: 'Carson Pound / Tired', isCorrect: false },
+            { text: 'Carson Downe / Tired', isCorrect: false },
             { text: 'Parson Brown / Married', isCorrect: true },
             { text: 'Mister Towne / Cranky', isCorrect: false },
             { text: 'Bobby Brown / Insured', isCorrect: false },
         ],
     },
     {
-        'question': "Here comes Santa Claus, here comes Santa Claus, right down ______<br>He's got a bag that's filled with toys for boys and girls again.<br>Hear those sleigh bells jingle jangle, oh what a beautiful ______<br>So jump in bed and cover your head, 'cause Santa Claus comes tonight",
+        'question': "So here's my lifelong wish<br>My grown-up Christmas list<br>Not for myself, but for ______",
         'answers': [
-            { text: 'Santa Claus Lane / Sight', isCorrect: true },
-            { text: 'Candy Cane Lane / Night', isCorrect: false },
-            { text: 'Sugar Drop Lane / Day', isCorrect: false },
-            { text: 'Mrs Claus Lane / Light', isCorrect: false },
+            { text: 'A World In Need', isCorrect: true },
+            { text: 'A Friend Indeed', isCorrect: false },
+            { text: 'A Friend Named Deeb', isCorrect: false },
+            { text: 'Some Things I Need', isCorrect: false },
         ],
     },   
     {
-        'question': 'Children carry through the streets,<br>A brightly painted ______,<br>Angels gather round the ______,<br>Strumming on guitars',
+        'question': "If your heart's been longing<br>You've been afraid to try<br>Sorrow's kept you company<br>And the dance has ______",
         'answers': [
-            { text: 'Barre / Tree', isCorrect: false },
-            { text: 'Shard / Scene', isCorrect: false },
-            { text: 'Star / Hearth', isCorrect: true },
-            { text: 'Tsar / Kids', isCorrect: false },
+            { text: 'Made You Cry', isCorrect: false },
+            { text: 'Been A Sigh', isCorrect: false },
+            { text: 'Passed You By', isCorrect: true },
+            { text: 'Made You Lie', isCorrect: false },
         ],
     }
     ],         

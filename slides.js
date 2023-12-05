@@ -77,8 +77,8 @@ export const introSlides = [
     [ // DEC 5
         "It's already December 5th?! Good golly I haven't listened to nearly enough Amy Grant yet...",
         "While I go queue up <em>Home For Christmas</em>, are you ready for another round of trivia?",
-        "Today's category is <em>Christmas Around The World</em> so hopefully you know your unique local Christmas traditions.",
-        "What's that? You don't? Hmm, oh well at least it's multiple choice I guess."
+        "Now that I've got the <em>Amy</em> going, why don't we take a stab at fill-in-the-blank lyrics...",
+        "Just remember, we're looking for the OG lyrics, not the Deans-ified versions...You ready?!"
     ],
     [ // DEC 6
         "Did you know that in many European countries they celebrate <a href='https://www.britannica.com/topic/Saint-Nicholas-Day' target='_blank'><strong>St. Nicholas Day</strong></a> on December 6th?",
