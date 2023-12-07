@@ -381,7 +381,7 @@ export const questions = [
     },
     {
         'question': 'What is the name of the devil-like creature that joins Austria\'s Christmas festivities on December 6?',
-        'image': '',
+        'image': './images/questionimgs/krampus.png',
         'answers': [
             { text: 'Krampus', isCorrect: true },
             { text: 'Kreacher', isCorrect: false },
@@ -401,7 +401,7 @@ export const questions = [
     },
     {
         'question': 'Which Island nation has a designated Christmas Capital city with a year-round Christmas theme park?',
-        'image': '',
+        'image': './images/questionimgs/pampanga.png',
         'answers': [
             { text: 'Japan', isCorrect: false },
             { text: 'Indonesia', isCorrect: false },

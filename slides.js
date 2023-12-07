@@ -89,16 +89,19 @@ export const introSlides = [
     ],
     [ // DEC 7
         "This year, December 7th marks the start of Hanukkah! Let's start with a quick <a href='https://www.britannica.com/topic/Hanukkah' target='_blank'>history lesson...",
-        "After a three-year struggle against Antiochus the Mad, the Jews emerged victorious and Judas ordered the restoration of the Second Temple of Jerusalem.",
+        "After a three-year struggle against <a href='https://www.britannica.com/biography/Antiochus-IV-Epiphanes'>Antiochus the Mad</a>, the Jews emerged victorious and Judas ordered the restoration of the Second Temple of Jerusalem.",
         "Upon completion, Judas declared that the dedication of the restored Temple should be celebrated every year for a period of eight days.",
         "And now you know the origins of Hanukkah! Wahoo for you. You can also probably guess what today's theme is... Mazel Tov!"
     ],
     [ // DEC 8
-        "Holy smokes are we already one week down!? Christmas is practically here!",
-        "At least today you'll be learning a new skill! Well, unless you can play the piano already, in which case you'll be doing something you already know how to do!",
-        "Each question will have a piano and a series of musical notes...",
-        "Play the notes using the keyboard (middle row for white keys, top row for black keys) and try to find the right timing to get the answer...",
-        "And don't forget to warm up with some scales, or a cookie!<br><br><p><em>Here's a <a href='https://www.piano-keyboard-guide.com/piano-keyboard-diagram.html' target='_blank'>link</a> to remind you of which key is which, just in case you need it!</em><p>"
+        "Holy Toledo are we already through the first week!? Tomorrow may not be Christmas, but as <em>The Grinch</em> may say, <em>it's practically here!</em>",
+        "December 8th happens to a pretty busy day on the <em>National Day Of...</em> calendar...",
+        "<a href='https://nationaltoday.com/christmas-jumper-day/' target='_blank'>Christmas Jumper Day</a> seems like a good fit for our purposes...",
+        "But then, in a way, so does <a href='https://nationaltoday.com/national-lard-day/' target='_blank>National Lard Day</a>, or <a href='https://www.barcelona-metropolitan.com/features/history/what-is-la-purissima/ target='_blank'>Immaculate Conception Day</a>...",
+        "Instead, as is our wont, we will go the sugary route and acknowledge today, officially, as <em>National Brownie Day</em>...",
+        "And as the National Day Archives remarks, \"Some might say that a brownie is a cake that has reached a higher plane. They might not be wrong.\"",
+        "To that I say, <em>\"Here's to higher planes, maybe not being wrong, and a well-balanced but, let's be honest, definitely more fudgy than cakey, hunk of brownie...preferably with ice cream.",
+        "And now, our minds firmly entrenched on the ideal brownie, we hit the road in search of the world's Christmas traditions..."
     ],
     [ // DEC 9 
         "Hold the phone everyone! Stop what you're doing and get ready to recognize the December 9th holiday that is...",
