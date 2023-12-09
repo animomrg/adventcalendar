@@ -104,10 +104,14 @@ export const introSlides = [
         "And now, our minds firmly entrenched on the ideal brownie, we hit the road in search of the world's Christmas traditions..."
     ],
     [ // DEC 9 
-        "Hold the phone everyone! Stop what you're doing and get ready to recognize the December 9th holiday that is...",
+        "Hold the phone everyone! Stop what you're doing and get ready to recognize the magical December 9th holiday that is...",
         "National PASTRY Day!",
-        "You could celebrate with <a href='https://www.foodandwine.com/recipes/sticky-toffee-pudding' target='_blank'>Sticky Toffee Pudding</a>... Or maybe a <a href='https://www.foodandwine.com/recipes/basque-cheesecake' target='_blank'>Basque Cheesecake</a>... Or even a <a href='https://www.foodandwine.com/recipes/butterscotch-pudding-parfait-gingersnap-crumble' target='_blank'>Butterscotch Pudding Parfait with Gingersnap Crumble</a>...",
-        "Whatever it is, one thing I know for sure is that any desserts consumed today do not count against eating restrictions of any kind... Except maybe allergies. <em>Sorry, Meg.</em>",
+        "<img id='bday-image' src='./images/bakeoff.gif' alt='mary berry cookies' />",
+        "Thanks for coming by, Mary! Do you have any suggestions for pastries by chance?",
+        "<em>'You could celebrate with <a href='https://www.foodandwine.com/recipes/sticky-toffee-pudding' target='_blank'>Sticky Toffee Pudding</a>... Or maybe a <a href='https://www.foodandwine.com/recipes/basque-cheesecake' target='_blank'>Basque Cheesecake</a>... Or even a <a href='https://www.foodandwine.com/recipes/butterscotch-pudding-parfait-gingersnap-crumble' target='_blank'>Butterscotch Pudding Parfait with Gingersnap Crumble</a>...'</ em>",
+        "<img id='bday-image' src='./images/more.gif' alt='mary berry wants more' />",
+        "Yes, Mary. We all do. Back to London you go, now. We need to get on with the show.",
+        "One thing I know for sure is that any desserts consumed today do not count against eating restrictions of any kind...",
         "So grab one of whatever you've got handy and let's see how much you know about Christmas pastries!"
     ],
     [ // DEC 10
