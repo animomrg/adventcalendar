@@ -127,8 +127,8 @@ function setNumSize() {
 }
 
 // DAY BUTTONS
-const currentDate = new Date().getDate();
-// const currentDate = 10;
+// const currentDate = new Date().getDate();
+const currentDate = 10;
 
 const dayBtns = document.querySelectorAll('.btn-day');
 const modalOverlay = document.querySelector('.modal-overlay');
@@ -383,22 +383,22 @@ function loadScore(date, questions, score) {
     scoreText.textContent = `You scored ${score} out of ${questions.length}!`;
     let randomNum = Math.floor(Math.random() * 3);
     if (score === 5) {
-        scoreImg.src = './images/scoregifs/santa.gif';
+        scoreImg.src = './images/scoregifs/santaelf.gif';
         reminderText.textContent = postTrivia[0][randomNum];
     } else if (score === 4) {
-        scoreImg.src = './images/scoregifs/santawink.gif';
+        scoreImg.src = './images/scoregifs/carlton.gif';
         reminderText.textContent = postTrivia[1][randomNum];
     } else if (score === 3) {
         scoreImg.src = './images/scoregifs/ralphieshrug.gif';
         reminderText.textContent = postTrivia[2][randomNum];
     } else if (score === 2) {
-        scoreImg.src = './images/scoregifs/sketch.gif';
+        scoreImg.src = './images/scoregifs/ornaments.gif';
         reminderText.textContent = postTrivia[3][randomNum];
     } else if (score === 1) {
-        scoreImg.src = './images/scoregifs/christmasangry.gif';
+        scoreImg.src = './images/scoregifs/getout.gif';
         reminderText.textContent = postTrivia[4][randomNum];
     } else {
-        scoreImg.src = './images/scoregifs/samuel.gif';
+        scoreImg.src = './images/scoregifs/dogsanta.gif';
         reminderText.textContent = postTrivia[5][randomNum];
     }
 };

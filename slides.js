@@ -116,11 +116,16 @@ export const introSlides = [
     ],
     [ // DEC 10
         "Among other things, December 10th is both <em>National Corey Day</em> and <em>National Derek Day</em>. But let's be serious...",
-        "It kinda seems like pretty much every day is Corey and Derek day, am I right? Sorry, Coreys and Dereks, it's not about you today.",
+        "It kinda seems like every day is Corey and Derek day, am I right? Sorry, Coreys and Dereks, it's not about you today.",
         "Instead, today's trivia theme is <a href='https://www.worldanimalprotection.org/our-campaigns/sentience/animal-awareness-days/international-animal-rights-day/' target='_blank'>International Animal Rights Day</a>!",
-        "<img id='bday-image' src='./images/questionimgs/cattree.gif' alt='cat in christmas tree' />",
+        "<img id='bday-image' src='./images/bakingdog.gif' alt='dog baking a christmas cake' /><br><span class='caption'><em>* No dogs were harmed in the making of this video...</em></span>",
         "Bonus points, I guess, if your dog or cat (or gerbil) is named Corey or Derek.",
-        "So go grab Patches (or Buttons) <em>(Fine, or Corey)</em> and get ready to test your knowledge of Christmas animals!"
+        "<img id='bday-image' src='./images/christmaspups.gif' alt='puppies under a tree' /><br><span class='caption'><em>* This is just gratuitous animal content...</em></span>",
+        "So go grab Patches (or Buttons) <em>(Fine, or Corey)</em> and get ready to test your knowledge of Christmas animals!",
+        "<img id='bday-image' src='./images/santacat.gif' alt='dog baking a christmas cake' /><br><span class='caption'><em>* Last one I promise...</em></span>",
+        "But just in case you need it, here's a <a href='https://www.youtube.com/watch?v=nTxdqLkMUtA&ab_channel=MusicalFeelings' target='_blank'>12-hour 4K video of cute animals</a> being extra cute with a soundtrack of relaxing Christmas music.",
+        "And if you don't have twelve hours to spend watching this, allow me to suggest <a href='https://www.youtube.com/live/nTxdqLkMUtA?si=yepbpKb9Z9SkD8Gg&t=9915' target='_blank'>this</a> and <a href='https://www.youtube.com/live/nTxdqLkMUtA?si=QP91ke-gkvAp8fOU&t=20855' target='_blank'>this</a>.",
+        "Before that though, on with the trivia!"
     ],
     [ // DEC 11
         "<em>Around and around the world we'll go, even to places that won't expect snow...</em>",
