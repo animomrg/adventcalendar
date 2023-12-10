@@ -116,9 +116,11 @@ export const introSlides = [
     ],
     [ // DEC 10
         "Among other things, December 10th is both <em>National Corey Day</em> and <em>National Derek Day</em>. But let's be serious...",
-        "It seems like pretty much every day is Corey and Derek day, am I right? Sorry, Coreys and Dereks, it's not about you today.",
-        "Instead, today's trivia theme is International Animal Rights Day! Bonus points, I guess, if your dog or cat (or gerbil) is named Corey or Derek.",
-        "Go grab Patches (or Buttons) (or Corey) and get ready to test your knowledge of Christmas animals!"
+        "It kinda seems like pretty much every day is Corey and Derek day, am I right? Sorry, Coreys and Dereks, it's not about you today.",
+        "Instead, today's trivia theme is <a href='https://www.worldanimalprotection.org/our-campaigns/sentience/animal-awareness-days/international-animal-rights-day/' target='_blank'>International Animal Rights Day</a>!",
+        "<img id='bday-image' src='./images/questionimgs/cattree.gif' alt='cat in christmas tree' />",
+        "Bonus points, I guess, if your dog or cat (or gerbil) is named Corey or Derek.",
+        "So go grab Patches (or Buttons) <em>(Fine, or Corey)</em> and get ready to test your knowledge of Christmas animals!"
     ],
     [ // DEC 11
         "<em>Around and around the world we'll go, even to places that won't expect snow...</em>",

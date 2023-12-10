@@ -464,13 +464,13 @@ export const questions = [
     ],
     [// DAY 10 - ANIMAL RIGHTS DAY
         {
-            'question': 'Where do partridges commonly establish their nests?',
+            'question': 'Which of the following animals are <strong>not</strong> given to us as we sing <em>The Twelve Days of Christmas</em>?',
             'image': '',
             'answers': [
-                { text: 'In Pear Trees', isCorrect: false },
-                { text: 'On The Ground', isCorrect: true },
-                { text: 'In Roosting Boxes', isCorrect: false },
-                { text: 'Under Bridges', isCorrect: false },
+                { text: 'Geese', isCorrect: false },
+                { text: 'Starlings', isCorrect: true },
+                { text: 'Swans', isCorrect: false },
+                { text: 'French Hens', isCorrect: false },
             ],
         },
         {
@@ -485,7 +485,7 @@ export const questions = [
         },
         {
             'question': 'What is a reindeer\'s favourite item to graze on?',
-            'image': '',
+            'image': './images/questionimgs/reindeer.gif',
             'answers': [
                 { text: 'Feskue Grass', isCorrect: false },
                 { text: 'Bamboo', isCorrect: false },
@@ -504,13 +504,13 @@ export const questions = [
             ],
         },
         {
-            'question': 'What animal has been used by Coca Cola in many of their Christmas marketing campaigns since 1993?',
-            'image': '',
+            'question': 'What animals have been used by Coca Cola in most of their Christmas marketing campaigns since 1993?',
+            'image': './images/questionimgs/coke.gif',
             'answers': [
-                { text: 'Coca Cola', isCorrect: true },
-                { text: 'McDonalds', isCorrect: false },
-                { text: 'The Bay', isCorrect: false },
-                { text: 'Hershey Chocolates', isCorrect: false },
+                { text: 'Polar Bears', isCorrect: true },
+                { text: 'Reindeer', isCorrect: false },
+                { text: 'Penguins', isCorrect: false },
+                { text: 'Narwhals', isCorrect: false },
             ],
         }
     ],

@@ -127,8 +127,8 @@ function setNumSize() {
 }
 
 // DAY BUTTONS
-const currentDate = new Date().getDate();
-// const currentDate = 9;
+// const currentDate = new Date().getDate();
+const currentDate = 10;
 
 const dayBtns = document.querySelectorAll('.btn-day');
 const modalOverlay = document.querySelector('.modal-overlay');
@@ -294,6 +294,7 @@ function loadQuestion(date, questions, currentQ, score) {
     elQuestion.innerHTML = questions[currentQ].question;
     if (questions[currentQ].image) {
         elImage.src = questions[currentQ].image;
+        questionImgContainer.style.display = 'block';
     } else {
         questionImgContainer.style.display = 'none';
         questionInfo.style.height = '40%';

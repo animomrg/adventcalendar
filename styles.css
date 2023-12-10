@@ -829,7 +829,8 @@ TRIVIA MODAL
 }
 
 #bday-image {
-    width: 95%;
+    max-width: 95%;
+    height: 50%;
     border-radius: 10px;
     border: 2px solid var(--clr-primary-2)
 }
