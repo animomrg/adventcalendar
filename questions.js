@@ -485,7 +485,7 @@ export const questions = [
         },
         {
             'question': 'What is a reindeer\'s favourite item to graze on?',
-            'image': './images/questionimgs/reindeer.gif',
+            // 'image': './images/questionimgs/reindeer.gif',
             'answers': [
                 { text: 'Feskue Grass', isCorrect: false },
                 { text: 'Bamboo', isCorrect: false },
@@ -505,7 +505,7 @@ export const questions = [
         },
         {
             'question': 'What animals have been used by Coca Cola in most of their Christmas marketing campaigns since 1993?',
-            'image': './images/questionimgs/coke.gif',
+            // 'image': './images/questionimgs/coke.gif',
             'answers': [
                 { text: 'Polar Bears', isCorrect: true },
                 { text: 'Reindeer', isCorrect: false },
