@@ -257,7 +257,7 @@ function triviaStart(date) {
     introModal.style.display = 'none';
     triviaModal.style.display = 'block';
     questionInfo.style.display = 'block';
-    if (date == 12 || date == 16 || date == 23) {
+    if (date == 16 || date == 23) {
         pianoSection.style.display = 'block';
         elQuestion.classList.add('piano-question');
 

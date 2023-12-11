@@ -566,58 +566,58 @@ export const questions = [
         ],
     }
     ],
-    [// DAY 12 - PIANO TUNES
-    {
-        'question': 'Notes:<br><br>E E E E E E E G C D E',
-        // 'image': '',
-        'answers': [
-            { text: 'O Holy Night', isCorrect: false },
-            { text: 'Let It Snow', isCorrect: false },
-            { text: 'Silent Night', isCorrect: false },
-            { text: 'Jingle Bells', isCorrect: true },
-        ],
-    },
-    {
-        'question': 'Notes:<br><br>G C C D C B A A A<br>D D E D C B G G',
-        // 'image': '',
-        'answers': [
-            { text: 'Rudolph The Red Nosed Reindeer', isCorrect: false },
-            { text: 'Jingle Bell Rock', isCorrect: false },
-            { text: 'We Wish You A Merry Christmas', isCorrect: true },
-            { text: 'Deck The Halls', isCorrect: false },
-        ],
-    },
-    {
-        'question': 'Notes:<br><br>D C B A G A B G<br>A B C A B A G F# G',
-        // 'image': '',
-        'answers': [
-            { text: 'Deck The Halls', isCorrect: true },
-            { text: 'We Three Kings', isCorrect: false },
-            { text: 'Let It Snow', isCorrect: false },
-            { text: 'The First Noel', isCorrect: false },
-        ],
-    },
-    {
-        'question': 'Notes:<br><br>D G G F# G B B A<br>D D D C B A B',
-        // 'image': '',
-        'answers': [
-            { text: 'Auld Lang Syne', isCorrect: false },
-            { text: 'Hark! The Herald Angels Sing', isCorrect: true },
-            { text: 'Silent Night', isCorrect: false },
-            { text: 'Joy To The World', isCorrect: false },
-        ],
-    },
-    {
-        'question': 'Notes:<br><br>B A G E F# G F# E<br>G G A A B B D C B',
-        // 'image': '',
-        'answers': [
-            { text: 'Deck The Halls', isCorrect: false },
-            { text: 'O Holy Night', isCorrect: false },
-            { text: 'The First Noel', isCorrect: false },
-            { text: 'We Three Kings', isCorrect: true },
-        ],
-    }
-    ],
+    [// DAY 12 - CHRISTMAS POTPURRI
+        {
+            'question': 'Which member of the British Royalty is credited with popularizing the in-house Christmas Tree?',
+            'image': '',
+            'answers': [
+                { text: 'King Edward VIII', isCorrect: false },
+                { text: 'Queen Elizabeth', isCorrect: false },
+                { text: 'King George VI', isCorrect: false },
+                { text: 'Prince Albert', isCorrect: true },
+            ],
+        },
+        {
+            'question': 'In 1931, what company first depicted Santa Claus as a jolly old man with a long white beard?',
+            'image': '',
+            'answers': [
+                { text: 'Ford', isCorrect: false },
+                { text: 'Coca Cola', isCorrect: true },
+                { text: 'Sears', isCorrect: false },
+                { text: 'Marlboro', isCorrect: false },
+            ],
+        },   
+        {
+            'question': 'Which beloved Christmas character was created by the Montgomery Ward department store in a 1939 advertising campaign?',
+            'image': '',
+            'answers': [
+                { text: 'Frosty The Snowman', isCorrect: false },
+                { text: 'Jack Frost', isCorrect: false },
+                { text: 'Rudolph The Red-Nosed Reindeer', isCorrect: true },
+                { text: 'Mrs. Claus', isCorrect: false },
+            ],
+        },
+        {
+            'question': 'Which Christmas carol was broadcast back to NASA command by the crew of Gemini 6 in a prank related to a possible UFO coming from the north pole?',
+            'image': '',
+            'answers': [
+                { text: 'I\'ll Be Home For Christmas', isCorrect: false },
+                { text: 'All I Want For Christmas Is You', isCorrect: false },
+                { text: 'Last Christmas', isCorrect: false },
+                { text: 'Jingle Bells', isCorrect: true },
+            ],
+        },
+        {
+            'question': 'Which traditional Christmas item is also an ancient symbol of fertility and virility <em>(aka. an aphrodisiac)</em>?',
+            'image': '',
+            'answers': [
+                { text: 'Mistletoe', isCorrect: true },
+                { text: 'A Fir Wreath', isCorrect: false },
+                { text: 'Chocolate Chip Cookies', isCorrect: false },
+                { text: 'A Dancing Santa', isCorrect: false },
+            ],
+        }
+    ],  
     [// DAY 13 - MOVIE - HOME ALONE
         {
             'question': 'What criminal nickname does Marv come up with for himself and Harry?',
@@ -670,57 +670,57 @@ export const questions = [
             ],
         },
     ],
-    [// DAY 14 - CHRISTMAS POTPURRI
-        {
-            'question': 'Which member of the British Royalty is credited with popularizing the in-house Christmas Tree?',
-            'image': '',
-            'answers': [
-                { text: 'King Edward VIII', isCorrect: false },
-                { text: 'Queen Elizabeth', isCorrect: false },
-                { text: 'King George VI', isCorrect: false },
-                { text: 'Prince Albert', isCorrect: true },
-            ],
-        },
-        {
-            'question': 'In 1931, what company first depicted Santa Claus as a jolly old man with a long white beard?',
-            'image': '',
-            'answers': [
-                { text: 'Ford', isCorrect: false },
-                { text: 'Coca Cola', isCorrect: true },
-                { text: 'Sears', isCorrect: false },
-                { text: 'Marlboro', isCorrect: false },
-            ],
-        },   
-        {
-            'question': 'Which beloved Christmas character was created by the Montgomery Ward department store in a 1939 advertising campaign?',
-            'image': '',
-            'answers': [
-                { text: 'Frosty The Snowman', isCorrect: false },
-                { text: 'Jack Frost', isCorrect: false },
-                { text: 'Rudolph The Red-Nosed Reindeer', isCorrect: true },
-                { text: 'Mrs. Claus', isCorrect: false },
-            ],
-        },
-        {
-            'question': 'Which Christmas carol was broadcast back to NASA command by the crew of Gemini 6 in a prank related to a possible UFO coming from the north pole?',
-            'image': '',
-            'answers': [
-                { text: 'I\'ll Be Home For Christmas', isCorrect: false },
-                { text: 'All I Want For Christmas Is You', isCorrect: false },
-                { text: 'Last Christmas', isCorrect: false },
-                { text: 'Jingle Bells', isCorrect: true },
-            ],
-        },
-        {
-            'question': 'Which traditional Christmas item is also an ancient symbol of fertility and virility <em>(aka. an aphrodisiac)</em>?',
-            'image': '',
-            'answers': [
-                { text: 'Mistletoe', isCorrect: true },
-                { text: 'A Fir Wreath', isCorrect: false },
-                { text: 'Chocolate Chip Cookies', isCorrect: false },
-                { text: 'A Dancing Santa', isCorrect: false },
-            ],
-        }
+    [// DAY 14 - PIANO TUNES
+    {
+        'question': 'Notes:<br><br>E E E E E E E G C D E',
+        // 'image': '',
+        'answers': [
+            { text: 'O Holy Night', isCorrect: false },
+            { text: 'Let It Snow', isCorrect: false },
+            { text: 'Silent Night', isCorrect: false },
+            { text: 'Jingle Bells', isCorrect: true },
+        ],
+    },
+    {
+        'question': 'Notes:<br><br>G C C D C B A A A<br>D D E D C B G G',
+        // 'image': '',
+        'answers': [
+            { text: 'Rudolph The Red Nosed Reindeer', isCorrect: false },
+            { text: 'Jingle Bell Rock', isCorrect: false },
+            { text: 'We Wish You A Merry Christmas', isCorrect: true },
+            { text: 'Deck The Halls', isCorrect: false },
+        ],
+    },
+    {
+        'question': 'Notes:<br><br>D C B A G A B G<br>A B C A B A G F# G',
+        // 'image': '',
+        'answers': [
+            { text: 'Deck The Halls', isCorrect: true },
+            { text: 'We Three Kings', isCorrect: false },
+            { text: 'Let It Snow', isCorrect: false },
+            { text: 'The First Noel', isCorrect: false },
+        ],
+    },
+    {
+        'question': 'Notes:<br><br>D G G F# G B B A<br>D D D C B A B',
+        // 'image': '',
+        'answers': [
+            { text: 'Auld Lang Syne', isCorrect: false },
+            { text: 'Hark! The Herald Angels Sing', isCorrect: true },
+            { text: 'Silent Night', isCorrect: false },
+            { text: 'Joy To The World', isCorrect: false },
+        ],
+    },
+    {
+        'question': 'Notes:<br><br>B A G E F# G F# E<br>G G A A B B D C B',
+        // 'image': '',
+        'answers': [
+            { text: 'Deck The Halls', isCorrect: false },
+            { text: 'O Holy Night', isCorrect: false },
+            { text: 'The First Noel', isCorrect: false },
+            { text: 'We Three Kings', isCorrect: true },
+        ],
+    }
     ],
     [// DAY 15 - CHRISTMAS AROUND THE WORLD
         {
