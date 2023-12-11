@@ -129,10 +129,10 @@ export const introSlides = [
     ],
     [ // DEC 11
         "Let's take a break from the bogus to semi-bogus holidays and head on back to the movies...",
-        "Purists may argue that our film of choice isn't really a <em>Christmas</em> movie, per se.",
+        "Purists may argue that our film of choice today isn't really a <em>Christmas</em> movie, <em>per se</em>.",
         "But to them and all the other pedants out there <em>(said the pedant, unironically)</em>, we say...",
         "There's room for everyone during the holiday season, and sometimes it's fun to watch explosions instead of elves.",
-        "With that, I'll leave you with one final nuggest of guidance...",
+        "With that, I'll leave you with one final word of warning...",
         "<em>\"Now I have a machine gun...Ho. Ho. Ho.\"</em>"
     ],
     [ // DEC 12
