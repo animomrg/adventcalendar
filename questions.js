@@ -526,7 +526,7 @@ export const questions = [
         ],
     },
     {
-        'question': 'Die Hard\'s villain is played by Alan Rickman. What was the villain\'s name?',
+        'question': 'Die Hard\'s villain is played by Alan Rickman. What was his character\'s name?',
         'image': './images/questionimgs/gruber.png',
         'answers': [
             { text: 'Hans Gruber', isCorrect: true },
@@ -539,7 +539,7 @@ export const questions = [
         'question': 'In which city does John McLane work as a police officer?',
         // 'image': './images/questionimgs/mclane2.png',
         'answers': [
-            { text: 'Boston', isCorrect: false },
+            { text: 'Philadelphia', isCorrect: false },
             { text: 'San Francisco', isCorrect: false },
             { text: 'Chicago', isCorrect: false },
             { text: 'New York', isCorrect: true },

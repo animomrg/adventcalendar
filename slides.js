@@ -128,10 +128,12 @@ export const introSlides = [
         "Before that though, on with the trivia!"
     ],
     [ // DEC 11
-        "<em>Around and around the world we'll go, even to places that won't expect snow...</em>",
-        "<em>But hey look at that, wouldn't you know, today is <a href='https://www.officeholidays.com/holidays/burkina-faso/proclamation-of-the-republic' target='_blank'>Republic Day in Burkina Faso</a>...</em>",
-        "Not exactly Shakespeare is it? I'll admit that I've been a lot of things in my life but I've certainly never been a poet.",
-        "Let's get to work then, yes? Today will test your knowledge of Christmas Traditions around the world. Good luck!"
+        "Let's take a break from the bogus to semi-bogus holidays and head on back to the movies...",
+        "Purists may argue that our film of choice isn't really a <em>Christmas</em> movie, per se.",
+        "But to them and all the other pedants out there <em>(said the pedant, unironically)</em>, we say...",
+        "There's room for everyone during the holiday season, and sometimes it's fun to watch explosions instead of elves.",
+        "With that, I'll leave you with one final nuggest of guidance...",
+        "<em>\"Now I have a machine gun...Ho. Ho. Ho.\"</em>"
     ],
     [ // DEC 12
         "Break out the bags of peppermint hard candies and boxes of smarties folks. And doesn't everybody love the sweet sugary rush of royal icing?!",
