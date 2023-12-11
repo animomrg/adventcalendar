@@ -139,8 +139,9 @@ export const introSlides = [
         "Break out the bags of peppermint hard candies and boxes of smarties folks. And doesn't everybody love the sweet sugary rush of royal icing?!",
         "December 12th, if you hadn't guessed it already, is Gingerbread House Day! ",
         "In 2013, the <em>(Guinness-official)</em> largest gingerbread house ever was constructed in Bryan, Texas. It was 21 feet high and contained 35.8 million calories...",
-        "Legend has it the residents of Bryan are still eating their way through the house. Do you think they ate the toilets?",
-        "Enough with gingerbread, let's get on with the show! Today we're singing Christmas carols together so get those pipes ready!"
+        "Legend has it the residents of Bryan are still eating their way through the house... Which begs the question...",
+        "Do you think they ate the toilets?",
+        "Enough with gingerbread, let's get on with the show! Today we're headed back to Christmas <em>Potpurri</em>. Good luck!"
     ],
     [ // DEC 13
         "Holy Mother of Marv we are over <strong>halfway</strong> to Christmas. Doesn't that news hit you in the face just like a raging hot clothes iron?",
