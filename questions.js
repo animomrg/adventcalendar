@@ -621,7 +621,7 @@ export const questions = [
     [// DAY 13 - MOVIE - HOME ALONE
         {
             'question': 'What criminal nickname does Marv come up with for himself and Harry?',
-            'image': '/images/questionimgs/homealonebadguys.png',
+            // 'image': '/images/questionimgs/homealonebadguys.png',
             'answers': [
                 { text: 'The Goodfellas', isCorrect: false },
                 { text: 'The Sticky Bandits', isCorrect: false },
@@ -631,7 +631,7 @@ export const questions = [
         },
         {
             'question': 'What kind of pizza is Kevin\'s favourite?',
-            'image': '',
+            // 'image': '',
             'answers': [
                 { text: 'Plain Cheese', isCorrect: true },
                 { text: 'Pepperoni', isCorrect: false },
@@ -641,7 +641,7 @@ export const questions = [
         }, 
         {
             'question': 'Who played Kevin\'s cousin <em>Fuller</em>, who always peed the bed?',
-            'image': './images/questionimgs/fuller.gif',
+            // 'image': './images/questionimgs/fuller.gif',
             'answers': [
                 { text: 'Rory Culkin', isCorrect: false },
                 { text: 'Paul Dano', isCorrect: false },
@@ -651,7 +651,7 @@ export const questions = [
         },
         {
             'question': 'Which of the following is <strong>not</strong> one of the booby traps Kevin sets for Harry and Marv?',
-            'image': '',
+            // 'image': '',
             'answers': [
                 { text: 'Nail On The Stairs', isCorrect: false },
                 { text: 'Ice Covered Stairway', isCorrect: false },
@@ -661,7 +661,7 @@ export const questions = [
         },
         {
             'question': "Which Canadian comic actor played Gus Polinski <em>(aka. the Polka King of the Midwest)</em> of <em>Gus Polinski and the Kenosha Kickers</em>?",
-            'image': '/images/questionimgs/homealone.png',
+            // 'image': '/images/questionimgs/homealone.png',
             'answers': [
                 { text: 'Rick Moranis', isCorrect: false },
                 { text: 'Dan Aykroyd', isCorrect: false },

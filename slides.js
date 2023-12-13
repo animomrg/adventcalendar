@@ -149,7 +149,7 @@ export const introSlides = [
         "Confused about those two references? You might be in trouble with today's category...",
         "In which we head back to 1990 and the suburbs of Chicago to see what you remember about <em>Home Alone</em>.",
         "Before that though, can we talk about how funny it is that Joe Pesci appeared in Goodfellas and Home Alone in the <strong>same year</strong>?!",
-        "<img id='bday-image src='./images/questionimgs/pesci.gif alt='joe pesci funny how />",
+        "<img id='bday-image' src='./images/questionimgs/pesci.gif' alt='joe pesci funny how' />",
         "Sorry, Joe Pesci. You're right, it's not funny. It's impressive. My bad.",
         "Okay, enough about Joe Pesci. Let's see how well you remember this classic Christmas movie!"
     ],
