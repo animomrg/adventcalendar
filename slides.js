@@ -154,11 +154,11 @@ export const introSlides = [
         "Okay, enough about Joe Pesci. Let's see how well you remember this classic Christmas movie!"
     ],
     [ // DEC 14
-        "Welcome back for day number 14! Glad to see you haven't OD'ed on Christmas baking yet, though there is still plenty of time for that, I'm sure.",
-        "Today we have another edition of <em>Christmas potpourri</em>. No history lesson this time...",
-        "Though since looking into it a bit I actually kind of like the idea. So here's a nice write-up on <a href='https://homesteadandchill.com/simmering-spices/' target='_blank'>simmer pots</a>, just in case you're interested.",
-        "Just in case your place often smells like wet dog...",
-        "On to the questions!",
+        "Welcome back for day number 14! We're two weeks in and I'm glad to see you haven't OD'ed on Christmas baking...<em>yet</em>. There's still plenty of time for that, I'm sure!",
+        "We've tested your knowledge of a handful of Christmas movies so far, but today we move from the silver screen to the small screen...",
+        "And while we by no means cover <strong>all</strong> of the classic Christmas TV specials, I think we hit on the best of the best...",
+        "Though if I've missed anything important please edify me so I can fill any necessary gaps in my Christmas entertainment repertoire!",
+        "With that, let's jump right in and see what you know!",
     ],
     [ // DEC 15
         "As you may have noticed, Christmas baking is a pretty hot topic around here, and today is no different.",
