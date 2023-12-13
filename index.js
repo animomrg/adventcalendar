@@ -128,7 +128,7 @@ function setNumSize() {
 
 // DAY BUTTONS
 const currentDate = new Date().getDate();
-// const currentDate = 13;
+// const currentDate = 14;
 
 const dayBtns = document.querySelectorAll('.btn-day');
 const modalOverlay = document.querySelector('.modal-overlay');
@@ -365,7 +365,7 @@ function loadScore(date, questions, score) {
 
     homeBtn.addEventListener('click', () => {
         scoreContainer.style.display = 'none';
-        pianoSection.style.display = 'none';
+        // pianoSection.style.display = 'none';
         questionContainer.style.display = 'block';
         questionImgContainer.style.display = 'block';
         answerContainer.style.display = 'grid';

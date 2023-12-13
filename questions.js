@@ -693,7 +693,7 @@ export const questions = [
     },
     {
         'question': 'What was the name of the magician from 1969\'s <em>Frosty The Snowman</em>?',
-        'image': './images/questionimgs/hinkle.png',
+        // 'image': './images/questionimgs/hinkle.png',
         'answers': [
             { text: 'Hocus Pocus', isCorrect: false },
             { text: 'Mr. Doolittle', isCorrect: false },
