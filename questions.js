@@ -654,7 +654,7 @@ export const questions = [
             'image': '',
             'answers': [
                 { text: 'Nail On The Stairs', isCorrect: false },
-                { text: 'Swinging Paint Can', isCorrect: false },
+                { text: 'Ice Covered Stairway', isCorrect: false },
                 { text: 'Searing Hot Door Knob', isCorrect: false },
                 { text: 'Electrified Bath Tub', isCorrect: true },
             ],

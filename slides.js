@@ -144,11 +144,14 @@ export const introSlides = [
         "Enough with gingerbread, let's get on with the show! Today we're headed back to Christmas <em>Potpurri</em>. Good luck!"
     ],
     [ // DEC 13
-        "Holy Mother of Marv we are over <strong>halfway</strong> to Christmas. Doesn't that news hit you in the face just like a raging hot clothes iron?",
+        "Holy Mother of Marv we are over <strong>halfway</strong> to Christmas. Doesn't that news hit you in the face just like a swinging can of paint?",
         "...Or a shovel-wielding, possibly murderous, weird-motorcycle-boot-wearing Old Man Marley?",
-        "Today we head back to 1990 and the suburbs of Chicago and see what you remember about <em>Home Alone</em>.",
-        "Before that though, can we talk about how weird it is that Joe Pesci appeared in Goodfellas and Home Alone in the same year?!",
-        "Okay, enough reminiscing about Joe Pesci. Let's see how you do!"
+        "Confused about those two references? You might be in trouble with today's category...",
+        "In which we head back to 1990 and the suburbs of Chicago to see what you remember about <em>Home Alone</em>.",
+        "Before that though, can we talk about how funny it is that Joe Pesci appeared in Goodfellas and Home Alone in the <strong>same year</strong>?!",
+        "<img id='bday-image src='./images/questionimgs/pesci.gif alt='joe pesci funny how />",
+        "Sorry, Joe Pesci. You're right, it's not funny. It's impressive. My bad.",
+        "Okay, enough about Joe Pesci. Let's see how well you remember this classic Christmas movie!"
     ],
     [ // DEC 14
         "Welcome back for day number 14! Glad to see you haven't OD'ed on Christmas baking yet, though there is still plenty of time for that, I'm sure.",
