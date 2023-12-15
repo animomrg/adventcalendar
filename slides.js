@@ -168,19 +168,19 @@ export const introSlides = [
         "But before you head to the post office, let's take another trip around the world and see what you know of the world's Christmas traditions!"
     ],
     [ // DEC 16
-        "Get those fingers stretched out folks, it's time to tickle the ivories again!",
-        "I sure hope you enjoyed round one because this one is...pretty much the same.",
-        "Except, you know, the songs are different. Because... It'd be weird if they weren't. Right?",
-        "At the very least you'll be able to wow your coworkers at the Christmas party. Provided there's a piano...",
-        "And you remember the notes... And you work with people who would be wowed by simple piano versions of Christmas Carols.",
-    ],
-    [ // DEC 17
         "As we've gone along here, you may have questioned some of the <em>\"National\"</em> days I've chosen...",
         "Which is totally fair because a) I didn't really fact check myself on what <em>National</em> meant and b) you should probably question most of what I do...",
         "That being said, today we have an <strong>official</strong> confirmed Canadian National Day celebrating one of our greatest exports to the world.",
         "No, it's not Justin Bieber's birthday. It's National Maple Syrup Day!",
-        "So head to Tim's and get a maple glazed, or throw some pancakes together and pour away.",
-        "Speaking of <em>Tim's</em>, that's an unintentional segue into today's trivia category. I bet Scott Calvin was a big maple syrup guy...",
+        "So head on over to Tim's and get a maple glazed, or throw some pancakes together and drench those bad boys in maple syrup.",
+        "And speaking of <em>Tim's</em>, that's an unintentional segue into today's trivia category...",
+        "Y'know...I bet Scott Calvin was a big maple syrup guy.",
+    ],
+    [ // DEC 17
+        "Over the years we've seen a handful of great Christmas movies, along with quite a few duds.",
+        "But I think the genre may have peaked back in 1966 with the release of Chuck Jones's <em>How The Grinch Stole Christmas!</em>",
+        "More than 50 years later it still holds up, at least in this man's humble opinion.",
+        "If you've watched it already this year, you may have a leg up. But if not then what are you waiting for? Is your heart two sizes too small or what?!"
     ],
     [ // DEC 18
         "One week to go until the big day! Though I'll be honest with you, National Bake Cookies Day is a pretty big day in itself.",
@@ -189,10 +189,11 @@ export const introSlides = [
         "Whichever it is, I bet you're craving one right about now. So go grab one from the jar and settle in for some Christmas baking trivia. Let's fire it up!",
     ],
     [ // DEC 19
-        "Over the years we've seen a handful of great Christmas movies, along with quite a few duds.",
-        "But I think the genre may have peaked back in 1966 with the release of Chuck Jones's <em>How The Grinch Stole Christmas!</em>",
-        "More than 50 years later it still holds up, at least in this man's humble opinion.",
-        "If you've watched it already this year, you may have a leg up. But if not then what are you waiting for? Is your heart two sizes too small or what?!"
+        "Just a few more days to go, folks. We've almost made it to the end of our advent journey.",
+        "And I'm sure there are those of you who may be a little <em>less enthusiastic</em> about certain categories...",
+        "I promise that this'll be the last time we travel the world looking at the weird and wonderful Christmas traditions of other countries.",
+        "And at the very least today we hit a country we're all somewhat familiar with, and get a mention of a mysterious Christmas pooper...",
+        "But before I spoil anything else, let's get on with the show!"
     ],
     [ // DEC 20
         "Amongst other things, December 20th is National Sangria Day, National Games Day, and National Go Caroling Day...",
