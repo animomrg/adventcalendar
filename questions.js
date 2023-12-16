@@ -776,7 +776,7 @@ export const questions = [
     ],
     [// DAY 16 - MOVIE - THE SANTA CLAUSE
             {
-                'question': 'What is the name of Santa\'s Head Elf?',
+                'question': 'In <em>The Santa Clause</em>, what is the name of Santa\'s Head Elf?',
                 // 'image': '.images/questionimgs/bernard.png',
                 'answers': [
                     { text: 'Barry', isCorrect: false },
