@@ -257,35 +257,35 @@ function triviaStart(date) {
     introModal.style.display = 'none';
     triviaModal.style.display = 'block';
     questionInfo.style.display = 'block';
-    if (date == 16 || date == 23) {
-        pianoSection.style.display = 'block';
-        elQuestion.classList.add('piano-question');
+    // if (date == 16 || date == 23) {
+    //     pianoSection.style.display = 'block';
+    //     elQuestion.classList.add('piano-question');
 
-        const keys = document.querySelectorAll(".key");
-        const note = document.querySelector(".nowplaying");
+    //     const keys = document.querySelectorAll(".key");
+    //     const note = document.querySelector(".nowplaying");
 
-        function playNote(e) {
-            const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
-            const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+    //     function playNote(e) {
+    //         const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
+    //         const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
 
-            if (!key) return;
+    //         if (!key) return;
 
-            const keyNote = key.getAttribute("data-note");
+    //         const keyNote = key.getAttribute("data-note");
 
-            key.classList.add("playing");
-            note.innerHTML = keyNote;
-            audio.currentTime = 0;
-            audio.play();
-        }
+    //         key.classList.add("playing");
+    //         note.innerHTML = keyNote;
+    //         audio.currentTime = 0;
+    //         audio.play();
+    //     }
 
-        function removeTransition(e) {
-            if (e.propertyName !== "transform") return;
-            this.classList.remove("playing");
-        }
+    //     function removeTransition(e) {
+    //         if (e.propertyName !== "transform") return;
+    //         this.classList.remove("playing");
+    //     }
 
-        keys.forEach(key => key.addEventListener("transitionend", removeTransition));
-        window.addEventListener("keydown", playNote);
-    }
+    //     keys.forEach(key => key.addEventListener("transitionend", removeTransition));
+    //     window.addEventListener("keydown", playNote);
+    // }
     
     loadQuestion(date, dayQuestions, currentQuestion, score);
 };
