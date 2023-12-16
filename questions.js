@@ -777,7 +777,7 @@ export const questions = [
     [// DAY 16 - MOVIE - THE SANTA CLAUSE
             {
                 'question': 'What is the name of Santa\'s Head Elf?',
-                'image': '.images/questionimgs/bernard.png',
+                // 'image': '.images/questionimgs/bernard.png',
                 'answers': [
                     { text: 'Barry', isCorrect: false },
                     { text: 'Bernard', isCorrect: true },
@@ -817,7 +817,7 @@ export const questions = [
             },
             {
                 'question': 'When Scott gains 45 pounds in one week, what does he say is the cause?',
-                'image': './images/questionimgs/scott.png',
+                // 'image': './images/questionimgs/scott.png',
                 'answers': [
                     { text: 'A Bee Sting', isCorrect: true },
                     { text: 'Too Much BBQ', isCorrect: false },
