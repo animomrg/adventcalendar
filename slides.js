@@ -215,10 +215,9 @@ export const introSlides = [
         "In 2003, Hollywood produced three of the <strong>great</strong> Christmas movies of all time...",
         "That year gave us Will Ferrell in <em>Elf</em>, Billy Bob Thornton in <em>Bad Santa</em> and...also Billy Bob Thornton <em>(and others)</em> in <em>Love Actually</em>...",
         "Pretty solid trifecta, especially relative to 2014, which gave us...", 
-        "...<a href='https://en.wikipedia.org/wiki/Get_Santa' target='_blank'>Get Santa<a>, Kirk Cameron's <a href='https://en.wikipedia.org/wiki/Saving_Christmas' target='_blank'>Saving Christmas</a>, and the absolute classic...",
-        "<em><a href='https://en.wikipedia.org/wiki/Nativity_3:_Dude,_Where%27s_My_Donkey%3F' target='_blank'>Nativity 3: Dude, Where's My Donkey?</a></em><br><img id='donkey-movie' src='./images/donkey.png>'",
-        "Outside of 2014, however, there have certainly been a few good additions to the annual repertoire.",
-        "Today, let's see what you know about the last ten years of Christmas movies!"
+        "...<a href='https://en.wikipedia.org/wiki/Get_Santa' target='_blank'>Get Santa<a>, Kirk Cameron's <a href='https://en.wikipedia.org/wiki/Saving_Christmas' target='_blank'>Saving Christmas</a>, and the absolute classic, <em><a href='https://en.wikipedia.org/wiki/Nativity_3:_Dude,_Where%27s_My_Donkey%3F' target='_blank'>Nativity 3: Dude, Where's My Donkey?</a></em><br><img id='donkey-movie' src='./images/donkey.png>'",
+        "To be honest with you, it's been pretty slim pickings over the last ten years...",
+        "But let's hit on some of the best and see if you've kept up with the times!"
     ],
     [ // DEC 23
         "On December 23rd, as I'm sure you all know, we celebrate a very special holiday that is near and dear to everyone.",

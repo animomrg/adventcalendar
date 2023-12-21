@@ -128,7 +128,7 @@ function setNumSize() {
 
 // DAY BUTTONS
 const currentDate = new Date().getDate();
-// const currentDate = 14;
+// const currentDate = 22;
 
 const dayBtns = document.querySelectorAll('.btn-day');
 const modalOverlay = document.querySelector('.modal-overlay');
@@ -257,35 +257,6 @@ function triviaStart(date) {
     introModal.style.display = 'none';
     triviaModal.style.display = 'block';
     questionInfo.style.display = 'block';
-    // if (date == 16 || date == 23) {
-    //     pianoSection.style.display = 'block';
-    //     elQuestion.classList.add('piano-question');
-
-    //     const keys = document.querySelectorAll(".key");
-    //     const note = document.querySelector(".nowplaying");
-
-    //     function playNote(e) {
-    //         const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
-    //         const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-
-    //         if (!key) return;
-
-    //         const keyNote = key.getAttribute("data-note");
-
-    //         key.classList.add("playing");
-    //         note.innerHTML = keyNote;
-    //         audio.currentTime = 0;
-    //         audio.play();
-    //     }
-
-    //     function removeTransition(e) {
-    //         if (e.propertyName !== "transform") return;
-    //         this.classList.remove("playing");
-    //     }
-
-    //     keys.forEach(key => key.addEventListener("transitionend", removeTransition));
-    //     window.addEventListener("keydown", playNote);
-    // }
     
     loadQuestion(date, dayQuestions, currentQuestion, score);
 };
@@ -386,19 +357,19 @@ function loadScore(date, questions, score) {
         scoreImg.src = './images/scoregifs/santaelf.gif';
         reminderText.textContent = postTrivia[0][randomNum];
     } else if (score === 4) {
-        scoreImg.src = './images/scoregifs/carlton.gif';
+        scoreImg.src = './images/scoregifs/whoville.gif';
         reminderText.textContent = postTrivia[1][randomNum];
     } else if (score === 3) {
-        scoreImg.src = './images/scoregifs/ralphieshrug.gif';
+        scoreImg.src = './images/scoregifs/charlie.gif';
         reminderText.textContent = postTrivia[2][randomNum];
     } else if (score === 2) {
-        scoreImg.src = './images/scoregifs/ornaments.gif';
+        scoreImg.src = './images/scoregifs/yourbest.gif';
         reminderText.textContent = postTrivia[3][randomNum];
     } else if (score === 1) {
-        scoreImg.src = './images/scoregifs/getout.gif';
+        scoreImg.src = './images/scoregifs/oops.gif';
         reminderText.textContent = postTrivia[4][randomNum];
     } else {
-        scoreImg.src = './images/scoregifs/dogsanta.gif';
+        scoreImg.src = './images/scoregifs/treecat.gif';
         reminderText.textContent = postTrivia[5][randomNum];
     }
 };
