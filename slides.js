@@ -212,11 +212,13 @@ export const introSlides = [
         "...whatever that means.",
     ],
     [ // DEC 22
-        "So far we've covered a few of the great Christmas movies but I think you'd agree that some of the best Christmas content never made it to theatres.",
-        "You got it! Today we're looking at a few of the best television Christmas specials from over the years.",
-        "Thanks to the wonders of Youtube, you should be able to catch all of these from the comfort of your couch.",
-        "So if anything is unfamiliar to you then I suggest you settle in with a drink and a treat and buckle up.",
-        "But before then, let's see what you can do!"
+        "In 2003, Hollywood produced three of the <strong>great</strong> Christmas movies of all time...",
+        "That year gave us Will Ferrell in <em>Elf</em>, Billy Bob Thornton in <em>Bad Santa</em> and...also Billy Bob Thornton <em>(and others)</em> in <em>Love Actually</em>...",
+        "Pretty solid trifecta, especially relative to 2014, which gave us...", 
+        "...<a href='https://en.wikipedia.org/wiki/Get_Santa' target='_blank'>Get Santa<a>, Kirk Cameron's <a href='https://en.wikipedia.org/wiki/Saving_Christmas' target='_blank'>Saving Christmas</a>, and the absolute classic...",
+        "<em><a href='https://en.wikipedia.org/wiki/Nativity_3:_Dude,_Where%27s_My_Donkey%3F' target='_blank'>Nativity 3: Dude, Where's My Donkey?</a></em><br><img id='donkey-movie' src='./images/donkey.png>'",
+        "Outside of 2014, however, there have certainly been a few good additions to the annual repertoire.",
+        "Today, let's see what you know about the last ten years of Christmas movies!"
     ],
     [ // DEC 23
         "On December 23rd, as I'm sure you all know, we celebrate a very special holiday that is near and dear to everyone.",
