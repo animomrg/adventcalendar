@@ -203,11 +203,13 @@ export const introSlides = [
         "Today, let's fast forward 34 years and look at a <em>slightly</em> different take on the character.",
     ],
     [ // DEC 21
-        "In most years we welcome the winter season on December 21st with the Winter Solstice...",
-        "Not this year though, as Mother Nature decided to sleep in and save it for the early morning hours of the 22nd.",
-        "Perhaps that lends some insight into Mother's true nature, as this year December 21st also happens to be National Short Girl Appreciation Day...",
-        "Shout-out to all the short girls out there. Enjoy the last day of fall and the sad, sad end of pumpkin season.",
-        "Throw your Uggs on, grab a venti PSL, and let's hit the road for one more round of Christmas Around The World!"
+        "Well here we are at December 21st, which just so happens to be the first day of winter...",
+        "...for some of us.",
+        "This year the solstice is a little later than usual since Mother Nature has an office holiday party the night before and will be sleeping in.",
+        "That means anyone in, say, Sweden, won't be celebrating the new season until the wee hours of the 22nd...",
+        "While anyone in Nanoose Bay who goes to bed at, say, 8:30pm, will be able to sneak in their celebrations just before bedtime.",
+        "Wherever in the world you are, grab a blanket and a hot chocolate and get ready to test your knowledge of the winter season...",
+        "...whatever that means.",
     ],
     [ // DEC 22
         "So far we've covered a few of the great Christmas movies but I think you'd agree that some of the best Christmas content never made it to theatres.",

@@ -1034,59 +1034,59 @@ export const questions = [
                 ],
             }
     ], 
-    [// DAY 21 - PIANO TUNES
+    [// DAY 21 - WINTER WONDERLAND
     {
-        'question': 'Notes:<br><br>G G G A G G D<br>E D E F# G G',
+        'question': 'Which country has won the most medals at the <em>Winter</em> Olympics all time?',
         'image': '',
         'answers': [
-            { text: 'The Little Drummer Boy', isCorrect: false },
-            { text: 'Deck The Halls', isCorrect: false },
-            { text: 'Good King Wenceslas', isCorrect: true },
-            { text: 'Silver Bells', isCorrect: false },
+            { text: 'Canada', isCorrect: false },
+            { text: 'The Netherlands', isCorrect: false },
+            { text: 'Norway', isCorrect: true },
+            { text: 'United States', isCorrect: false },
         ],
     },
     {
-        'question': 'Notes:<br><br>E D C D E F G<br>A B C B A G',
+        'question': 'Which Christmas-themed ballet premiered in St. Petersburg, Russia, in 1892?',
         'image': '',
         'answers': [
-            { text: 'The First Noel', isCorrect: true },
-            { text: 'I\'ll Be Home For Christmas', isCorrect: false },
-            { text: 'Jingle Bell Rock', isCorrect: false },
-            { text: 'Silent Night', isCorrect: false },
+            { text: 'The Nutcracker', isCorrect: true },
+            { text: 'The Sleeping Beauty', isCorrect: false },
+            { text: 'Black Swan', isCorrect: false },
+            { text: 'The Daughter of the Snows', isCorrect: false },
         ],
     },
     {
-        'question': 'Notes:<br><br>D G G A B G G<br>B C D D E C',
+        'question': 'Which city has been proclaimed as <em>The Snowiest City In The World</em>, with an annual snowfall of 312 inches <em>(26 feet)</em>?',
         'image': '',
         'answers': [
-            { text: 'O Holy Night', isCorrect: false },
-            { text: 'The Twelve Days of Christmas', isCorrect: false },
-            { text: 'Jingle Bells', isCorrect: false },
-            { text: 'Away In A Manger', isCorrect: true },
+            { text: 'Erie, United States', isCorrect: false },
+            { text: 'Chamonix, France', isCorrect: false },
+            { text: 'Ketchikan, Alaska', isCorrect: false },
+            { text: 'Aomori, Japan', isCorrect: true },
         ],
     },
     {
-        'question': 'Notes:<br><br>D C# B A G F# E D<br>A B B C# C# D',
+        'question': 'Which animal eschews hibernation and freezes itself over the winter <em>(For up to 8 months!)</em> before thawing back to life in the spring?',
         'image': '',
         'answers': [
-            { text: 'The Christmas Song', isCorrect: false },
-            { text: 'Frosty The Snowman', isCorrect: false },
-            { text: 'Joy To The World', isCorrect: true },
-            { text: 'Winter Wonderland', isCorrect: false },
+            { text: 'Hummingbird', isCorrect: false },
+            { text: 'Arctic Hare', isCorrect: false },
+            { text: 'Wood Frog', isCorrect: true },
+            { text: 'Three-Toed Sloth', isCorrect: false },
         ],
     },
     {
-        'question': 'Notes:<br><br>D G G G B A G A<br>B G G B D E',
+        'question': 'How many sides does a snowflake have?',
         'image': '',
         'answers': [
-            { text: 'Silver Bells', isCorrect: false },
-            { text: 'Auld Lang Syne', isCorrect: true },
-            { text: 'We Three Kings', isCorrect: false },
-            { text: 'This Christmas', isCorrect: false },
+            { text: 'Three', isCorrect: false },
+            { text: 'Six', isCorrect: true },
+            { text: 'Nine', isCorrect: false },
+            { text: 'Fifteen', isCorrect: false },
         ],
     }
     ],
-    [// DAY 22 - PIANO TUNES
+    [// DAY 22 - MODERN MOVIES
     {
         'question': 'Notes:<br><br>E E E E E E E G C D E',
         // 'image': '',
