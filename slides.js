@@ -221,10 +221,11 @@ export const introSlides = [
     ],
     [ // DEC 23
         "On December 23rd, as I'm sure you all know, we celebrate a very special holiday that is near and dear to everyone.",
-        "No, not National Pfeffernusse Day, though by all means please enjoy a cookie or three.",
+        "No, not <a href='https://nationaltoday.com/national-pfeffernusse-day/' target='_blank'>National Pfeffernusse Day</a>, though by all means please grab yourself a cookie...",
         "Instead, we gather around the aluminum pole, prepare to air our grievances and celebrate the glory that is <strong>Festivus</strong>!",
-        "Don't forget to fuel up before the <em>Feats of Strength</em>. Now that I think about it a Pfeffernusse might be just the ticket.",
-        "Before we do, however, let's all enjoy a final stab a learning the piano with another batch of modern Christmas tunes!"
+        "<iframe width='560' height='315' src='https://www.youtube.com/embed/1njzgXSzA-A?si=iBaI6RLMchLfqkLA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+        "As always, make sure you remember to fuel up before the annual Festivus <em>Feats of Strength</em>! Now that I think about it a Pfeffernusse might be just the ticket...",
+        "Before we do, however, let's see what you know about some memorable television holiday specials!"
     ],
     [ // DEC 24
         "Well would you look at that we made it all the way to Christmas Eve. If you've made it this far, I can't imagine it's been seamless, so thank you for sticking with it!",
