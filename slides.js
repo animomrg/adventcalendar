@@ -223,7 +223,7 @@ export const introSlides = [
         "On December 23rd, as I'm sure you all know, we celebrate a very special holiday that is near and dear to everyone.",
         "No, not <a href='https://nationaltoday.com/national-pfeffernusse-day/' target='_blank'>National Pfeffernusse Day</a>, though by all means please grab yourself a cookie...",
         "Instead, we gather around the aluminum pole, prepare to air our grievances and celebrate the glory that is <strong>Festivus</strong>!",
-        "<iframe width='560' height='315' src='https://www.youtube.com/embed/1njzgXSzA-A?si=iBaI6RLMchLfqkLA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+        "<img id='bday-image' src='./images/festivus.gif'>",
         "As always, make sure you remember to fuel up before the annual Festivus <em>Feats of Strength</em>! Now that I think about it a Pfeffernusse might be just the ticket...",
         "Before we do, however, let's see what you know about some memorable television holiday specials!"
     ],
